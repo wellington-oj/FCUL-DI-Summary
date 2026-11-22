@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa das Cadeiras</title>
+<meta name="description" content="Todas as cadeiras da LEI e da LTI na Ciências ULisboa: o que ensinam e como se ligam. Dados do Fenix, plano 2026/2027.">
+<meta name="theme-color" content="#f7f8fb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232348d6'/%3E%3Ccircle cx='9' cy='10' r='3.2' fill='white'/%3E%3Ccircle cx='23' cy='10' r='3.2' fill='white'/%3E%3Ccircle cx='16' cy='23' r='3.2' fill='white'/%3E%3Cpath d='M9 10 L16 23 L23 10' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#lei" aria-label="Mapa das Cadeiras">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="8" cy="9" r="3.4"/><circle cx="24" cy="9" r="3.4"/><circle cx="16" cy="23" r="3.4"/><path d="M8 9 C 8 16, 16 16, 16 23 M24 9 C 24 16, 16 16, 16 23"/></svg>
+      <span class="brand-text"><strong>Mapa das Cadeiras</strong><span data-i18n="brandSub">LEI · LTI · Ciências ULisboa</span></span>
+    </a>
+    <div class="search" role="search">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" autocomplete="off" spellcheck="false" aria-label="Pesquisar" aria-controls="search-results" aria-expanded="false">
+      <kbd class="search-kbd" aria-hidden="true">/</kbd>
+      <div id="search-results" class="search-results" role="listbox" hidden></div>
+    </div>
+    <div class="top-actions">
+      <button id="lang-toggle" class="chip-btn" type="button" aria-label="Language">EN</button>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Tema">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14-1.41-1.41"/><circle class="sun" cx="12" cy="12" r="4"/><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="page">
+  <noscript><p>Este site precisa de JavaScript. / This site needs JavaScript.</p></noscript>
+</main>
+
+<aside id="drawer" class="drawer" aria-hidden="true" tabindex="-1">
+  <div class="drawer-scrim" data-close></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div id="drawer-body"></div>
+  </div>
+</aside>
+
+<footer class="site-footer">
+  <div class="footer-inner" id="footer"></div>
+</footer>
+
+<script src="data/courses.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

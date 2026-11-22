@@ -1,0 +1,412 @@
+{
+  "_about": "Concrete skills a student should have after each course, written from the Fenix objectives and syllabi. Keyed by Fenix acronym. Each entry is what the student should be able to do.",
+  "ASC": {
+    "pt": ["Representar inteiros, reais e texto em binário e fazer aritmética com eles", "Ler e escrever pequenos programas em assembly x86-64 (dados, saltos, pilha, funções)", "Explicar como o processador executa instruções, incluindo pipelines e paralelismo", "Raciocinar sobre cache, localidade e memória virtual para escrever código mais rápido", "Compilar, executar e depurar programas com as ferramentas de linha de comandos"],
+    "en": ["Represent integers, reals and text in binary and do arithmetic on them", "Read and write small x86-64 assembly programs (data, jumps, stack, functions)", "Explain how the processor executes instructions, including pipelines and parallelism", "Reason about cache, locality and virtual memory to write faster code", "Compile, run and debug programs with command-line tools"]
+  },
+  "Calc": {
+    "pt": ["Estudar a convergência de sucessões e séries", "Calcular limites e estudar a continuidade de funções reais", "Derivar funções e usar derivadas para encontrar extremos e traçar gráficos", "Aproximar funções com a fórmula de Taylor", "Calcular primitivas e integrais definidos"],
+    "en": ["Study the convergence of sequences and series", "Compute limits and study the continuity of real functions", "Differentiate functions and use derivatives to find extrema and sketch graphs", "Approximate functions with Taylor's formula", "Compute antiderivatives and definite integrals"]
+  },
+  "EP": {
+    "pt": ["Calcular probabilidades com probabilidade condicionada e o teorema de Bayes", "Escolher e usar os modelos discretos e contínuos mais comuns (binomial, Poisson, normal…)", "Resumir uma amostra com estatística descritiva e gráficos", "Construir intervalos de confiança para médias e proporções", "Fazer e interpretar testes de hipóteses, incluindo comparação de duas amostras"],
+    "en": ["Compute probabilities using conditional probability and Bayes' theorem", "Choose and use the common discrete and continuous models (binomial, Poisson, normal…)", "Summarise a sample with descriptive statistics and charts", "Build confidence intervals for means and proportions", "Run and interpret hypothesis tests, including two-sample comparisons"]
+  },
+  "IPro": {
+    "pt": ["Programar em Java: variáveis, tipos, condições, ciclos e métodos", "Decompor um problema em funções (abstração procedimental)", "Criar classes simples com atributos e métodos e usar objetos", "Usar a API do Java: Math, String, StringBuilder, Scanner, Random", "Ler e escrever ficheiros e lidar com input/output da consola", "Usar contratos, asserções e exceções para tratar erros"],
+    "en": ["Program in Java: variables, types, conditionals, loops and methods", "Break a problem down into functions (procedural abstraction)", "Write simple classes with fields and methods and work with objects", "Use the Java API: Math, String, StringBuilder, Scanner, Random", "Read and write files and handle console input/output", "Use contracts, assertions and exceptions to handle errors"]
+  },
+  "LPOrd": {
+    "pt": ["Traduzir frases em português para lógica proposicional e de primeira ordem", "Construir provas formais no sistema de Fitch e provas informais", "Converter fórmulas para formas normais (conjuntiva e disjuntiva)", "Aplicar o método de resolução e o algoritmo de Horn", "Usar quantificadores e unificação de termos corretamente"],
+    "en": ["Translate English sentences into propositional and first-order logic", "Build formal proofs in the Fitch system and informal proofs", "Convert formulas into normal forms (conjunctive and disjunctive)", "Apply the resolution method and Horn's algorithm", "Use quantifiers and term unification correctly"]
+  },
+  "AEDado": {
+    "pt": ["Analisar a complexidade temporal e espacial de um algoritmo (pior, melhor e caso médio)", "Implementar pilhas, filas e sacos com genéricos, interfaces e iteradores em Java", "Implementar e comparar algoritmos de ordenação (insertion, mergesort, quicksort, heaps)", "Implementar árvores de pesquisa binária, árvores rubro-negras e tabelas de dispersão", "Escolher a estrutura de dados certa para um problema", "Escrever código recursivo correto"],
+    "en": ["Analyse an algorithm's time and space complexity (worst, best and average case)", "Implement stacks, queues and bags using generics, interfaces and iterators in Java", "Implement and compare sorting algorithms (insertion, mergesort, quicksort, heaps)", "Implement binary search trees, red-black trees and hash tables", "Pick the right data structure for a problem", "Write correct recursive code"]
+  },
+  "EGest": {
+    "pt": ["Explicar oferta, procura, equilíbrio de mercado e elasticidade", "Ler os principais indicadores macroeconómicos (PIB, inflação) e políticas orçamentais e monetárias", "Distinguir tipos de empresas e formas de financiar o capital", "Ler os fluxos económicos e financeiros básicos de uma empresa", "Perceber o papel da inovação na gestão"],
+    "en": ["Explain supply, demand, market equilibrium and elasticity", "Read the main macroeconomic indicators (GDP, inflation) and fiscal and monetary policy", "Tell types of companies apart and the ways to raise capital", "Read a company's basic economic and financial flows", "Understand the role of innovation in management"]
+  },
+  "EAL": {
+    "pt": ["Resolver sistemas de equações lineares com eliminação de Gauss", "Operar com matrizes e calcular determinantes e inversas", "Trabalhar com espaços vetoriais, bases e dimensão", "Representar aplicações lineares como matrizes", "Calcular valores e vetores próprios"],
+    "en": ["Solve systems of linear equations with Gaussian elimination", "Work with matrices and compute determinants and inverses", "Work with vector spaces, bases and dimension", "Represent linear maps as matrices", "Compute eigenvalues and eigenvectors"]
+  },
+  "Fisic": {
+    "pt": ["Calcular campos e potenciais elétricos e aplicar a lei de Gauss", "Analisar circuitos DC com resistências e condensadores", "Explicar campos magnéticos, indução de Faraday e circuitos AC", "Descrever ondas eletromagnéticas e o funcionamento básico de semicondutores", "Resolver problemas práticos de eletromagnetismo"],
+    "en": ["Compute electric fields and potentials and apply Gauss's law", "Analyse DC circuits with resistors and capacitors", "Explain magnetic fields, Faraday induction and AC circuits", "Describe electromagnetic waves and how semiconductors basically work", "Solve practical electromagnetism problems"]
+  },
+  "PF": {
+    "pt": ["Programar em Haskell com tipos, classes de tipos e pattern matching", "Escrever e combinar funções de ordem superior (map, filter, fold)", "Organizar código em módulos e fazer I/O em Haskell", "Testar programas funcionais e raciocinar sobre a sua correção", "Usar lambdas e streams no estilo funcional em Java"],
+    "en": ["Program in Haskell with types, type classes and pattern matching", "Write and combine higher-order functions (map, filter, fold)", "Organise code in modules and do I/O in Haskell", "Test functional programs and reason about their correctness", "Use lambdas and streams in a functional style in Java"]
+  },
+  "FExp": {
+    "pt": ["Usar multímetros, osciloscópios, fontes e geradores de sinal", "Montar e analisar circuitos com as leis de Kirchhoff", "Caracterizar componentes: resistências, díodos, LEDs, condensadores, bobinas", "Adquirir dados, analisá-los numa folha de cálculo e estimar erros", "Relacionar o hardware físico com o firmware e o software que o controla"],
+    "en": ["Use multimeters, oscilloscopes, power supplies and signal generators", "Build and analyse circuits with Kirchhoff's laws", "Characterise components: resistors, diodes, LEDs, capacitors, inductors", "Acquire data, analyse it in a spreadsheet and estimate errors", "Connect physical hardware to the firmware and software that drives it"]
+  },
+  "IIOper": {
+    "pt": ["Formular problemas de decisão como programas lineares", "Resolver programas lineares (graficamente e com um solver) e fazer análise de sensibilidade", "Resolver problemas de caminho mais curto e árvore de suporte mínima (Prim)", "Planear projetos com redes de atividades e caminho crítico"],
+    "en": ["Formulate decision problems as linear programs", "Solve linear programs (graphically and with a solver) and do sensitivity analysis", "Solve shortest-path and minimum spanning tree problems (Prim)", "Plan projects with activity networks and the critical path"]
+  },
+  "PES": {
+    "pt": ["Trabalhar na shell e escrever scripts de automação", "Usar Git para colaborar: ramos, merges e revisão de código", "Montar testes automáticos e integração e entrega contínuas (CI/CD)", "Depurar, fazer profiling e usar análise estática", "Empacotar e fazer deploy em máquinas virtuais e contentores", "Usar ferramentas de IA no desenvolvimento de software com sentido crítico"],
+    "en": ["Work in the shell and write automation scripts", "Use Git to collaborate: branches, merges and code review", "Set up automated tests and continuous integration and delivery (CI/CD)", "Debug, profile and use static analysis", "Package and deploy to virtual machines and containers", "Use AI tools in software development with a critical eye"]
+  },
+  "RComp": {
+    "pt": ["Explicar a arquitetura em camadas da Internet e o papel de cada protocolo", "Analisar HTTP, DNS, TCP, UDP e IP e o seu funcionamento", "Explicar como funciona o encaminhamento e o endereçamento IP", "Desenhar redes pequenas e médias e avaliar o seu desempenho", "Explicar como funcionam as redes sem fios e as bases da segurança de redes"],
+    "en": ["Explain the Internet's layered architecture and what each protocol does", "Analyse how HTTP, DNS, TCP, UDP and IP work", "Explain how IP routing and addressing work", "Design small and medium networks and evaluate their performance", "Explain how wireless networks work and the basics of network security"]
+  },
+  "SIBDad": {
+    "pt": ["Modelar dados com diagramas entidade-associação", "Converter um modelo E-A num esquema relacional e normalizá-lo", "Escrever consultas e atualizações em SQL e em álgebra relacional", "Definir restrições de integridade complexas", "Desenvolver uma aplicação que acede a uma base de dados", "Explicar o que é uma transação"],
+    "en": ["Model data with entity-relationship diagrams", "Turn an ER model into a relational schema and normalise it", "Write queries and updates in SQL and relational algebra", "Define complex integrity constraints", "Build an application that talks to a database", "Explain what a transaction is"]
+  },
+  "CSI": {
+    "pt": ["Identificar stakeholders e levantar e analisar requisitos", "Formular a visão de um produto, hipóteses e critérios de aceitação", "Escrever cenários e user stories e criar mapas de empatia", "Modelar processos de negócio, regras e exceções", "Analisar riscos e construir protótipos", "Definir a arquitetura de informação de um sistema"],
+    "en": ["Identify stakeholders and elicit and analyse requirements", "Write a product vision, hypotheses and acceptance criteria", "Write scenarios and user stories and build empathy maps", "Model business processes, rules and exceptions", "Analyse risks and build prototypes", "Define a system's information architecture"]
+  },
+  "DCObj": {
+    "pt": ["Construir modelos de domínio e de casos de uso", "Desenhar sistemas de classes atribuindo responsabilidades (padrões GRASP)", "Aplicar padrões de desenho GoF para código fácil de alterar e reutilizar", "Documentar o desenho em UML", "Implementar o desenho em Java com herança, polimorfismo, composição e contratos"],
+    "en": ["Build domain models and use case models", "Design class systems by assigning responsibilities (GRASP patterns)", "Apply GoF design patterns for code that is easy to change and reuse", "Document the design in UML", "Implement the design in Java with inheritance, polymorphism, composition and contracts"]
+  },
+  "MDisc": {
+    "pt": ["Contar objetos com princípios de contagem, coeficientes binomiais e inclusão-exclusão", "Usar divisibilidade, o algoritmo de Euclides e congruências", "Explicar e calcular com o sistema RSA", "Resolver relações de recorrência, incluindo as de algoritmos dividir-para-conquistar", "Trabalhar com grafos simples e dirigidos e as suas propriedades"],
+    "en": ["Count objects with counting principles, binomial coefficients and inclusion-exclusion", "Use divisibility, Euclid's algorithm and congruences", "Explain and compute with the RSA system", "Solve recurrence relations, including those of divide-and-conquer algorithms", "Work with simple and directed graphs and their properties"]
+  },
+  "SOpe": {
+    "pt": ["Explicar como um SO gere processos, threads e escalonamento", "Escrever programas concorrentes com sincronização correta e evitar deadlocks", "Explicar memória virtual e gestão de memória", "Usar e explicar sistemas de ficheiros e E/S", "Programar com as chamadas de sistema de Linux"],
+    "en": ["Explain how an OS manages processes, threads and scheduling", "Write concurrent programs with correct synchronisation and avoid deadlocks", "Explain virtual memory and memory management", "Use and explain file systems and I/O", "Program against Linux system calls"]
+  },
+  "EPI": {
+    "pt": ["Analisar dilemas éticos em projetos de tecnologia com métodos estruturados", "Aplicar códigos de ética profissional à prática de engenharia", "Identificar questões de propriedade intelectual, privacidade e direitos civis", "Conhecer a lei sobre crime informático e políticas de segurança", "Considerar sustentabilidade, diversidade e inclusão no trabalho em informática"],
+    "en": ["Analyse ethical dilemmas in technology projects with structured methods", "Apply professional codes of ethics to engineering practice", "Spot intellectual property, privacy and civil rights issues", "Know the law on computer crime and security policies", "Factor sustainability, diversity and inclusion into computing work"]
+  },
+  "CGraf": {
+    "pt": ["Aplicar transformações geométricas e mudanças de coordenadas", "Implementar projeções paralelas e de perspetiva e o pipeline de visualização", "Implementar recorte e remoção de superfícies ocultas (Z-buffer)", "Aplicar modelos de iluminação, sombreamento e texturas", "Escrever um ray tracer básico com sombras, reflexão e refração", "Usar a GPU para computação gráfica e de uso geral"],
+    "en": ["Apply geometric transformations and coordinate changes", "Implement parallel and perspective projections and the rendering pipeline", "Implement clipping and hidden surface removal (Z-buffer)", "Apply lighting models, shading and textures", "Write a basic ray tracer with shadows, reflection and refraction", "Use the GPU for graphics and general-purpose computing"]
+  },
+  "IP-Mma": {
+    "pt": ["Analisar utilizadores e tarefas e recolher requisitos (questionários, entrevistas, observação)", "Aplicar os princípios de Norman e as heurísticas de Nielsen", "Desenhar ecrãs com bom uso de cor, tipografia e mensagens", "Criar protótipos de baixa e alta fidelidade", "Avaliar a usabilidade com métodos qualitativos e quantitativos e relatar os resultados"],
+    "en": ["Analyse users and tasks and gather requirements (questionnaires, interviews, observation)", "Apply Norman's principles and Nielsen's heuristics", "Design screens with good use of colour, typography and messages", "Build low- and high-fidelity prototypes", "Evaluate usability with qualitative and quantitative methods and report the results"]
+  },
+  "IIArti": {
+    "pt": ["Modelar um problema como pesquisa num espaço de estados", "Aplicar pesquisa cega, heurística (A*) e local", "Programar agentes para jogos com minimax e alfa-beta", "Resolver problemas de satisfação de restrições", "Representar conhecimento em lógica e fazer inferência", "Formular problemas de planeamento"],
+    "en": ["Model a problem as a search in a state space", "Apply blind, heuristic (A*) and local search", "Program game-playing agents with minimax and alpha-beta", "Solve constraint satisfaction problems", "Represent knowledge in logic and do inference", "Formulate planning problems"]
+  },
+  "SDistr": {
+    "pt": ["Desenhar sistemas cliente-servidor e escolher a arquitetura distribuída adequada", "Implementar comunicação com sockets, RPC/RMI e filas de mensagens", "Aplicar algoritmos de coordenação: relógios lógicos, eleição, checkpointing", "Usar replicação e escolher modelos de consistência", "Tornar um sistema tolerante a faltas, incluindo noções de faltas bizantinas"],
+    "en": ["Design client-server systems and pick the right distributed architecture", "Implement communication with sockets, RPC/RMI and message queues", "Apply coordination algorithms: logical clocks, election, checkpointing", "Use replication and choose consistency models", "Make a system fault tolerant, including the basics of Byzantine faults"]
+  },
+  "TComput": {
+    "pt": ["Construir autómatos finitos (DFA/NFA) e expressões regulares para uma linguagem", "Escrever gramáticas livres de contexto e autómatos de pilha", "Usar o lema da bombagem para provar que uma linguagem não é regular", "Mostrar que um problema é decidível ou indecidível com máquinas de Turing", "Classificar problemas em P, NP e NP-completo"],
+    "en": ["Build finite automata (DFA/NFA) and regular expressions for a language", "Write context-free grammars and pushdown automata", "Use the pumping lemma to prove a language isn't regular", "Show a problem is decidable or undecidable using Turing machines", "Classify problems as P, NP and NP-complete"]
+  },
+  "CSSof": {
+    "pt": ["Estruturar aplicações empresariais em camadas (apresentação, negócio, dados)", "Aplicar padrões de persistência e mapeamento objeto-relacional", "Construir a camada de apresentação web e expor serviços web", "Gerir dependências e versões num projeto real", "Lidar com concorrência em aplicações com servidores de base de dados e aplicacionais"],
+    "en": ["Structure enterprise applications in layers (presentation, business, data)", "Apply persistence and object-relational mapping patterns", "Build the web presentation layer and expose web services", "Manage dependencies and versions in a real project", "Handle concurrency in applications with database and application servers"]
+  },
+  "IAA": {
+    "pt": ["Preparar dados e selecionar variáveis para aprendizagem", "Treinar árvores de decisão, modelos lineares com regularização e k-vizinhos", "Avaliar e validar modelos corretamente (validação cruzada, métricas)", "Usar modelos probabilísticos, ensembles e redes neuronais", "Agrupar dados com clustering", "Reconhecer as limitações e os problemas típicos dos modelos baseados em dados"],
+    "en": ["Prepare data and select features for learning", "Train decision trees, regularised linear models and k-nearest neighbours", "Evaluate and validate models properly (cross-validation, metrics)", "Use probabilistic models, ensembles and neural networks", "Group data with clustering", "Recognise the limits and typical pitfalls of data-driven models"]
+  },
+  "PSInf": {
+    "pt": ["Desenvolver em equipa um sistema de informação web completo", "Construir uma SPA responsiva com comunicação cliente-servidor e gestão de estado", "Ligar a aplicação a uma camada de armazenamento", "Gerir o projeto com métodos ágeis (Kanban)", "Aplicar critérios de qualidade a uma aplicação web"],
+    "en": ["Build a complete web-based information system as a team", "Build a responsive SPA with client-server communication and state management", "Connect the application to a storage layer", "Run the project with agile methods (Kanban)", "Apply quality criteria to a web application"]
+  },
+  "SConf": {
+    "pt": ["Usar cifras, hashes, MACs e assinaturas digitais, e saber quando usar cada um", "Implementar autenticação e usar certificados e PKI", "Construir canais seguros com TLS usando a API de segurança do Java", "Configurar firewalls (iptables) e sistemas de deteção de intrusões (Snort)", "Aumentar a confiabilidade com remoção, tolerância e previsão de faltas"],
+    "en": ["Use ciphers, hashes, MACs and digital signatures, and know when to use each", "Implement authentication and use certificates and PKI", "Build secure channels with TLS using the Java security API", "Configure firewalls (iptables) and intrusion detection systems (Snort)", "Improve dependability through fault removal, tolerance and forecasting"]
+  },
+  "EJ": {
+    "pt": ["Analisar e desconstruir os sistemas de jogos comerciais", "Implementar sistemas de jogo centrais (movimento de personagem e câmara, inventário)", "Usar motores de jogo, máquinas de estados e colisões", "Prototipar rapidamente e iterar com playtesting", "Construir ferramentas e sistemas modulares reutilizáveis", "Implementar um conceito de jogo original e funcional"],
+    "en": ["Analyse and deconstruct the systems in commercial games", "Implement core gameplay systems (character and camera movement, inventory)", "Use game engines, state machines and collisions", "Prototype quickly and iterate through playtesting", "Build reusable tools and modular systems", "Implement a working original game concept"]
+  },
+  "IAAp": {
+    "pt": ["Construir e explorar grafos de conhecimento e dados da web semântica", "Desenvolver agentes conversacionais e sistemas de diálogo", "Avaliar sistemas de IA que interagem com pessoas", "Analisar os requisitos e o impacto ético da IA em diferentes áreas"],
+    "en": ["Build and explore knowledge graphs and semantic web data", "Develop conversational agents and dialogue systems", "Evaluate AI systems that interact with people", "Analyse the requirements and ethical impact of AI in different domains"]
+  },
+
+  "AComp": {
+    "pt": ["Representar dados em binário e fazer aritmética inteira e de vírgula flutuante", "Explicar a organização de um computador: processador, memória e periféricos", "Ler o modelo de programação e o conjunto de instruções de um processador", "Comparar arquiteturas RISC e CISC e explicar pipelines", "Explicar caches, hierarquia de memória e memória virtual"],
+    "en": ["Represent data in binary and do integer and floating-point arithmetic", "Explain how a computer is organised: processor, memory and peripherals", "Read a processor's programming model and instruction set", "Compare RISC and CISC architectures and explain pipelines", "Explain caches, the memory hierarchy and virtual memory"]
+  },
+  "EM-I": {
+    "pt": ["Resolver sistemas de equações lineares", "Operar com matrizes e calcular determinantes", "Trabalhar com vetores e o espaço euclidiano Rⁿ", "Representar transformações lineares como matrizes", "Calcular valores e vetores próprios"],
+    "en": ["Solve systems of linear equations", "Work with matrices and compute determinants", "Work with vectors and the Euclidean space Rⁿ", "Represent linear transformations as matrices", "Compute eigenvalues and eigenvectors"]
+  },
+  "P-I-LTI": {
+    "pt": ["Resolver problemas com algoritmos e programá-los em Python", "Definir funções e usar condições, ciclos e recursão", "Usar listas, tuplos, dicionários e conjuntos", "Ler e escrever ficheiros", "Documentar, testar e depurar programas e usar exceções"],
+    "en": ["Solve problems with algorithms and program them in Python", "Define functions and use conditionals, loops and recursion", "Use lists, tuples, dictionaries and sets", "Read and write files", "Document, test and debug programs and use exceptions"]
+  },
+  "ADAS": {
+    "pt": ["Mapear serviços, processos e sistemas de uma organização", "Analisar a complexidade de um problema antes de desenhar a solução", "Desenhar soluções centradas no valor para o utilizador", "Criar modelos de processos e de serviços", "Pensar em flexibilidade, falhas e resiliência no desenho"],
+    "en": ["Map an organisation's services, processes and systems", "Analyse a problem's complexity before designing the solution", "Design solutions centred on value for the user", "Build process and service models", "Design for flexibility, failure and resilience"]
+  },
+  "EM-II": {
+    "pt": ["Estudar a convergência de sucessões e séries", "Calcular limites e estudar a continuidade de funções", "Derivar funções e usar derivadas em problemas de otimização", "Aproximar funções com a fórmula de Taylor", "Calcular primitivas e integrais"],
+    "en": ["Study the convergence of sequences and series", "Compute limits and study the continuity of functions", "Differentiate functions and use derivatives in optimisation problems", "Approximate functions with Taylor's formula", "Compute antiderivatives and integrals"]
+  },
+  "ITW": {
+    "pt": ["Estruturar páginas com HTML5 semântico", "Estilizar páginas com CSS e torná-las responsivas", "Programar em JavaScript: tipos, controlo de fluxo, arrays e objetos", "Manipular o DOM e reagir a eventos", "Usar bibliotecas como jQuery e Bootstrap"],
+    "en": ["Structure pages with semantic HTML5", "Style pages with CSS and make them responsive", "Program in JavaScript: types, control flow, arrays and objects", "Manipulate the DOM and respond to events", "Use libraries like jQuery and Bootstrap"]
+  },
+  "P-II-LTI": {
+    "pt": ["Definir novos tipos com classes e objetos em Python", "Analisar algoritmos experimental e assintoticamente", "Especificar tipos abstratos de dados e programar contra interfaces", "Implementar pilhas, filas, deques, árvores e filas de prioridade", "Implementar e comparar algoritmos de ordenação e pesquisa"],
+    "en": ["Define new types with classes and objects in Python", "Analyse algorithms experimentally and asymptotically", "Specify abstract data types and program against interfaces", "Implement stacks, queues, deques, trees and priority queues", "Implement and compare sorting and searching algorithms"]
+  },
+  "RC-LTI": {
+    "pt": ["Explicar a estrutura da Internet e o modelo em camadas", "Analisar protocolos de aplicação: HTTP, SMTP, FTP, DNS", "Explicar o transporte com e sem ligação (TCP e UDP)", "Explicar encaminhamento, controlo de congestão e a camada de ligação", "Analisar experimentalmente o tráfego HTTP, TCP e IP", "Explicar redes móveis, QoS e transmissão de multimédia"],
+    "en": ["Explain the structure of the Internet and the layered model", "Analyse application protocols: HTTP, SMTP, FTP, DNS", "Explain connection-oriented and connectionless transport (TCP and UDP)", "Explain routing, congestion control and the link layer", "Analyse HTTP, TCP and IP traffic experimentally", "Explain mobile networks, QoS and multimedia streaming"]
+  },
+  "BDad": {
+    "pt": ["Modelar dados com diagramas E-A e convertê-los num esquema relacional", "Escrever SQL avançado: joins, agregações e subconsultas", "Implementar bases de dados em PostgreSQL com restrições, triggers e procedimentos", "Explicar como o SGBD otimiza consultas e usar índices", "Explicar transações ACID e controlo de concorrência", "Usar MongoDB e combinar bases de dados relacionais e NoSQL"],
+    "en": ["Model data with ER diagrams and turn them into a relational schema", "Write advanced SQL: joins, aggregations and subqueries", "Implement PostgreSQL databases with constraints, triggers and stored procedures", "Explain how the DBMS optimises queries and use indexes", "Explain ACID transactions and concurrency control", "Use MongoDB and combine relational and NoSQL databases"]
+  },
+  "FTV": {
+    "pt": ["Aplicar transformações 2D e 3D, projeções e recorte", "Usar modelos de cor e técnicas de sombreamento", "Visualizar dados escalares e vetoriais e fazer volume rendering", "Visualizar estruturas lineares e hierárquicas", "Criar visualizações interativas com filtragem e zoom semântico"],
+    "en": ["Apply 2D and 3D transformations, projections and clipping", "Use colour models and shading techniques", "Visualise scalar and vector data and do volume rendering", "Visualise linear and hierarchical structures", "Build interactive visualisations with filtering and semantic zoom"]
+  },
+  "ICompu": {
+    "pt": ["Desenvolver software com design iterativo centrado no utilizador", "Identificar requisitos e criar personas e cenários", "Aplicar princípios de usabilidade e de design gráfico de ecrãs", "Criar e avaliar protótipos, incluindo em papel", "Tratar os dados de avaliação com estatística", "Comunicar com utilizadores e clientes e trabalhar em equipa"],
+    "en": ["Develop software through iterative user-centred design", "Identify requirements and create personas and scenarios", "Apply usability and screen design principles", "Build and evaluate prototypes, including paper ones", "Process evaluation data with statistics", "Communicate with users and clients and work in a team"]
+  },
+  "PCObj": {
+    "pt": ["Programar fluentemente em Java", "Criar classes, interfaces e enumerados", "Usar herança, polimorfismo e ligação dinâmica respeitando o princípio de Liskov", "Usar tipos genéricos e tratar exceções", "Usar a framework de coleções do Java", "Aplicar padrões básicos de programação orientada a objetos"],
+    "en": ["Program fluently in Java", "Write classes, interfaces and enums", "Use inheritance, polymorphism and dynamic binding while respecting Liskov substitution", "Use generic types and handle exceptions", "Use the Java Collections Framework", "Apply basic object-oriented programming patterns"]
+  },
+  "SO-LTI": {
+    "pt": ["Explicar as funções e a estrutura de um sistema operativo", "Explicar processos, threads e algoritmos de escalonamento", "Sincronizar processos e evitar deadlocks", "Explicar paginação, segmentação e memória virtual", "Explicar sistemas de ficheiros e E/S, com exemplos em Linux e Windows"],
+    "en": ["Explain what an operating system does and how it is structured", "Explain processes, threads and scheduling algorithms", "Synchronise processes and avoid deadlocks", "Explain paging, segmentation and virtual memory", "Explain file systems and I/O, with examples from Linux and Windows"]
+  },
+  "ADS": {
+    "pt": ["Identificar requisitos com uma abordagem orientada a objetos", "Construir o modelo de domínio de um sistema", "Atribuir responsabilidades a objetos com padrões GRASP", "Aplicar padrões de desenho GoF", "Passar do desenho ao modelo de implementação"],
+    "en": ["Identify requirements with an object-oriented approach", "Build a system's domain model", "Assign responsibilities to objects with GRASP patterns", "Apply GoF design patterns", "Go from design to implementation model"]
+  },
+  "ADis": {
+    "pt": ["Desenhar aplicações cliente-servidor e peer-to-peer", "Programar comunicação em rede com sockets, RPC e filas de mensagens", "Aplicar sincronização de relógios e algoritmos de eleição", "Usar replicação, modelos de consistência e transações distribuídas", "Tornar aplicações tolerantes a faltas", "Explicar computação na nuvem e virtualização"],
+    "en": ["Design client-server and peer-to-peer applications", "Program network communication with sockets, RPC and message queues", "Apply clock synchronisation and election algorithms", "Use replication, consistency models and distributed transactions", "Make applications fault tolerant", "Explain cloud computing and virtualisation"]
+  },
+  "ASW": {
+    "pt": ["Desenvolver aplicações web do lado do servidor em PHP", "Estruturar aplicações com o padrão MVC", "Trocar dados com JSON e XML e fazer pedidos assíncronos", "Criar e consumir serviços web", "Construir aplicações com as stacks LAMP e MEAN (Node.js)"],
+    "en": ["Build server-side web applications in PHP", "Structure applications with the MVC pattern", "Exchange data with JSON and XML and make asynchronous requests", "Build and consume web services", "Build applications on the LAMP and MEAN (Node.js) stacks"]
+  },
+  "SIntel": {
+    "pt": ["Modelar problemas como espaços de estados", "Implementar pesquisa cega e heurística", "Programar jogos com minimax e alfa-beta", "Usar pesquisa local: hill climbing, simulated annealing, algoritmos genéticos", "Resolver problemas de restrições e problemas em lógica proposicional", "Treinar árvores de decisão e usar programação genética"],
+    "en": ["Model problems as state spaces", "Implement blind and heuristic search", "Program games with minimax and alpha-beta", "Use local search: hill climbing, simulated annealing, genetic algorithms", "Solve constraint problems and problems in propositional logic", "Train decision trees and use genetic programming"]
+  },
+  "CSS-LTI": {
+    "pt": ["Estruturar aplicações empresariais em camadas", "Aplicar padrões de persistência e mapeamento objeto-relacional", "Construir a camada de apresentação web e expor serviços web", "Gerir dependências e versões num projeto", "Desenhar sistemas com componentes e microserviços"],
+    "en": ["Structure enterprise applications in layers", "Apply persistence and object-relational mapping patterns", "Build the web presentation layer and expose web services", "Manage dependencies and versions in a project", "Design systems with components and microservices"]
+  },
+  "PGP": {
+    "pt": ["Escolher o modelo de processo de software adequado a um projeto", "Organizar uma equipa e decompor o trabalho em tarefas", "Estimar esforço com métricas", "Calendarizar tarefas e alocar recursos", "Acompanhar o projeto e gerir riscos", "Planear testes de software"],
+    "en": ["Choose the right software process model for a project", "Organise a team and break work down into tasks", "Estimate effort with metrics", "Schedule tasks and allocate resources", "Monitor the project and manage risks", "Plan software testing"]
+  },
+  "FAA": {
+    "pt": ["Montar o pipeline de aprendizagem: preparar dados e selecionar variáveis", "Treinar modelos de classificação e regressão: lineares, árvores, distância, probabilísticos", "Usar ensembles e redes neuronais", "Avaliar e validar modelos corretamente", "Agrupar dados com clustering", "Distinguir modelos interpretáveis de caixas-pretas e explicar previsões"],
+    "en": ["Set up the learning pipeline: prepare data and select features", "Train classification and regression models: linear, tree, distance-based, probabilistic", "Use ensembles and neural networks", "Evaluate and validate models properly", "Group data with clustering", "Tell interpretable models from black boxes and explain predictions"]
+  },
+  "PTIR": {
+    "pt": ["Desenvolver e testar uma aplicação web com requisitos reais e boa experiência de utilização", "Fazer testes com utilizadores", "Conceber e implementar um sistema distribuído escalável, seguro e tolerante a faltas", "Gerir o projeto segundo um plano e reportar o progresso", "Integrar o que aprendeu em todo o curso num só projeto"],
+    "en": ["Build and test a web application with real requirements and a good user experience", "Run user tests", "Design and implement a scalable, secure and fault-tolerant distributed system", "Manage the project against a plan and report progress", "Bring everything from the degree together in one project"]
+  },
+  "SInf": {
+    "pt": ["Usar operações criptográficas: cifras, hashes, MACs e assinaturas", "Implementar autenticação e usar certificados e PKI", "Aplicar controlo de acesso", "Configurar firewalls (iptables) e deteção de intrusões (Snort)", "Reconhecer tipos de malware", "Desenvolver uma aplicação distribuída segura em Java com TLS"],
+    "en": ["Use cryptographic operations: ciphers, hashes, MACs and signatures", "Implement authentication and use certificates and PKI", "Apply access control", "Configure firewalls (iptables) and intrusion detection (Snort)", "Recognise types of malware", "Build a secure distributed Java application with TLS"]
+  },
+
+  "CTC": {
+    "pt": ["Relacionar problemas urbanos atuais com a sua história", "Analisar as interdependências entre tecnologia, infraestrutura, ambiente e sociedade", "Ler dados urbanos de forma crítica, incluindo o que deixam de fora", "Comunicar conhecimento técnico a públicos de outras áreas"],
+    "en": ["Relate current urban problems to their history", "Analyse how technology, infrastructure, environment and society depend on each other", "Read urban data critically, including what it leaves out", "Communicate technical knowledge to people from other fields"]
+  },
+  "CCul-A": {
+    "pt": ["Analisar a ciência como fenómeno social e cultural", "Discutir a relação entre ciência, cultura e sociedade do séc. XVIII ao XXI", "Interpretar representações da ciência na literatura, cinema, teatro e pintura"],
+    "en": ["Analyse science as a social and cultural phenomenon", "Discuss how science, culture and society interacted from the 18th to the 21st century", "Interpret how science is portrayed in literature, film, theatre and painting"]
+  },
+  "CCien-A": {
+    "pt": ["Construir e avaliar argumentos com rigor lógico", "Analisar controvérsias científicas com ferramentas metodológicas", "Usar paradoxos como treino de raciocínio"],
+    "en": ["Build and assess arguments with logical rigour", "Analyse scientific controversies with methodological tools", "Use paradoxes to train reasoning"]
+  },
+  "HMR": {
+    "pt": ["Resolver puzzles e problemas recreativos com conceitos matemáticos", "Aplicar noções básicas de teoria combinatória de jogos", "Situar historicamente a matemática recreativa"],
+    "en": ["Solve puzzles and recreational problems with mathematical concepts", "Apply the basics of combinatorial game theory", "Place recreational mathematics in its history"]
+  },
+  "HIB": {
+    "pt": ["Traçar a evolução das ideias em biologia e os seus principais autores", "Relacionar descobertas científicas com o contexto histórico", "Usar um referencial histórico-filosófico para contextualizar a biologia"],
+    "en": ["Trace how ideas in biology developed and who shaped them", "Relate scientific discoveries to their historical context", "Use a historical-philosophical frame to put biology in context"]
+  },
+  "HJT": {
+    "pt": ["Identificar e caracterizar jogos de tabuleiro de várias épocas e regiões", "Analisar a mecânica, a dinâmica e a materialidade de um jogo", "Explicar a dimensão cultural e social dos jogos"],
+    "en": ["Identify and describe board games from different eras and regions", "Analyse a game's mechanics, dynamics and materiality", "Explain the cultural and social side of games"]
+  },
+  "LF": {
+    "pt": ["Construir e gerir um orçamento pessoal", "Comparar produtos financeiros: contas, cartões, seguros", "Avaliar créditos, juros fixos e variáveis e endividamento", "Tomar decisões informadas sobre consumo, poupança e impostos"],
+    "en": ["Build and manage a personal budget", "Compare financial products: accounts, cards, insurance", "Assess loans, fixed and variable interest and debt", "Make informed decisions about spending, saving and tax"]
+  },
+  "PRSL": {
+    "pt": ["Identificar perigos e avaliar riscos num laboratório", "Ler fichas de dados de segurança e escolher equipamento de proteção", "Aplicar boas práticas de segurança e agir numa emergência"],
+    "en": ["Identify hazards and assess risks in a lab", "Read safety data sheets and choose protective equipment", "Follow safe lab practice and respond in an emergency"]
+  },
+  "PR": {
+    "pt": ["Estruturar relatórios técnicos e documentos científicos", "Escrever documentos em LaTeX com fórmulas, figuras, tabelas e referências", "Preparar apresentações claras"],
+    "en": ["Structure technical reports and scientific documents", "Write documents in LaTeX with formulas, figures, tables and references", "Prepare clear presentations"]
+  },
+  "Sust.": {
+    "pt": ["Relacionar as dimensões ambiental, social e económica da sustentabilidade", "Analisar o uso de recursos naturais, energia e alterações climáticas", "Usar informação relevante para decisões de cidadania sobre sustentabilidade"],
+    "en": ["Connect the environmental, social and economic sides of sustainability", "Analyse the use of natural resources, energy and climate change", "Use relevant information to make civic decisions on sustainability"]
+  },
+  "CCSDP": {
+    "pt": ["Definir objetivos pessoais e agir de acordo com eles", "Comunicar de forma assertiva e gerir conflitos em equipa", "Tomar decisões e resolver problemas de forma autónoma", "Gerir o tempo, as emoções e o stress", "Preparar a entrada no mercado de trabalho"],
+    "en": ["Set personal goals and act on them", "Communicate assertively and manage conflict in teams", "Make decisions and solve problems independently", "Manage time, emotions and stress", "Prepare to enter the job market"]
+  },
+  "ECie": {
+    "pt": ["Desenvolver uma ideia de negócio em equipa a partir de um problema real", "Usar design thinking e ferramentas de criatividade", "Aplicar modelos de inovação (ex.: Blue Ocean)", "Distinguir startups, PME e intra-empreendedorismo"],
+    "en": ["Develop a business idea in a team from a real problem", "Use design thinking and creativity tools", "Apply innovation models (e.g. Blue Ocean)", "Tell startups, SMEs and intrapreneurship apart"]
+  },
+  "VC": {
+    "pt": ["Trabalhar numa instituição externa segundo um plano de voluntariado", "Desenvolver competências transversais e responsabilidade social", "Refletir sobre solidariedade, tolerância e compromisso"],
+    "en": ["Work in an outside institution following a volunteering plan", "Build transferable skills and social responsibility", "Reflect on solidarity, tolerance and commitment"]
+  },
+  "Bioeti": {
+    "pt": ["Aplicar as principais teorias éticas a casos concretos", "Argumentar sobre questões biomédicas, animais e ambientais", "Analisar o impacto ético da biotecnologia e da ciência na sociedade"],
+    "en": ["Apply the main ethical theories to real cases", "Argue about biomedical, animal and environmental issues", "Analyse the ethical impact of biotechnology and science on society"]
+  },
+  "BACons": {
+    "pt": ["Explicar as causas e consequências dos problemas ambientais atuais", "Avaliar a eficácia das medidas de conservação", "Formar opiniões fundamentadas sobre ambiente e desenvolvimento"],
+    "en": ["Explain the causes and consequences of today's environmental problems", "Judge how well conservation measures work", "Form well-grounded opinions on environment and development"]
+  },
+  "EPM": {
+    "pt": ["Traçar o desenvolvimento das grandes ideias matemáticas desde a Antiguidade", "Situar autores e resultados no seu contexto histórico", "Relacionar a história da matemática com a matemática atual"],
+    "en": ["Trace how the big mathematical ideas developed since antiquity", "Place mathematicians and results in their historical context", "Connect the history of mathematics with today's mathematics"]
+  },
+  "HLC": {
+    "pt": ["Distinguir limites intrínsecos e extrínsecos da ciência", "Discutir limites éticos, culturais e filosóficos com exemplos históricos", "Avaliar criticamente afirmações sobre o fim do progresso científico"],
+    "en": ["Tell intrinsic and extrinsic limits of science apart", "Discuss ethical, cultural and philosophical limits with historical examples", "Critically assess claims about the end of scientific progress"]
+  },
+  "HdA": {
+    "pt": ["Analisar historicamente a relação entre sociedades humanas e natureza", "Usar os conceitos e debates da história ambiental", "Tratar clima, água, florestas e doenças como agentes históricos"],
+    "en": ["Analyse the relationship between human societies and nature historically", "Use the concepts and debates of environmental history", "Treat climate, water, forests and disease as historical actors"]
+  },
+
+  "AD": {
+    "pt": ["Captar e editar fotografia digital e criar fotomontagens", "Gravar, editar e desenhar som", "Captar e editar vídeo com efeitos visuais", "Integrar imagem, som e imagem em movimento numa obra"],
+    "en": ["Capture and edit digital photos and create photomontages", "Record, edit and design sound", "Capture and edit video with visual effects", "Combine still image, sound and moving image in one piece"]
+  },
+  "CVis": {
+    "pt": ["Analisar criticamente objetos e conteúdos culturais", "Usar os conceitos base da cultura visual (signo, ideologia, representação)", "Conhecer os principais autores e escolas de pensamento", "Escrever ensaios e comentários fundamentados"],
+    "en": ["Critically analyse cultural objects and content", "Use the core concepts of visual culture (sign, ideology, representation)", "Know the main authors and schools of thought", "Write well-supported essays and commentaries"]
+  },
+  "TFV": {
+    "pt": ["Explicar como funciona a perceção visual: olho, cérebro e cultura", "Usar conceitos de luz e cor na prática artística", "Relacionar processos de perceção com a leitura de imagens artísticas"],
+    "en": ["Explain how visual perception works: eye, brain and culture", "Use concepts of light and colour in artistic practice", "Relate perception to how we read artistic images"]
+  },
+  "TI-I": {
+    "pt": ["Analisar a imagem como objeto de comunicação e os seus recursos visuais", "Relacionar imagens de diferentes formatos e épocas", "Escrever e apresentar trabalhos de investigação sobre imagem"],
+    "en": ["Analyse the image as an object of communication and its visual resources", "Relate images from different formats and periods", "Write and present research on images"]
+  },
+  "ENum": {
+    "pt": ["Desenhar amostragens e experiências em ecologia", "Fazer análise exploratória e testes de hipóteses", "Aplicar ANOVA, regressão e modelos lineares e aditivos generalizados", "Escolher a técnica estatística adequada a dados ecológicos"],
+    "en": ["Design sampling and experiments in ecology", "Do exploratory analysis and hypothesis tests", "Apply ANOVA, regression and generalised linear and additive models", "Choose the right statistical technique for ecological data"]
+  },
+  "EOBCB": {
+    "pt": ["Participar num projeto de investigação real num laboratório", "Aplicar conhecimentos de biologia celular e biotecnologia na prática", "Comunicar resultados científicos e trabalhar em equipa"],
+    "en": ["Take part in a real research project in a lab", "Apply cell biology and biotechnology knowledge in practice", "Communicate scientific results and work in a team"]
+  },
+  "FBioi": {
+    "pt": ["Pesquisar em bases de dados biológicas", "Fazer e interpretar alinhamentos de sequências", "Programar em Octave/MATLAB para bioinformática", "Construir e interpretar filogenias"],
+    "en": ["Search biological databases", "Run and interpret sequence alignments", "Program in Octave/MATLAB for bioinformatics", "Build and interpret phylogenies"]
+  },
+  "CIF": {
+    "pt": ["Calcular juro simples e composto e taxas equivalentes", "Avaliar rendas e perpetuidades", "Construir planos de amortização de empréstimos e leasing", "Explicar obrigações e ações"],
+    "en": ["Compute simple and compound interest and equivalent rates", "Value annuities and perpetuities", "Build loan amortisation and leasing schedules", "Explain bonds and shares"]
+  },
+  "CF1": {
+    "pt": ["Explicar os conceitos base da contabilidade financeira", "Registar transações de exploração, financiamento e investimento", "Preparar e ler as demonstrações financeiras", "Calcular e apresentar resultados"],
+    "en": ["Explain the core concepts of financial accounting", "Record operating, financing and investing transactions", "Prepare and read financial statements", "Compute and present earnings"]
+  },
+  "ME": {"pt": [], "en": []},
+  "PGes": {"pt": [], "en": []},
+  "ENP": {
+    "pt": ["Escolher entre métodos paramétricos e não paramétricos", "Aplicar testes de ajustamento (qui-quadrado, Kolmogorov-Smirnov, Lilliefors)", "Aplicar testes de sinais, Wilcoxon, Mann-Whitney, Kruskal-Wallis e Friedman", "Medir associação com a correlação de Spearman"],
+    "en": ["Choose between parametric and nonparametric methods", "Apply goodness-of-fit tests (chi-squared, Kolmogorov-Smirnov, Lilliefors)", "Apply the sign, Wilcoxon, Mann-Whitney, Kruskal-Wallis and Friedman tests", "Measure association with Spearman's correlation"]
+  },
+  "GRede": {
+    "pt": ["Trabalhar com árvores de suporte, conectividade e distâncias em grafos", "Reconhecer grafos planares e resolver problemas de coloração", "Provar resultados sobre grafos com raciocínio matemático"],
+    "en": ["Work with spanning trees, connectivity and distances in graphs", "Recognise planar graphs and solve colouring problems", "Prove results about graphs with mathematical reasoning"]
+  },
+  "LE-IIS": {
+    "pt": ["Programar em R e RStudio: vetores, data frames, funções e gráficos", "Organizar e preparar dados em R e usar RMarkdown", "Gerar amostras de diferentes distribuições", "Usar o método de Monte Carlo para resolver problemas reais"],
+    "en": ["Program in R and RStudio: vectors, data frames, functions and plots", "Organise and prepare data in R and use RMarkdown", "Generate samples from different distributions", "Use the Monte Carlo method to solve real problems"]
+  },
+  "DTI3D": {
+    "pt": ["Fazer desenho técnico 2D com normas, vistas e cotagem", "Modelar objetos em 3D em CAD", "Preparar e imprimir modelos em 3D"],
+    "en": ["Produce 2D technical drawings with standards, views and dimensions", "Model objects in 3D with CAD", "Prepare and 3D-print models"]
+  },
+  "DRPI": {
+    "pt": ["Explicar as características dos satélites e dos dados que produzem", "Corrigir erros e registar imagens de satélite", "Aplicar realces radiométricos, geométricos e transformações multiespectrais", "Interpretar imagens de deteção remota"],
+    "en": ["Explain how satellites and their data work", "Correct errors in and register satellite images", "Apply radiometric and geometric enhancement and multispectral transforms", "Interpret remote sensing images"]
+  },
+  "SIG": {
+    "pt": ["Explicar estruturas e formatos de dados geográficos (vetorial, raster, TIN)", "Georreferenciar dados num software SIG", "Guardar e consultar informação geográfica com bases de dados e SQL", "Fazer análise espacial e apresentar resultados em mapas"],
+    "en": ["Explain geographic data structures and formats (vector, raster, TIN)", "Georeference data in GIS software", "Store and query geographic data with databases and SQL", "Do spatial analysis and present results as maps"]
+  },
+  "MPM": {
+    "pt": ["Aplicar metodologias de projeto a trabalhos multimédia", "Conceber e desenvolver um projeto multimédia artístico de forma autónoma", "Escolher as tecnologias adequadas a cada projeto", "Documentar e apresentar o processo e o resultado"],
+    "en": ["Apply project methods to multimedia work", "Conceive and develop an artistic multimedia project independently", "Choose the right technologies for each project", "Document and present the process and the result"]
+  },
+  "SI": {
+    "pt": ["Analisar projetos de artes transmedia e de interação", "Relacionar as vanguardas do séc. XX com projetos atuais e jogos", "Desenvolver conceitos de projeto com estética de participação e interação"],
+    "en": ["Analyse transmedia and interactive art projects", "Connect 20th-century avant-gardes with current projects and games", "Develop project concepts around participation and interaction"]
+  },
+  "TI-II": {
+    "pt": ["Analisar de forma autónoma imagens multimédia na cultura visual atual", "Usar métodos de investigação dos estudos visuais", "Escrever e apresentar investigação sobre imagens em diferentes media"],
+    "en": ["Independently analyse multimedia images in today's visual culture", "Use research methods from visual studies", "Write and present research on images across media"]
+  },
+  "Ecolo": {
+    "pt": ["Explicar os fatores que determinam a distribuição das populações", "Descrever a estrutura e o funcionamento dos ecossistemas", "Usar métodos básicos de estudo da biodiversidade no campo", "Interpretar questões ambientais com base científica"],
+    "en": ["Explain what determines where populations live", "Describe how ecosystems are structured and work", "Use basic field methods to study biodiversity", "Interpret environmental issues on a scientific basis"]
+  },
+  "Evo": {
+    "pt": ["Pensar em termos evolutivos e formular hipóteses testáveis", "Explicar seleção natural, deriva genética e origem da variabilidade", "Reconstruir e interpretar a história evolutiva (filogenias)"],
+    "en": ["Think in evolutionary terms and formulate testable hypotheses", "Explain natural selection, genetic drift and where variation comes from", "Reconstruct and interpret evolutionary history (phylogenies)"]
+  },
+  "Gene": {
+    "pt": ["Aplicar as leis de Mendel e as relações entre alelos", "Analisar ligação genética e meiose", "Interpretar heredogramas e genes ligados ao sexo", "Usar métodos de análise genética"],
+    "en": ["Apply Mendel's laws and allele interactions", "Analyse genetic linkage and meiosis", "Interpret pedigrees and sex-linked genes", "Use methods of genetic analysis"]
+  },
+  "ADEG": {
+    "pt": ["Formular perguntas de investigação em economia e gestão", "Encontrar fontes de dados económicos e empresariais", "Analisar dados com estatística descritiva e números índice em folha de cálculo", "Apresentar resultados em relatórios com tabelas e gráficos"],
+    "en": ["Formulate research questions in economics and business", "Find sources of economic and business data", "Analyse data with descriptive statistics and index numbers in spreadsheets", "Present results in reports with tables and charts"]
+  },
+  "EEmpr": {
+    "pt": ["Analisar o contexto externo e interno de uma empresa", "Formular estratégias de negócio e corporativas", "Planear a implementação e o controlo de uma estratégia"],
+    "en": ["Analyse a company's external and internal context", "Formulate business and corporate strategies", "Plan how a strategy is implemented and controlled"]
+  },
+  "SIGes": {
+    "pt": ["Escrever um documento de especificação de requisitos", "Modelar sistemas com casos de uso, cenários e diagramas de classes UML", "Converter um diagrama de classes no modelo relacional", "Desenvolver pequenos sistemas de informação de gestão"],
+    "en": ["Write a requirements specification document", "Model systems with use cases, scenarios and UML class diagrams", "Turn a class diagram into a relational model", "Build small management information systems"]
+  },
+  "ASSistem": {
+    "pt": ["Modelar e programar simulações de eventos discretos", "Gerar números pseudoaleatórios e validar simulações", "Modelar sistemas de inventário determinísticos e estocásticos", "Combinar abordagens analíticas e numéricas"],
+    "en": ["Model and program discrete-event simulations", "Generate pseudo-random numbers and validate simulations", "Model deterministic and stochastic inventory systems", "Combine analytical and numerical approaches"]
+  },
+  "EPar": {
+    "pt": ["Usar distribuições amostrais e o teorema do limite central", "Estimar parâmetros pelo método dos momentos e da máxima verosimilhança", "Construir intervalos de confiança para médias, variâncias e proporções", "Fazer testes de hipóteses paramétricos"],
+    "en": ["Use sampling distributions and the central limit theorem", "Estimate parameters by method of moments and maximum likelihood", "Build confidence intervals for means, variances and proportions", "Run parametric hypothesis tests"]
+  },
+  "PMat": {
+    "pt": ["Modelar problemas em programação matemática", "Resolver programas lineares com o algoritmo simplex", "Usar dualidade e fazer análise pós-ótima", "Resolver problemas de transporte"],
+    "en": ["Model problems as mathematical programs", "Solve linear programs with the simplex algorithm", "Use duality and do post-optimal analysis", "Solve transportation problems"]
+  },
+  "FCart": {
+    "pt": ["Interpretar os elementos de uma carta", "Identificar os sistemas de referência usados em Portugal", "Explicar projeções cartográficas e as suas distorções", "Converter coordenadas entre sistemas de referência"],
+    "en": ["Read the elements of a map", "Identify the reference systems used in Portugal", "Explain map projections and their distortions", "Convert coordinates between reference systems"]
+  },
+  "MOM-3D": {
+    "pt": ["Planear levantamentos de fotogrametria terrestre", "Calibrar câmaras e orientar fotografias", "Reconstruir objetos 3D a partir de fotografias", "Modelar em 3D a partir de nuvens de pontos de laser scanning"],
+    "en": ["Plan terrestrial photogrammetry surveys", "Calibrate cameras and orient photographs", "Reconstruct 3D objects from photographs", "Model in 3D from laser scanning point clouds"]
+  },
+  "PGeo-I": {
+    "pt": ["Usar equipamento de topografia e fazer observações de campo", "Calcular poligonais, interseções e nivelamentos com propagação de erros", "Posicionar com GPS (pós-processamento e RTK)", "Planear e gerir um levantamento topográfico"],
+    "en": ["Use surveying equipment and take field observations", "Compute traverses, intersections and levelling with error propagation", "Position with GPS (post-processing and RTK)", "Plan and run a topographic survey"]
+  }
+}
