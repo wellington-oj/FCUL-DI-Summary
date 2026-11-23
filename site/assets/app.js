@@ -71,6 +71,35 @@
       noSkills: "O Fenix ainda não tem descrição desta cadeira.",
       skillsNote: "Competências escritas a partir dos objetivos e programas publicados no Fenix.",
       skillWord: "Competência",
+      calTab: "Horários", calSub: "Aulas e exames",
+      calEyebrow: (d, y) => `${d} · horários e exames ${y}`,
+      calTitle: "Quando e onde são as aulas e os exames",
+      calLead: "Escolha uma cadeira para ver os turnos da semana e a data, hora e sala de cada exame. Sem nenhuma escolhida, veja a semana completa de uma turma e o calendário de exames do semestre.",
+      calList: "Cadeiras do semestre",
+      exams: "Exames",
+      epoca: { 1: "1.ª época", 2: "2.ª época", esp: "Época especial" },
+      room: "Sala", rooms: "Salas", roomTbd: "Sala ainda por anunciar",
+      inDays: (n) => (n < 0 ? "já passou" : n === 0 ? "hoje" : n === 1 ? "amanhã" : `daqui a ${n} dias`),
+      noExams: "Esta cadeira não aparece no calendário de exames do Fenix. A avaliação pode ser contínua ou por projeto: veja o método de avaliação na ficha da cadeira.",
+      weekTitle: "Horário semanal", weekOf: (x) => `Semana da turma ${x}`,
+      turma: "Turma", allTurmas: "Todas as turmas",
+      turmaNone: (x) => `A turma ${x} não tem turnos nesta cadeira, por isso aparecem todos.`,
+      turmaWhat: "As turmas (ex.: 1LEI01) são os grupos de horário do Fenix. O primeiro algarismo é o ano.",
+      pickTurma: "Escolha uma turma para ver a semana completa, com as aulas de todas as cadeiras.",
+      noShifts: "O Fenix não tem horário publicado para esta cadeira. Acontece sobretudo com cadeiras de Menores dadas noutras faculdades.",
+      shiftType: { T: "Teórica", TP: "Teórico-prática", PL: "Prática laboratorial", P: "Prática", S: "Seminário", O: "Orientação tutorial", OT: "Orientação tutorial" },
+      shiftsList: (n) => `Todos os turnos (${n})`,
+      shiftCol: "Turno", whenCol: "Dia, hora e sala", turmasCol: "Turmas",
+      otherDegrees: (n) => `+${n} de outros cursos`,
+      openCourse: "Ficha da cadeira", fenixShifts: "Turnos no Fenix", calLink: "Horário e exames",
+      backOverview: "Visão geral do semestre",
+      examCal: "Calendário de exames",
+      examCalLead: (s) => `Todos os exames das cadeiras do ${s}. Clique numa cadeira para ver os detalhes.`,
+      examCalTurma: (x) => `Exames das cadeiras que a turma ${x} frequenta. Clique numa cadeira para ver os detalhes.`,
+      noExamsPeriod: "Nenhum exame nesta época.",
+      days: ["", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
+      kindShort: { option: "opção", minor: "menor" },
+      calNote: (y) => `Turnos e exames publicados no Fenix para ${y}. Podem mudar ao longo do ano: confirme sempre no Fenix.`,
     },
     en: {
       brandSub: "LEI · LTI · Ciências ULisboa",
@@ -132,6 +161,35 @@
       noSkills: "Fenix doesn't describe this course yet.",
       skillsNote: "Skills written from the objectives and syllabi published on Fenix.",
       skillWord: "Skill",
+      calTab: "Timetable", calSub: "Classes and exams",
+      calEyebrow: (d, y) => `${d} · timetable and exams ${y}`,
+      calTitle: "When and where classes and exams happen",
+      calLead: "Pick a course to see its weekly shifts and the date, time and room of each exam. With no course picked, see the full week of a class group and the semester's exam calendar.",
+      calList: "Courses this semester",
+      exams: "Exams",
+      epoca: { 1: "1st exam period", 2: "2nd exam period", esp: "Special period" },
+      room: "Room", rooms: "Rooms", roomTbd: "Room not announced yet",
+      inDays: (n) => (n < 0 ? "done" : n === 0 ? "today" : n === 1 ? "tomorrow" : `in ${n} days`),
+      noExams: "This course isn't in the Fenix exam calendar. It may be assessed continuously or by project: see the assessment method in the course details.",
+      weekTitle: "Weekly timetable", weekOf: (x) => `Week for class group ${x}`,
+      turma: "Class group", allTurmas: "All class groups",
+      turmaNone: (x) => `Class group ${x} has no shifts in this course, so all of them are shown.`,
+      turmaWhat: "Class groups (e.g. 1LEI01) are Fenix's timetable groups. The first digit is the year.",
+      pickTurma: "Pick a class group to see its full week, with classes from every course.",
+      noShifts: "Fenix has no timetable for this course. This mostly happens with Minor courses taught at other faculties.",
+      shiftType: { T: "Lecture", TP: "Lecture-practical", PL: "Lab", P: "Practical", S: "Seminar", O: "Tutorial", OT: "Tutorial" },
+      shiftsList: (n) => `All shifts (${n})`,
+      shiftCol: "Shift", whenCol: "Day, time and room", turmasCol: "Class groups",
+      otherDegrees: (n) => `+${n} from other degrees`,
+      openCourse: "Course details", fenixShifts: "Shifts on Fenix", calLink: "Timetable and exams",
+      backOverview: "Semester overview",
+      examCal: "Exam calendar",
+      examCalLead: (s) => `Every exam for the courses in ${s.toLowerCase()}. Click a course to see the details.`,
+      examCalTurma: (x) => `Exams for the courses class group ${x} takes. Click a course to see the details.`,
+      noExamsPeriod: "No exams in this period.",
+      days: ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      kindShort: { option: "option", minor: "minor" },
+      calNote: (y) => `Shifts and exams as published on Fenix for ${y}. They can change during the year: always check Fenix.`,
     },
   };
 
@@ -148,6 +206,10 @@
     open: null,
     area: null,
     showAll: store.get("showAll") === "1",
+    calSem: (() => { const m = new Date().getMonth() + 1; return m >= 2 && m <= 7 ? 2 : 1; })(),
+    calCourse: null,
+    turma: store.get("turma") || "",
+    epoca: "1",
   };
   const t = (k, ...a) => { const v = T[state.lang][k]; return typeof v === "function" ? v(...a) : v; };
   const L = (o) => (o ? o[state.lang] || o.pt || "" : "");
@@ -195,8 +257,10 @@
       const deg = D.degrees[d];
       return `<a class="dtab" href="#${d.toLowerCase()}" ${state.view === d.toLowerCase() ? 'aria-current="page"' : ""}>
         <span class="dtab-code">${d}</span><span class="dtab-sub">${esc(L(deg.short))}</span></a>`;
-    }).join("") + `<a class="dtab" href="#skills-${state.lastDegree}" ${state.view.startsWith("skills") ? 'aria-current="page"' : ""}>
-        <span class="dtab-code">${esc(t("skillsTab"))}</span><span class="dtab-sub">${esc(t("skillsSub"))}</span></a>`;
+    }).join("") + `<a class="dtab lens" href="#skills-${state.lastDegree}" ${state.view.startsWith("skills") ? 'aria-current="page"' : ""}>
+        <span class="dtab-code">${esc(t("skillsTab"))}</span><span class="dtab-sub">${esc(t("skillsSub"))}</span></a>
+      <a class="dtab lens" href="#cal-${state.lastDegree}" ${state.view.startsWith("cal") ? 'aria-current="page"' : ""}>
+        <span class="dtab-code">${esc(t("calTab"))}</span><span class="dtab-sub">${esc(t("calSub"))}</span></a>`;
     return `<section class="intro">
       <div>
         <p class="eyebrow">${esc(t("eyebrow", D.degrees.LEI.planYear))}</p>
@@ -204,7 +268,7 @@
         <p>${esc(t("tagline"))}</p>
       </div>
       <nav class="degree-tabs" aria-label="Degree">${tabs}
-        <a class="dtab" href="#compare" ${state.view === "compare" ? 'aria-current="page"' : ""}><span class="dtab-code">${esc(t("compare"))}</span><span class="dtab-sub">${esc(t("compareSub"))}</span></a>
+        <a class="dtab lens" href="#compare" ${state.view === "compare" ? 'aria-current="page"' : ""}><span class="dtab-code">${esc(t("compare"))}</span><span class="dtab-sub">${esc(t("compareSub"))}</span></a>
       </nav>
     </section>`;
   }
@@ -407,6 +471,238 @@
       <p class="source-note" style="margin-top:32px">${esc(t("skillsNote"))}</p>`;
   }
 
+  /* ------------------------------------------------------- calendar view */
+  const DAY0 = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
+  const dateOf = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+  const fmtDate = (s, o) => dateOf(s).toLocaleDateString(state.lang === "pt" ? "pt-PT" : "en-GB", o);
+  const toMin = (s) => { const [h, m] = s.split(":").map(Number); return h * 60 + m; };
+  const turmaRe = (deg) => new RegExp(`^\\d${deg}`, "i");
+  const calDeg = () => state.view.slice(4).toUpperCase();
+  const currentHash = () => (state.view.startsWith("cal-") && state.calCourse ? `${state.view}-${state.calCourse}` : state.view);
+
+  function calGroups(deg, sem) {
+    const byName = (a, b) => L(a.name).localeCompare(L(b.name), state.lang);
+    const rows = all.map((c) => ({ c, o: c.offerings.find((o) => o.degree === deg && o.sem === sem) })).filter((x) => x.o);
+    const groups = [];
+    for (let y = 1; y <= 3; y++) {
+      const items = rows.filter((x) => x.o.kind === "core" && x.o.year === y).map((x) => x.c).sort(byName);
+      if (items.length) groups.push({ title: t("year", y), items });
+    }
+    for (const kind of ["option", "minor"]) {
+      const items = rows.filter((x) => x.o.kind === kind).map((x) => x.c).sort(byName);
+      if (items.length) groups.push({ title: t(kind === "option" ? "optionsTitle" : "minorsTitle"), items });
+    }
+    return groups;
+  }
+
+  function calItem(c) {
+    const ex = c.exams.find((e) => e.epoca === "1") || c.exams[0];
+    const meta = ex ? fmtDate(ex.date, { day: "numeric", month: "short" }) : "—";
+    return `<button type="button" class="cal-item hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}" aria-pressed="${state.calCourse === c.id}">
+      <span class="tile-acr">${esc(c.acr)}</span><span class="ci-name">${esc(L(c.name))}</span>
+      <span class="ci-meta" ${ex ? `title="${esc(t("epoca")[ex.epoca])}"` : ""}>${esc(meta)}</span></button>`;
+  }
+
+  function turmaSelect(list, sel) {
+    if (!list.length) return "";
+    const years = [...new Set(list.map((x) => x[0]))];
+    const opts = years.map((y) => `<optgroup label="${esc(t("year", y))}">${list.filter((x) => x[0] === y)
+      .map((x) => `<option value="${esc(x)}" ${x === sel ? "selected" : ""}>${esc(x)}</option>`).join("")}</optgroup>`).join("");
+    return `<label class="turma-pick"><span>${esc(t("turma"))}</span><select id="turma-select"><option value="">${esc(t("allTurmas"))}</option>${opts}</select></label>`;
+  }
+
+  /* weekly grid: events {day, start, end, room, label, sub, type, course, key, cal?, title?}.
+     Overlapping blocks on the same day are laid out side by side in lanes. */
+  function weekGrid(events) {
+    const lo = Math.min(8 * 60, ...events.map((e) => toMin(e.start)));
+    const hi = Math.max(18 * 60, ...events.map((e) => toMin(e.end)));
+    const start = Math.floor(lo / 60) * 60, end = Math.ceil(hi / 60) * 60, span = end - start;
+    const days = Math.max(5, ...events.map((e) => e.day));
+    const heads = [];
+    const cols = [];
+    for (let d = 1; d <= days; d++) {
+      heads.push(`<div class="wk-dh">${esc(t("days")[d])}</div>`);
+      const evs = events.filter((e) => e.day === d).sort((a, b) => toMin(a.start) - toMin(b.start) || toMin(b.end) - toMin(a.end));
+      const placed = [];
+      let cluster = [], clusterEnd = -1;
+      const flush = () => { const n = Math.max(...cluster.map((x) => x.lane)) + 1; cluster.forEach((x) => (x.lanes = n)); cluster = []; };
+      for (const e of evs) {
+        const s0 = toMin(e.start);
+        if (cluster.length && s0 >= clusterEnd) { flush(); clusterEnd = -1; }
+        const used = new Set(cluster.filter((x) => toMin(x.end) > s0).map((x) => x.lane));
+        let lane = 0;
+        while (used.has(lane)) lane++;
+        const p = { ...e, lane };
+        cluster.push(p); placed.push(p);
+        clusterEnd = Math.max(clusterEnd, toMin(e.end));
+      }
+      if (cluster.length) flush();
+      cols.push(`<div class="wk-col">${placed.map((p) => {
+        const top = ((toMin(p.start) - start) / span) * 100, h = ((toMin(p.end) - toMin(p.start)) / span) * 100, w = 100 / p.lanes;
+        const tag = p.cal ? "button" : "div";
+        const title = `${p.title || p.label} · ${t("days")[p.day]} ${p.start}–${p.end}${p.room ? " · " + p.room : ""}`;
+        return `<${tag} ${p.cal ? `type="button" data-cal="${p.cal}"` : 'tabindex="0"'} class="wk-ev hued ty-${esc(p.type)}${neutralCls(p.course)}" data-shift="${esc(p.key)}"
+          style="${hueStyle(p.course)};top:${top}%;height:${h}%;left:${p.lane * w}%;width:${w}%" title="${esc(title)}">
+          <b>${esc(p.label)}</b><span>${esc(p.sub)}</span><span class="wk-time">${p.start}–${p.end}</span></${tag}>`;
+      }).join("")}</div>`);
+    }
+    const hours = [];
+    for (let m = start; m < end; m += 60) hours.push(`<span style="top:${((m - start) / span) * 100}%">${String(m / 60).padStart(2, "0")}:00</span>`);
+    const types = [...new Set(events.map((e) => e.type))];
+    const key = `<div class="wk-key">${types.map((x) => `<span class="ty-${esc(x)}"><i></i>${esc(t("shiftType")[x] || x)}</span>`).join("")}</div>`;
+    return `${key}<div class="wk-scroll"><div class="wk" style="--days:${days};--hours:${span / 60}">
+      <div class="wk-dh"></div>${heads.join("")}
+      <div class="wk-times">${hours.join("")}</div>${cols.join("")}
+    </div></div>`;
+  }
+
+  function examCard(e) {
+    const days = Math.round((dateOf(e.date) - DAY0) / 864e5);
+    const rooms = e.rooms.length ? `${t(e.rooms.length > 1 ? "rooms" : "room")} ${e.rooms.join(", ")}` : t("roomTbd");
+    return `<div class="exam-card${days < 0 ? " past" : ""}">
+      <span class="ec-epoca">${esc(t("epoca")[e.epoca] || e.epoca)}</span>
+      <span class="ec-date"><b>${dateOf(e.date).getDate()}</b><span>${esc(fmtDate(e.date, { month: "short", year: "numeric" }))}</span></span>
+      <span class="ec-when">${esc(fmtDate(e.date, { weekday: "long" }))} · ${e.start}–${e.end}</span>
+      <span class="ec-rooms">${esc(rooms)}</span>
+      <span class="ec-in">${esc(t("inDays", days))}</span>
+    </div>`;
+  }
+
+  function calCourseView(c, deg) {
+    const o = c.offerings.find((x) => x.degree === deg) || c.offerings[0];
+    const re = turmaRe(deg);
+    const own = c.shifts.filter((s) => !s.turmas.length || s.turmas.some((x) => re.test(x)));
+    const base = own.length ? own : c.shifts;
+    const turmas = [...new Set(base.flatMap((s) => s.turmas).filter((x) => re.test(x)))].sort();
+    const tsel = turmas.includes(state.turma) ? state.turma : "";
+    const shown = tsel ? base.filter((s) => s.turmas.includes(tsel)) : base;
+    const events = shown.flatMap((s) => s.slots.map((sl) => ({ ...sl, key: s.id, type: s.type, label: s.id, sub: sl.room, course: c, title: `${s.id} (${t("shiftType")[s.type] || s.type})` })));
+    const kind = o.kind !== "core" ? ` · ${t("kind")[o.kind]}` : "";
+    const rows = base.map((s) => {
+      const tm = s.turmas.filter((x) => re.test(x)), other = s.turmas.length - tm.length;
+      return `<tr data-shift="${esc(s.id)}" class="${tsel && !s.turmas.includes(tsel) ? "dim" : ""}">
+        <td><b class="mono">${esc(s.id)}</b><small>${esc(t("shiftType")[s.type] || s.type)}</small></td>
+        <td>${s.slots.map((sl) => `${esc(t("days")[sl.day])} ${sl.start}–${sl.end} <span class="muted">· ${esc(sl.room)}</span>`).join("<br>")}</td>
+        <td>${esc(tm.join(", "))}${other ? ` <small>${esc(t("otherDegrees", other))}</small>` : ""}</td></tr>`;
+    }).join("");
+    const week = c.shifts.length ? `
+        ${state.turma && !tsel && turmas.length ? `<p class="cal-note">${esc(t("turmaNone", state.turma))}</p>` : ""}
+        ${weekGrid(events)}
+        <details class="fold shifts-fold"${base.length <= 8 ? " open" : ""}><summary>${esc(t("shiftsList", base.length))}</summary>
+          <div class="table-scroll"><table class="shifts"><thead><tr><th>${esc(t("shiftCol"))}</th><th>${esc(t("whenCol"))}</th><th>${esc(t("turmasCol"))}</th></tr></thead><tbody>${rows}</tbody></table></div>
+        </details>` : `<p class="cal-empty">${esc(t("noShifts"))}</p>`;
+    return `<div class="cd-head hued${neutralCls(c)}" style="${hueStyle(c)}">
+        <button class="cd-back" type="button" data-calback>← ${esc(t("backOverview"))}</button>
+        <div class="d-acr"><span>${esc(c.acr)}</span><span class="sw"></span><span>${esc(L(D.areas[c.area]))}</span></div>
+        <h3>${esc(L(c.name))}</h3>
+        <div class="d-meta"><span class="pill">${deg} · ${esc(t("yearSem", o.year, o.sem))}${esc(kind)}</span><span class="pill">${fmtN(c.ects)} ECTS</span></div>
+        <div class="cd-actions"><button class="btn" type="button" data-open="${c.id}">${esc(t("openCourse"))}</button>
+          ${c.edition?.url ? `<a class="btn" href="${esc(c.edition.url)}/turnos" target="_blank" rel="noopener">${esc(t("fenixShifts"))} ↗</a>` : ""}</div>
+      </div>
+      <div class="cp-block">
+        <h3 class="cp-title">${esc(t("exams"))}</h3>
+        ${c.exams.length ? `<div class="exam-cards">${c.exams.map(examCard).join("")}</div>` : `<p class="cal-empty">${esc(t("noExams"))}</p>`}
+      </div>
+      <div class="cp-block">
+        <div class="cp-head"><h3 class="cp-title">${esc(t("weekTitle"))}</h3>${turmaSelect(turmas, tsel)}</div>
+        ${week}
+      </div>`;
+  }
+
+  function calOverview(deg, groups) {
+    const list = groups.flatMap((g) => g.items);
+    const re = turmaRe(deg);
+    const turmas = [...new Set(list.flatMap((c) => c.shifts.flatMap((s) => s.turmas)).filter((x) => re.test(x)))].sort();
+    const tsel = turmas.includes(state.turma) ? state.turma : "";
+    let week = `<p class="cal-empty">${esc(t("pickTurma"))}</p>`;
+    let taken = list;
+    if (tsel) {
+      const events = [];
+      taken = [];
+      list.forEach((c) => c.shifts.filter((s) => s.turmas.includes(tsel)).forEach((s, i) => {
+        if (!i) taken.push(c);
+        s.slots.forEach((sl) => events.push({ ...sl, key: c.id + s.id, type: s.type, label: c.acr, sub: `${s.id} · ${sl.room}`, course: c, cal: c.id, title: `${L(c.name)} · ${s.id}` }));
+      }));
+      week = events.length ? weekGrid(events) : week;
+    }
+    const ep = state.epoca;
+    const items = taken.flatMap((c) => c.exams.filter((e) => e.epoca === ep).map((e) => ({ c, e })))
+      .sort((a, b) => a.e.date.localeCompare(b.e.date) || a.e.start.localeCompare(b.e.start) || a.c.acr.localeCompare(b.c.acr));
+    const byDate = [];
+    items.forEach((x) => { const last = byDate[byDate.length - 1]; if (last && last.date === x.e.date) last.items.push(x); else byDate.push({ date: x.e.date, items: [x] }); });
+    const kindOf = (c) => (c.offerings.find((o) => o.degree === deg && o.sem === state.calSem) || {}).kind;
+    const agenda = byDate.length ? `<div class="agenda">${byDate.map((g) => {
+      const past = dateOf(g.date) < DAY0;
+      return `<div class="ag-day${past ? " past" : ""}">
+        <div class="ag-date"><b>${dateOf(g.date).getDate()}</b><span>${esc(fmtDate(g.date, { month: "short" }))}</span><small>${esc(fmtDate(g.date, { weekday: "short" }))}</small></div>
+        <div class="ag-items">${g.items.map(({ c, e }) => { const k = kindOf(c); return `<button type="button" class="ag-item hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}">
+          <span class="ag-time mono">${e.start}–${e.end}</span><span class="tile-acr">${esc(c.acr)}</span>
+          <span class="ag-name">${esc(L(c.name))}${k && k !== "core" ? ` <small>${esc(t("kindShort")[k])}</small>` : ""}</span>
+          <span class="ag-rooms mono">${esc(e.rooms.join(", "))}</span></button>`; }).join("")}</div></div>`;
+    }).join("")}</div>` : `<p class="cal-empty">${esc(t("noExamsPeriod"))}</p>`;
+    const epSeg = ["1", "2", "esp"].map((k) => `<button type="button" class="seg-btn" data-epoca="${k}" aria-pressed="${k === ep}">${esc(t("epoca")[k])}</button>`).join("");
+    return `<div class="cp-block">
+        <div class="cp-head"><div><h3 class="cp-title">${esc(tsel ? t("weekOf", tsel) : t("weekTitle"))}</h3><p>${esc(t("turmaWhat"))}</p></div>${turmaSelect(turmas, tsel)}</div>
+        ${week}
+      </div>
+      <div class="cp-block">
+        <div class="cp-head"><div><h3 class="cp-title">${esc(t("examCal"))}</h3><p>${esc(tsel ? t("examCalTurma", tsel) : t("examCalLead", t("sem", state.calSem)))}</p></div>
+          <div class="seg seg-sm" role="group" aria-label="${esc(t("exams"))}">${epSeg}</div></div>
+        ${agenda}
+      </div>`;
+  }
+
+  function calBody(deg) {
+    const groups = calGroups(deg, state.calSem);
+    const c = state.calCourse && courses[state.calCourse];
+    const semSeg = [1, 2].map((n) => `<button type="button" class="seg-btn" data-calsem="${n}" aria-pressed="${n === state.calSem}">${esc(t("sem", n))}</button>`).join("");
+    return `<div class="cal-layout">
+      <aside class="cal-side">
+        <div class="seg seg-sm" role="group" aria-label="${esc(t("semesters"))}">${semSeg}</div>
+        <nav class="cal-list" aria-label="${esc(t("calList"))}">${groups.map((g) => `<div class="cal-group"><p class="eyebrow">${esc(g.title)}</p>${g.items.map(calItem).join("")}</div>`).join("")}</nav>
+      </aside>
+      <section class="cal-panel" id="cal-panel">${c ? calCourseView(c, deg) : calOverview(deg, groups)}</section>
+    </div>`;
+  }
+
+  function calView(deg) {
+    const d = D.degrees[deg];
+    const seg = DEGREES.map((x) => `<a href="#cal-${x.toLowerCase()}" class="seg-btn" ${x === deg ? 'aria-current="page"' : ""}>${x}</a>`).join("");
+    return `${header()}
+      <section class="deg-head">
+        <div>
+          <p class="eyebrow">${esc(t("calEyebrow", L(d.title), d.planYear))}</p>
+          <h2>${esc(t("calTitle"))}</h2>
+          <p>${esc(t("calLead"))}</p>
+        </div>
+        <nav class="seg" aria-label="Degree">${seg}</nav>
+      </section>
+      <div id="cal">${calBody(deg)}</div>
+      <p class="source-note" style="margin-top:32px">${esc(t("calNote", d.planYear))}</p>`;
+  }
+
+  /* re-render only the calendar body, keeping list scroll and keyboard focus */
+  function updateCal(scrollToPanel) {
+    const box = $("#cal");
+    if (!box) return;
+    const a = document.activeElement;
+    const refocus = a && box.contains(a)
+      ? (a.dataset.cal && a.classList.contains("cal-item") ? `.cal-item[data-cal="${a.dataset.cal}"]`
+        : a.dataset.calsem ? `[data-calsem="${a.dataset.calsem}"]`
+        : a.dataset.epoca ? `[data-epoca="${a.dataset.epoca}"]`
+        : a.id === "turma-select" ? "#turma-select" : null)
+      : null;
+    const ls = $(".cal-list", box)?.scrollTop || 0;
+    box.innerHTML = calBody(calDeg());
+    const list = $(".cal-list", box);
+    if (list) list.scrollTop = ls;
+    if (refocus) $(refocus, box)?.focus({ preventScroll: true });
+    if (scrollToPanel) {
+      const p = $("#cal-panel"), r = p.getBoundingClientRect();
+      if (r.top < 64 || r.top > innerHeight * 0.7) p.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }
+
   function closure(id, next) {
     const seen = new Set();
     const stack = [...next(id)];
@@ -591,6 +887,7 @@
         ${c.staff.length ? `<section class="d-sec"><h3>${esc(t("staff"))}${edition ? " · " + esc(edition) : ""}</h3><ul class="staff">${c.staff.map((s) => `<li class="${s.lead ? "lead" : ""}">${esc(s.name)}${s.lead ? ` <span class="muted">(${esc(t("lead"))})</span>` : ""}</li>`).join("")}</ul></section>` : ""}
         <div class="d-actions">
           ${c.edition?.url ? `<a class="btn primary" href="${esc(c.edition.url)}" target="_blank" rel="noopener">${esc(t("openEdition"))} ↗</a>` : ""}
+          ${c.shifts?.length || c.exams?.length ? `<a class="btn" href="#cal-${(c.offerings.some((o) => o.degree.toLowerCase() === state.lastDegree) ? state.lastDegree : c.offerings[0].degree.toLowerCase())}-${c.id}">${esc(t("calLink"))} →</a>` : ""}
           ${c.offerings.map((o) => `<a class="btn" href="${esc(o.fenix)}" target="_blank" rel="noopener">${esc(t("openPlan", o.degree))} ↗</a>`).join("")}
         </div>
         <p class="source-note">${esc(t("editorial", edition || "Fenix"))}</p>
@@ -618,7 +915,7 @@
     state.open = null;
     document.title = "Mapa das Cadeiras";
     applyFocus();
-    if (!fromRoute) history.replaceState(null, "", "#" + state.view);
+    if (!fromRoute) history.replaceState(null, "", "#" + currentHash());
     if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
   }
 
@@ -773,6 +1070,7 @@
     renderStatic();
     app.innerHTML = state.view === "compare" ? compareView()
       : state.view.startsWith("skills-") ? skillsView(state.view.slice(7).toUpperCase())
+      : state.view.startsWith("cal-") ? calView(calDeg())
       : degreeView(state.view.toUpperCase());
     applyFocus();
     if (state.open) openDrawer(state.open);
@@ -785,10 +1083,25 @@
       if (!app.innerHTML.trim() || !app.querySelector(".intro")) {
         const first = c.offerings[0].degree.toLowerCase();
         if (state.view !== first && !c.offerings.some((o) => o.degree.toLowerCase() === state.view)) state.view = first;
-        state.lastDegree = state.view.replace("skills-", "");
+        state.lastDegree = state.view.replace(/^(skills|cal)-/, "");
         render();
       }
       openDrawer(c.id);
+      return;
+    }
+    const cal = h.match(/^cal-(lei|lti)(?:-(.+))?$/);
+    if (cal) {
+      let deg = cal[1];
+      const id = cal[2] && courses[cal[2]] ? cal[2] : null;
+      if (id && !courses[id].offerings.some((o) => o.degree.toLowerCase() === deg)) deg = courses[id].offerings[0].degree.toLowerCase();
+      if (id) state.calSem = courses[id].offerings.find((o) => o.degree.toLowerCase() === deg).sem;
+      const same = state.view === "cal-" + deg && app.querySelector("#cal");
+      state.view = "cal-" + deg;
+      state.lastDegree = deg;
+      state.calCourse = id;
+      closeDrawer(true);
+      if (same) updateCal(!!id);
+      else { render(); window.scrollTo({ top: 0 }); }
       return;
     }
     const view = ["lei", "lti", "compare", "skills-lei", "skills-lti"].includes(h) ? h : "lei";
@@ -804,6 +1117,19 @@
   app.addEventListener("click", (e) => {
     const jump = e.target.closest("[data-jump]");
     if (jump) { document.getElementById(jump.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    const calEl = e.target.closest("[data-cal]");
+    if (calEl) { location.hash = `cal-${calDeg().toLowerCase()}-${calEl.dataset.cal}`; return; }
+    if (e.target.closest("[data-calback]")) { location.hash = `cal-${calDeg().toLowerCase()}`; return; }
+    const semBtn = e.target.closest("[data-calsem]");
+    if (semBtn) {
+      state.calSem = Number(semBtn.dataset.calsem);
+      const c = state.calCourse && courses[state.calCourse];
+      if (c && !c.offerings.some((o) => o.degree === calDeg() && o.sem === state.calSem)) location.hash = `cal-${calDeg().toLowerCase()}`;
+      else updateCal();
+      return;
+    }
+    const epBtn = e.target.closest("[data-epoca]");
+    if (epBtn) { state.epoca = epBtn.dataset.epoca; updateCal(); return; }
     const tileEl = e.target.closest(".tile[data-id], [data-open]");
     if (tileEl) { location.hash = "c-" + (tileEl.dataset.id || tileEl.dataset.open); return; }
     const chip = e.target.closest(".area-chip[data-area]");
@@ -814,6 +1140,7 @@
     }
   });
   app.addEventListener("change", (e) => {
+    if (e.target.id === "turma-select") { state.turma = e.target.value; store.set("turma", state.turma); updateCal(); return; }
     if (e.target.id === "show-all") { state.showAll = e.target.checked; store.set("showAll", state.showAll ? "1" : "0"); scheduleWires(); }
   });
   const hoverable = window.matchMedia("(hover: hover)");
@@ -823,6 +1150,9 @@
     const id = el ? el.dataset.id || el.dataset.card : null;
     if (id !== state.hover) { state.hover = id; applyFocus(); }
   });
+  const markShift = (key) => $$("#cal-panel [data-shift]").forEach((el) => el.classList.toggle("is-hl", !!key && el.dataset.shift === key));
+  app.addEventListener("pointerover", (e) => { if (state.view.startsWith("cal-")) markShift(e.target.closest("#cal-panel [data-shift]")?.dataset.shift); });
+  app.addEventListener("focusin", (e) => { if (state.view.startsWith("cal-")) markShift(e.target.closest("#cal-panel [data-shift]")?.dataset.shift); });
   app.addEventListener("pointerleave", () => { if (state.hover) { state.hover = null; applyFocus(); } });
   app.addEventListener("focusin", (e) => {
     const el = e.target.closest("#plan .tile[data-id], #tree [data-card]");

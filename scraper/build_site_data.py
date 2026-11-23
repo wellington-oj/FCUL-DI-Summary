@@ -1,6 +1,7 @@
 """
-Merge data/fenix.json (scraped) with data/curation.json (hand-written summaries,
-areas and connections) into site/data/courses.js, the single file the site loads.
+Merge data/fenix.json (scraped: plans, course pages, shifts, exams) with
+data/curation.json and data/skills.json (hand-written) into site/data/courses.js,
+the single file the site loads.
 
 Usage:  python -I scraper/build_site_data.py
 """
@@ -43,6 +44,25 @@ def edition_semester(label: str):
     return int(m.group(1)) if m else None
 
 
+def group_shifts(rows):
+    """Fenix lists one row per weekly slot; group them into shifts (T11, TP12, ...)."""
+    shifts = {}
+    for r in rows or []:
+        sh = shifts.setdefault(r["shift"], {"id": r["shift"], "type": re.match(r"[A-Za-z]*", r["shift"]).group(0) or "?",
+                                            "slots": [], "turmas": set()})
+        slot = {"day": r["day"], "start": r["start"], "end": r["end"], "room": r["room"]}
+        if slot not in sh["slots"]:
+            sh["slots"].append(slot)
+        sh["turmas"].update(r["turmas"])
+    out = []
+    for sh in shifts.values():
+        sh["slots"].sort(key=lambda x: (x["day"], x["start"]))
+        sh["turmas"] = sorted(sh["turmas"])
+        out.append(sh)
+    order = {"T": 0, "TP": 1, "PL": 2, "P": 3}
+    return sorted(out, key=lambda x: (order.get(x["type"], 9), int(re.sub(r"\D", "", x["id"]) or 0), x["id"]))
+
+
 def clean_staff(staff):
     out = []
     for s in staff or []:
@@ -59,6 +79,9 @@ degrees = {}
 
 for code, deg in FENIX["degrees"].items():
     dcur = CUR["degrees"][code]
+    exams_by_name: dict[str, list] = {}
+    for e in deg.get("exams", []):
+        exams_by_name.setdefault(slug(e["name"]), []).append({k: v for k, v in e.items() if k != "name"})
     info = deg["description"]["pt"]["info"]
     secs_pt, secs_en = deg["description"]["pt"]["sections"], deg["description"]["en"]["sections"]
 
@@ -132,11 +155,17 @@ for code, deg in FENIX["degrees"].items():
                 "biblio": biblio,
                 "staff": clean_staff(latest.get("staff")),
                 "edition": {"label": latest.get("label", ""), "url": latest.get("url")} if latest else None,
+                "shifts": group_shifts(latest.get("shifts")),
+                "exams": [],
                 "after": cur.get("after", []),
                 "twin": cur.get("twin"),
                 "offerings": [],
             }
         course = courses[key]
+        for e in exams_by_name.pop(slug(c["name"]), []):
+            if e not in course["exams"]:
+                course["exams"].append(e)
+        course["exams"].sort(key=lambda e: (e["date"], e["start"]))
 
         group_pt, group_en = c["groups"][0], (c.get("groups_en") or c["groups"])[0]
         is_minor = any(g.lower().startswith(("menor", "minor")) for g in group_pt[2:3])
@@ -158,6 +187,9 @@ for code, deg in FENIX["degrees"].items():
             rules = [g["rules"] for g in deg["groups_en"].values() if strip_code(g["name"]) == group["en"]]
             m = re.search(r"([\d.]+)", " ".join(rules[0]) if rules else "")
             degrees[code]["groups"].append({**group, "year": c["year"], "credits": float(m.group(1)) if m else None})
+
+    if exams_by_name:
+        print(f"[{code}] exams with no matching course:", sorted(exams_by_name))
 
 # areas for non-curated courses, and resolve acronym references into course ids
 acr_index = {}

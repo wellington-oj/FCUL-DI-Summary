@@ -4,7 +4,8 @@ Scrape the LEI and LTI study plans from FCUL's Fenix (fenix.ciencias.ulisboa.pt)
 For each degree it reads the newest study plan (Plano de Estudos), then, for every
 curricular unit, the curricular-course page (objectives, syllabus, assessment,
 bibliography, list of editions) and the most recent edition's course page
-(objectives, syllabus, teaching staff). Both Portuguese and English are fetched.
+(objectives, syllabus, teaching staff, weekly class shifts), plus the degree's exam
+calendar (dates, times, rooms). Both Portuguese and English are fetched.
 
 Output: data/fenix.json   (raw HTTP responses are cached in .cache/fenix/)
 
@@ -18,8 +19,9 @@ import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
@@ -222,6 +224,71 @@ def parse_exec_section(html: str) -> str:
     return clean(p.get_text("\n")) if p else ""
 
 
+# ------------------------------------------------------------ timetable + exams
+WEEKDAYS = {"seg": 1, "ter": 2, "qua": 3, "qui": 4, "sex": 5, "sab": 6, "sáb": 6, "dom": 7}
+LISBON = ZoneInfo("Europe/Lisbon")
+
+
+def parse_shifts(html: str) -> list[dict]:
+    """Rows of the execution course's /turnos table: one row per weekly slot."""
+    soup = BeautifulSoup(html, "lxml")
+    table = soup.select_one("main table")
+    rows = []
+    for tr in table.select("tbody tr") if table else []:
+        tds = tr.find_all("td")
+        if len(tds) < 5:
+            continue
+        m = re.match(r"\s*(\w+)\.?,\s*(\d{1,2}:\d\d)\D+(\d{1,2}:\d\d)", tds[2].get_text(" ", strip=True))
+        if not m:
+            continue
+        turmas = [t for t in (one_line(x) for x in tds[4].get_text("\n").split("\n")) if t and "[" not in t]
+        rows.append({
+            "shift": one_line(tds[0].get_text()),
+            "weeks": one_line(tds[1].get_text()),
+            "day": WEEKDAYS.get(m.group(1).lower()[:3], 0),
+            "start": m.group(2).zfill(5),
+            "end": m.group(3).zfill(5),
+            "room": one_line(tds[3].get_text()),
+            "turmas": sorted(set(turmas)),
+        })
+    return rows
+
+
+def calendar_events(html: str) -> list[dict]:
+    """The JSON array the Fenix calendar widget is initialised with (events: [...])."""
+    m = re.search(r"events\s*:\s*\[", html)
+    if not m:
+        return []
+    start, depth = m.end() - 1, 0
+    for i in range(start, len(html)):
+        depth += {"[": 1, "]": -1}.get(html[i], 0)
+        if depth == 0:
+            return json.loads(html[start : i + 1])
+    return []
+
+
+def local(ts: str) -> datetime:
+    return datetime.fromisoformat(ts.replace("Z", "+00:00")).astimezone(LISBON)
+
+
+def parse_exams(html: str) -> list[dict]:
+    """Degree /avaliacoes page: every exam of the year, with rooms. Grade-improvement
+    entries ("Melhoria") duplicate the regular ones, so they are skipped."""
+    out = []
+    for ev in calendar_events(html):
+        first, *rest = [one_line(x) for x in ev.get("title", "").split("\n")]
+        name, _, kind = first.rpartition(" - ")
+        if not name or "melhoria" in kind.lower():
+            continue
+        k = kind.lower()
+        epoca = "1" if k.startswith("1") else "2" if k.startswith("2") else "esp" if "especial" in k else kind
+        rooms = sorted({r.strip() for r in (rest[-1] if rest else "").replace(",", ";").split(";") if r.strip()})
+        a, b = local(ev["start"]), local(ev["end"])
+        out.append({"name": name, "epoca": epoca, "date": a.date().isoformat(),
+                    "start": a.strftime("%H:%M"), "end": b.strftime("%H:%M"), "rooms": rooms})
+    return sorted(out, key=lambda e: (e["date"], e["start"], e["name"]))
+
+
 # ------------------------------------------------------------------------ main
 def scrape_course(degree_url: str, cid: str) -> dict:
     result = {"pt": {}, "en": {}, "latest": None}
@@ -240,6 +307,7 @@ def scrape_course(degree_url: str, cid: str) -> dict:
                 "objectives": parse_exec_section(fetch(url + "/objectivos", lang)),
                 "program": parse_exec_section(fetch(url + "/programa", lang)),
             }
+        info["shifts"] = parse_shifts(fetch(url + "/turnos", "pt"))
         result["latest"] = info
     return result
 
@@ -280,6 +348,7 @@ def main():
             "title": {"pt": plans["pt"]["title"], "en": plans["en"]["title"]},
             "plan_year": (plans["pt"]["years"] or [""])[0],
             "description": {lang: description(desc[lang]) for lang in LOCALES},
+            "exams": parse_exams(fetch(url + "/avaliacoes", "pt")),
             "groups": plan["groups"],
             "groups_en": plans["en"]["groups"],
             "courses": plan["courses"],
