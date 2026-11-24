@@ -9,6 +9,8 @@
   const HUES = { prog: 255, hci: 222, se: 192, data: 158, soc: 128, free: 100, net: 76, sys: 48, sec: 20, ai: 352, math: 320, algo: 288, minor: 60 };
   const NEUTRAL = new Set(["free", "minor"]);
   const DEGREES = ["LEI", "LTI"];
+  const MASTERS = ["MEI", "MI", "MSI", "MCD"].filter((d) => window.COURSE_DATA.degrees[d]);
+  const isMaster = (code) => MASTERS.includes(String(code).toUpperCase());
 
   const T = {
     pt: {
@@ -22,6 +24,18 @@
       tagline: "Todas as cadeiras das licenciaturas em Engenharia Informática e em Tecnologias de Informação da Faculdade de Ciências da Universidade de Lisboa: o que ensinam, quando aparecem e como se ligam umas às outras.",
       compare: "Comparar", compareSub: "LEI lado a lado com a LTI",
       degreeKind: "Licenciatura",
+      mastersTab: "Mestrados", mastersTitle: "Mestrados",
+      mastersEyebrow: (y) => `Mestrados do Departamento de Informática · ${y}`,
+      mastersLead: "Os quatro mestrados do Departamento de Informática: o que se aprende em cada cadeira, como se organizam as opções e quando são as aulas e os exames.",
+      masterKind: "Mestrado", modePlan: "Plano de estudos", modeCal: "Horários e exames",
+      structureTitle: "Como se organiza", annual: "Anual", finalWork: "Trabalho final", finalPick: "escolhe-se um",
+      optSlot: "Opções", optSlotName: "Escolhidas na lista abaixo",
+      optionsY1: "Opções do 1.º ano", optionsY1Lead: "Clique num grupo para destacar as cadeiras que contam para ele.",
+      setAll: "Todas", nuclear: "nuclear", nuclearKey: "nuclear: cadeira central da especialização",
+      myWeek: "O seu horário", myWeekLead: "Escolha as cadeiras que vai fazer neste semestre. As obrigatórias já vêm escolhidas.",
+      myNone: "Escolha pelo menos uma cadeira acima para ver o horário.", myRow: "As suas cadeiras", otherRow: "Outras cadeiras",
+      examMastersLead: (s) => `Exames do ${s}: as suas cadeiras em cima e as restantes em baixo. Clique numa cadeira para ver as salas.`,
+      myClear: "Limpar",
       ects: "ECTS", semesters: "Semestres", core: "Obrigatórias", options: "Opções", minors: "Menores",
       areasTitle: "Peso de cada área nas cadeiras obrigatórias (ECTS)",
       allAreas: "Todas",
@@ -39,7 +53,7 @@
       minorsLead: "No 3.º ano da LTI escolhe-se um Menor de 30 ECTS: 18 no 1.º semestre e 12 no 2.º.",
       choose: (n) => `escolher ${n} ECTS`,
       both: "LEI + LTI",
-      kind: { core: "Obrigatória", option: "Opção", minor: "Menor" },
+      kind: { core: "Obrigatória", option: "Opção", minor: "Menor", final: "Trabalho final" },
       links: "Ligações", buildsOn: "Assenta em", leadsTo: "Prepara para", twinIn: (d) => `Equivalente na ${d}`,
       noBuilds: "Não depende de outras cadeiras do plano.", noLeads: "Nenhuma cadeira do plano assenta diretamente nesta.",
       objectives: "Objetivos", program: "Programa", assessment: "Avaliação", biblio: "Bibliografia",
@@ -111,6 +125,18 @@
       tagline: "Every course in the Informatics Engineering and Information Technology bachelor's degrees at the Faculty of Sciences, University of Lisbon: what it teaches, when it happens and how it connects to the rest.",
       compare: "Compare", compareSub: "LEI side by side with LTI",
       degreeKind: "Bachelor's",
+      mastersTab: "Master's", mastersTitle: "Master's degrees",
+      mastersEyebrow: (y) => `Department of Informatics master's degrees · ${y}`,
+      mastersLead: "The four master's degrees of the Department of Informatics: what each course teaches, how the options are organised, and when classes and exams happen.",
+      masterKind: "Master's", modePlan: "Study plan", modeCal: "Timetable and exams",
+      structureTitle: "How it is organised", annual: "Full year", finalWork: "Final work", finalPick: "pick one",
+      optSlot: "Options", optSlotName: "Chosen from the list below",
+      optionsY1: "First-year options", optionsY1Lead: "Click a group to highlight the courses that count towards it.",
+      setAll: "All", nuclear: "core", nuclearKey: "core: a central course of the specialisation",
+      myWeek: "Your week", myWeekLead: "Pick the courses you will take this semester. Compulsory ones are already picked.",
+      myNone: "Pick at least one course above to see the timetable.", myRow: "Your courses", otherRow: "Other courses",
+      examMastersLead: (s) => `${s} exams: your courses on top and the rest below. Click a course to see the rooms.`,
+      myClear: "Clear",
       ects: "ECTS", semesters: "Semesters", core: "Mandatory", options: "Options", minors: "Minors",
       areasTitle: "Weight of each area in the mandatory courses (ECTS)",
       allAreas: "All",
@@ -128,7 +154,7 @@
       minorsLead: "In the third year of LTI students choose a 30 ECTS Minor: 18 in the first semester and 12 in the second.",
       choose: (n) => `choose ${n} ECTS`,
       both: "LEI + LTI",
-      kind: { core: "Mandatory", option: "Option", minor: "Minor" },
+      kind: { core: "Mandatory", option: "Option", minor: "Minor", final: "Final work" },
       links: "Connections", buildsOn: "Builds on", leadsTo: "Leads to", twinIn: (d) => `Counterpart in ${d}`,
       noBuilds: "Doesn't depend on other courses in the plan.", noLeads: "No course in the plan builds directly on this one.",
       objectives: "Objectives", program: "Syllabus", assessment: "Assessment", biblio: "Bibliography",
@@ -200,6 +226,9 @@
     lang: store.get("lang") || ((navigator.language || "pt").toLowerCase().startsWith("pt") ? "pt" : "en"),
     view: "lei",
     lastDegree: "lei",
+    lastMaster: "mei",
+    track: null,
+    my: {},
     hover: null,
     open: null,
     area: null,
@@ -231,7 +260,7 @@
   /* -------------------------------------------------------------- tiles */
   function tile(c, deg, opts = {}) {
     const o = deg ? offering(c, deg) : c.offerings[0];
-    const shared = new Set(c.offerings.map((x) => x.degree)).size > 1;
+    const shared = new Set(c.offerings.filter((x) => !isMaster(x.degree)).map((x) => x.degree)).size > 1;
     const flags = [];
     if (opts.when && o) flags.push(t("yearSem", o.year, o.sem));
     if (opts.semFlag && o) flags.push(t("semShort", o.sem));
@@ -251,13 +280,16 @@
 
   /* --------------------------------------------------------------- views */
   function header() {
+    const inMasters = isMasterView();
     const tabs = DEGREES.map((d) => {
       const deg = D.degrees[d];
       return `<a class="dtab" href="#${d.toLowerCase()}" ${state.view === d.toLowerCase() ? 'aria-current="page"' : ""}>
         <span class="dtab-code">${d}</span><span class="dtab-sub">${esc(L(deg.short))}</span></a>`;
-    }).join("") + `<a class="dtab lens" href="#skills-${state.lastDegree}" ${state.view.startsWith("skills") ? 'aria-current="page"' : ""}>
+    }).join("") + (MASTERS.length ? `<a class="dtab" href="#m-${state.lastMaster}" ${inMasters ? 'aria-current="page"' : ""}>
+        <span class="dtab-code">${esc(t("mastersTab"))}</span><span class="dtab-sub">${esc(MASTERS.join(" · "))}</span></a>` : "")
+      + `<a class="dtab lens" href="#skills-${state.lastDegree}" ${state.view.startsWith("skills") ? 'aria-current="page"' : ""}>
         <span class="dtab-code">${esc(t("skillsTab"))}</span><span class="dtab-sub">${esc(t("skillsSub"))}</span></a>
-      <a class="dtab lens" href="#cal-${state.lastDegree}" ${state.view.startsWith("cal") ? 'aria-current="page"' : ""}>
+      <a class="dtab lens" href="#cal-${state.lastDegree}" ${state.view.startsWith("cal") && !inMasters ? 'aria-current="page"' : ""}>
         <span class="dtab-code">${esc(t("calTab"))}</span><span class="dtab-sub">${esc(t("calSub"))}</span></a>`;
     return `<section class="intro">
       <div>
@@ -469,12 +501,110 @@
       <p class="source-note" style="margin-top:32px">${esc(t("skillsNote"))}</p>`;
   }
 
+  /* -------------------------------------------------------- master's view */
+  function isMasterView() {
+    return state.view.startsWith("m-") || (state.view.startsWith("cal-") && isMaster(state.view.slice(4)));
+  }
+
+  /* shared top of both master's pages: which degree, and plan vs timetable */
+  function mastersHead(deg, mode) {
+    const d = D.degrees[deg];
+    const degSeg = MASTERS.map((x) => `<a href="#${mode === "cal" ? "cal" : "m"}-${x.toLowerCase()}" class="seg-btn" ${x === deg ? 'aria-current="page"' : ""}>${x}</a>`).join("");
+    const modeSeg = [["plan", `#m-${deg.toLowerCase()}`, t("modePlan")], ["cal", `#cal-${deg.toLowerCase()}`, t("modeCal")]]
+      .map(([k, href, label]) => `<a href="${href}" class="seg-btn" ${k === mode ? 'aria-current="page"' : ""}>${esc(label)}</a>`).join("");
+    return `<section class="masters-head">
+        <div>
+          <p class="eyebrow">${esc(t("mastersEyebrow", d.planYear))}</p>
+          <h2>${esc(t("mastersTitle"))}</h2>
+          <p>${esc(t("mastersLead"))}</p>
+        </div>
+        <div class="masters-nav">
+          <nav class="seg" aria-label="${esc(t("mastersTitle"))}">${degSeg}</nav>
+          <nav class="seg seg-sm" aria-label="${esc(L(d.title))}">${modeSeg}</nav>
+        </div>
+      </section>`;
+  }
+
+  function masterView(deg) {
+    const d = D.degrees[deg];
+    const offs = all.map((c) => ({ c, o: offering(c, deg) })).filter((x) => x.o);
+    const byName = (a, b) => L(a.c.name).localeCompare(L(b.c.name), state.lang);
+    const core = offs.filter((x) => x.o.kind === "core");
+    const opts = offs.filter((x) => x.o.kind === "option");
+    const finals = offs.filter((x) => x.o.kind === "final").sort(byName);
+    const set = d.sets.find((s) => s.id === state.track) || null;
+    const inSet = (o) => (set ? (o.sets || []).find((s) => s.id === set.id) : null);
+
+    const semCol = (s) => {
+      const list = core.filter((x) => x.o.year === 1 && x.o.sem === s).sort(byName);
+      const free = 30 - list.reduce((n, x) => n + x.c.ects, 0);
+      const slot = free > 0 ? `<button class="tile slot" type="button" data-jump="m-options">
+          <span class="tile-top"><span class="tile-acr">${esc(t("optSlot"))}</span><span class="tile-ects">${fmtN(free)} ECTS</span></span>
+          <span class="tile-name">${esc(t("optSlotName"))}</span></button>` : "";
+      return `<div class="sem-col"><div class="sem-head"><strong data-year="${esc(t("year", 1))}">${esc(t("sem", s))}</strong><span class="mono">30 ECTS</span></div>
+        <div class="tiles">${list.map((x) => tile(x.c, deg, { shared: false })).join("")}${slot}</div></div>`;
+    };
+    const y2core = core.filter((x) => x.o.year === 2).sort(byName);
+    const y2 = `<div class="sem-col"><div class="sem-head"><strong data-year="${esc(t("year", 2))}">${esc(t("annual"))}</strong><span class="mono">60 ECTS</span></div>
+        <div class="tiles">
+          ${finals.length ? `<div class="final-pick"><p class="eyebrow">${esc(t("finalWork"))} · ${esc(t("finalPick"))}</p>${finals.map((x) => tile(x.c, deg, { shared: false })).join("")}</div>` : ""}
+          ${y2core.map((x) => tile(x.c, deg, { shared: false })).join("")}
+        </div></div>`;
+
+    const optTile = (x) => {
+      const m = inSet(x.o);
+      const flags = m && m.core ? `<span class="tile-flags"><span class="flag nuc">${esc(t("nuclear"))}</span></span>` : "";
+      return tile(x.c, deg, { shared: false }).replace('class="tile', `class="tile${set && !m ? " is-dim" : ""}${m ? " is-in" : ""}`)
+        .replace(/<\/button>\s*$/, `${flags}</button>`);
+    };
+    const chips = d.sets.length ? `<div class="set-chips" role="group" aria-label="${esc(L(d.setsTitle) || t("options"))}">
+        <span class="eyebrow">${esc(L(d.setsTitle) || t("options"))}</span>
+        <button type="button" class="set-chip" data-track="" aria-pressed="${!set}">${esc(t("setAll"))}</button>
+        ${d.sets.map((s) => {
+          const n = opts.filter((x) => (x.o.sets || []).some((y) => y.id === s.id)).length;
+          return `<button type="button" class="set-chip" data-track="${esc(s.id)}" aria-pressed="${set?.id === s.id}">${esc(L(s))} <b>${n}</b></button>`;
+        }).join("")}
+      </div>${set && opts.some((x) => inSet(x.o)?.core) ? `<p class="cal-note">${esc(t("nuclearKey"))}</p>` : ""}` : "";
+    const optCols = [1, 2].map((s) => {
+      const list = opts.filter((x) => x.o.sem === s).sort((a, b) => (set ? (inSet(b.o) ? 1 : 0) - (inSet(a.o) ? 1 : 0) || (inSet(b.o)?.core ? 1 : 0) - (inSet(a.o)?.core ? 1 : 0) : 0) || byName(a, b));
+      return list.length ? `<div class="opt-col"><h3 class="cp-title">${esc(t("sem", s))} <span class="muted">· ${list.length}</span></h3><div class="tile-grid">${list.map(optTile).join("")}</div></div>` : "";
+    }).join("");
+
+    const structure = L(d.structure) || [];
+    return `${header()}
+      ${mastersHead(deg, "plan")}
+      <section class="deg-head">
+        <div>
+          <p class="eyebrow">${esc(t("masterKind"))} · ${esc(d.dges)} · ${esc(d.planYear)}</p>
+          <h2>${esc(L(d.title))}</h2>
+          <p>${esc(L(d.intro))}</p>
+        </div>
+        <dl class="facts">
+          <div><dt>${t("ects")}</dt><dd>${d.ects}</dd></div>
+          <div><dt>${t("semesters")}</dt><dd>${d.semesters}</dd></div>
+          <div><dt>${t("core")}</dt><dd>${core.length}</dd></div>
+          <div><dt>${t("options")}</dt><dd>${opts.length}</dd></div>
+        </dl>
+      </section>
+      ${structure.length ? `<section class="m-structure"><h3 class="cp-title">${esc(t("structureTitle"))}</h3><ul>${structure.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></section>` : ""}
+      <div class="map-scroll"><div class="mplan">
+        <div class="year-label">${esc(t("year", 1))}</div><div class="year-label">&nbsp;</div><div class="year-label">${esc(t("year", 2))}</div>
+        ${semCol(1)}${semCol(2)}${y2}
+      </div></div>
+      <section class="section" id="m-options">
+        <div class="section-head"><div><h2>${esc(t("optionsY1"))}</h2>${d.sets.length ? `<p>${esc(t("optionsY1Lead"))}</p>` : ""}</div></div>
+        ${chips}
+        <div class="opt-cols">${optCols}</div>
+      </section>`;
+  }
+
   /* ------------------------------------------------------- calendar view */
   const DAY0 = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
   const dateOf = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
   const fmtDate = (s, o) => dateOf(s).toLocaleDateString(state.lang === "pt" ? "pt-PT" : "en-GB", o);
   const toMin = (s) => { const [h, m] = s.split(":").map(Number); return h * 60 + m; };
-  const turmaRe = (deg) => new RegExp(`^\\d${deg}`, "i");
+  // "1LEI01", "1MEI"; not "1MEIO" (that one is Estatística e Investigação Operacional)
+  const turmaRe = (deg) => new RegExp(`^\\d${deg}\\d*$`, "i");
   const calDeg = () => state.view.slice(4).toUpperCase();
   const currentHash = () => (state.view.startsWith("cal-") && state.calCourse ? `${state.view}-${state.calCourse}` : state.view);
 
@@ -482,6 +612,14 @@
     const byName = (a, b) => L(a.name).localeCompare(L(b.name), state.lang);
     const rows = all.map((c) => ({ c, o: c.offerings.find((o) => o.degree === deg && o.sem === sem) })).filter((x) => x.o);
     const groups = [];
+    if (isMaster(deg)) {
+      for (const [kind, title] of [["core", t("core")], ["option", t("options")]]) {
+        // only courses that meet or sit an exam: the 2nd-year guided study and dissertation have neither
+        const items = rows.filter((x) => x.o.kind === kind && (x.c.shifts.length || x.c.exams.length)).map((x) => x.c).sort(byName);
+        if (items.length) groups.push({ title, items });
+      }
+      return groups;
+    }
     for (let y = 1; y <= 3; y++) {
       const items = rows.filter((x) => x.o.kind === "core" && x.o.year === y).map((x) => x.c).sort(byName);
       if (items.length) groups.push({ title: t("year", y), items });
@@ -639,7 +777,7 @@
   function examMatrix(groups, ysel) {
     const ep = state.epoca;
     const rows = groups.map((g) => ({
-      ...g, mine: g.title === t("year", Number(ysel)),
+      ...g, mine: g.mine ?? g.title === t("year", Number(ysel)),
       ex: g.items.flatMap((c) => c.exams.filter((e) => e.epoca === ep && examInSem(e, state.calSem)).map((e) => ({ c, e }))),
     })).filter((r) => r.ex.length);
     if (!rows.length) return `<p class="cal-empty">${esc(t("noExamsPeriod"))}</p>`;
@@ -659,7 +797,7 @@
         <small>${esc(t("days")[d.getDay() || 7])}</small><b>${d.getDate()}</b><small>${showMon ? esc(mon.replace(".", "")) : "&nbsp;"}</small></div>`;
     }).join("");
     const body = rows.map((r) => `<div class="xm-row${r.mine ? " mine" : ""}">
-        <div class="xm-label">${esc(r.title)}${r.mine ? `<small>${esc(t("yourYear"))}</small>` : ""}</div>
+        <div class="xm-label">${esc(r.title)}${r.mine && ysel ? `<small>${esc(t("yourYear"))}</small>` : ""}</div>
         ${days.map((iso) => {
           const here = r.ex.filter((x) => x.e.date === iso).sort((a, b) => a.e.start.localeCompare(b.e.start));
           return `<div class="xm-cell${dateOf(iso).getDay() === 1 ? " wk-start" : ""}${dateOf(iso) < DAY0 ? " past" : ""}">${here.map(({ c, e }) => {
@@ -673,6 +811,47 @@
     return `<div class="xm-scroll"><div class="xm" style="--cols:${days.length}">
         <div class="xm-row xm-headrow"><div class="xm-label"></div>${head}</div>${body}
       </div></div>`;
+  }
+
+  /* Master's students build their own week: almost everything is an option and Fenix puts all of a
+     degree's courses in one class group, so the course picks replace the class-group picker. */
+  function myCourses(deg) {
+    if (!state.my[deg]) {
+      let ids = null;
+      try { ids = JSON.parse(store.get("my-" + deg) || "null"); } catch { ids = null; }
+      state.my[deg] = new Set(Array.isArray(ids) ? ids : all.filter((c) => { const o = offering(c, deg); return o?.kind === "core" && o.year === 1; }).map((c) => c.id));
+    }
+    return state.my[deg];
+  }
+  function toggleMy(deg, id) {
+    const set = myCourses(deg);
+    if (set.has(id)) set.delete(id); else set.add(id);
+    store.set("my-" + deg, JSON.stringify([...set]));
+  }
+
+  function masterCalOverview(deg, groups) {
+    const sel = myCourses(deg);
+    const list = groups.flatMap((g) => g.items);
+    const mine = list.filter((c) => sel.has(c.id));
+    const picker = groups.map((g) => `<div class="my-group"><span class="eyebrow">${esc(g.title)}</span><div class="my-chips">${g.items.map((c) =>
+      `<button type="button" class="my-chip hued${neutralCls(c)}" data-my="${c.id}" style="${hueStyle(c)}" aria-pressed="${sel.has(c.id)}" title="${esc(L(c.name))}">
+        <span class="tile-acr">${esc(c.acr)}</span><span>${esc(L(c.name))}</span></button>`).join("")}</div></div>`).join("");
+    const events = [];
+    mine.forEach((c) => c.shifts.forEach((s) => s.slots.forEach((sl) => events.push({ ...sl, key: c.id + s.id, type: s.type, label: c.acr, sub: `${s.id} · ${sl.room}`, course: c, cal: c.id, title: `${L(c.name)} · ${s.id}` }))));
+    const week = !mine.length ? `<p class="cal-empty">${esc(t("myNone"))}</p>` : events.length ? weekGrid(events) : `<p class="cal-empty">${esc(t("noShifts"))}</p>`;
+    const epSeg = ["1", "2", "esp"].map((k) => `<button type="button" class="seg-btn" data-epoca="${k}" aria-pressed="${k === state.epoca}">${esc(t("epoca")[k])}</button>`).join("");
+    const rows = [{ title: t("myRow"), items: mine, mine: true }, { title: t("otherRow"), items: list.filter((c) => !sel.has(c.id)), mine: false }];
+    return `<div class="cp-block">
+        <div class="cp-head"><div><h3 class="cp-title">${esc(t("myWeek"))}</h3><p>${esc(t("myWeekLead"))}</p></div>
+          ${sel.size ? `<button type="button" class="btn btn-sm" data-myclear>${esc(t("myClear"))}</button>` : ""}</div>
+        <div class="my-picker">${picker}</div>
+        ${week}
+      </div>
+      <div class="cp-block">
+        <div class="cp-head"><div><h3 class="cp-title">${esc(t("examCal"))}</h3><p>${esc(t("examMastersLead", t("sem", state.calSem)))}</p></div>
+          <div class="seg seg-sm" role="group" aria-label="${esc(t("exams"))}">${epSeg}</div></div>
+        ${examMatrix(rows, null)}
+      </div>`;
   }
 
   function calOverview(deg, groups) {
@@ -718,14 +897,18 @@
         <div class="seg seg-sm" role="group" aria-label="${esc(t("semesters"))}">${semSeg}</div>
         <nav class="cal-list" aria-label="${esc(t("calList"))}">${groups.map((g) => `<div class="cal-group"><p class="eyebrow">${esc(g.title)}</p>${g.items.map(calItem).join("")}</div>`).join("")}</nav>
       </aside>
-      <section class="cal-panel" id="cal-panel">${c ? calCourseView(c, deg) : calOverview(deg, groups)}</section>
+      <section class="cal-panel" id="cal-panel">${c ? calCourseView(c, deg) : isMaster(deg) ? masterCalOverview(deg, groups) : calOverview(deg, groups)}</section>
     </div>`;
   }
 
   function calView(deg) {
     const d = D.degrees[deg];
     const seg = DEGREES.map((x) => `<a href="#cal-${x.toLowerCase()}" class="seg-btn" ${x === deg ? 'aria-current="page"' : ""}>${x}</a>`).join("");
-    return `${header()}
+    const head = isMaster(deg) ? `${mastersHead(deg, "cal")}
+      <section class="deg-head deg-head-sm"><div><p class="eyebrow">${esc(t("masterKind"))} · ${esc(d.dges)} · ${esc(d.planYear)}</p><h2>${esc(L(d.title))}</h2></div></section>` : "";
+    return head ? `${header()}${head}
+      <div id="cal">${calBody(deg)}</div>
+      <p class="source-note" style="margin-top:32px">${esc(t("calNote", d.planYear))}${D.examSource ? ` <a href="${esc(D.examSource)}" target="_blank" rel="noopener">${esc(t("examPdf"))} ↗</a>` : ""}</p>` : `${header()}
       <section class="deg-head">
         <div>
           <p class="eyebrow">${esc(t("calEyebrow", L(d.title), d.planYear))}</p>
@@ -749,6 +932,7 @@
         : a.dataset.epoca ? `[data-epoca="${a.dataset.epoca}"]`
         : a.dataset.calyear ? `[data-calyear="${a.dataset.calyear}"]`
         : a.dataset.turma ? `[data-turma="${a.dataset.turma}"]`
+        : a.dataset.my ? `[data-my="${a.dataset.my}"]`
         : a.id === "turma-select" ? "#turma-select" : null)
       : null;
     const ls = $(".cal-list", box)?.scrollTop || 0;
@@ -905,6 +1089,12 @@
     return `<details class="fold"${open ? " open" : ""}><summary>${esc(title)}</summary>${body}</details>`;
   }
 
+  function calDegreeFor(c) {
+    const has = (d) => c.offerings.some((o) => o.degree.toLowerCase() === d);
+    const pref = isMasterView() ? [state.lastMaster, state.lastDegree] : [state.lastDegree, state.lastMaster];
+    return pref.find(has) || c.offerings[0].degree.toLowerCase();
+  }
+
   function drawerHTML(c) {
     const other = state.lang === "pt" ? "en" : "pt";
     const pills = c.offerings.map((o) => `<span class="pill ${o.kind === "core" ? "kind-core" : ""}">${o.degree} · ${esc(t("yearSem", o.year, o.sem))} · ${esc(t("kind")[o.kind])}</span>`).join("");
@@ -946,7 +1136,7 @@
         ${c.staff.length ? `<section class="d-sec"><h3>${esc(t("staff"))}${edition ? " · " + esc(edition) : ""}</h3><ul class="staff">${c.staff.map((s) => `<li class="${s.lead ? "lead" : ""}">${esc(s.name)}${s.lead ? ` <span class="muted">(${esc(t("lead"))})</span>` : ""}</li>`).join("")}</ul></section>` : ""}
         <div class="d-actions">
           ${c.edition?.url ? `<a class="btn primary" href="${esc(c.edition.url)}" target="_blank" rel="noopener">${esc(t("openEdition"))} ↗</a>` : ""}
-          ${c.shifts?.length || c.exams?.length ? `<a class="btn" href="#cal-${(c.offerings.some((o) => o.degree.toLowerCase() === state.lastDegree) ? state.lastDegree : c.offerings[0].degree.toLowerCase())}-${c.id}">${esc(t("calLink"))} →</a>` : ""}
+          ${c.shifts?.length || c.exams?.length ? `<a class="btn" href="#cal-${calDegreeFor(c)}-${c.id}">${esc(t("calLink"))} →</a>` : ""}
           ${c.offerings.map((o) => `<a class="btn" href="${esc(o.fenix)}" target="_blank" rel="noopener">${esc(t("openPlan", o.degree))} ↗</a>`).join("")}
         </div>
         <p class="source-note">${esc(t("editorial", edition || "Fenix"))}</p>
@@ -1121,8 +1311,7 @@
     $("#theme-toggle").setAttribute("aria-label", t("themeLabel"));
     const date = new Date(D.scraped + "T12:00:00").toLocaleDateString(state.lang === "pt" ? "pt-PT" : "en-GB", { day: "numeric", month: "long", year: "numeric" });
     $("#footer").innerHTML = `<div><p>${t("footer1")}</p><p>${esc(t("footer2", date))}</p><p>${esc(t("footer3"))}</p></div>
-      <div><p><a href="https://fenix.ciencias.ulisboa.pt/degrees/engenharia-informatica-564500436615278" target="_blank" rel="noopener">Fenix · LEI ↗</a></p>
-      <p><a href="https://fenix.ciencias.ulisboa.pt/degrees/tecnologias-de-informacao-564500436615450" target="_blank" rel="noopener">Fenix · LTI ↗</a></p></div>`;
+      <div class="footer-links">${[...DEGREES, ...MASTERS].map((x) => `<p><a href="${esc(D.degrees[x].url)}" target="_blank" rel="noopener">Fenix · ${x} ↗</a></p>`).join("")}</div>`;
   }
 
   function render() {
@@ -1130,6 +1319,7 @@
     app.innerHTML = state.view === "compare" ? compareView()
       : state.view.startsWith("skills-") ? skillsView(state.view.slice(7).toUpperCase())
       : state.view.startsWith("cal-") ? calView(calDeg())
+      : state.view.startsWith("m-") ? masterView(state.view.slice(2).toUpperCase())
       : degreeView(state.view.toUpperCase());
     applyFocus();
     if (state.open) openDrawer(state.open);
@@ -1140,15 +1330,18 @@
     if (h.startsWith("c-") && courses[h.slice(2)]) {
       const c = courses[h.slice(2)];
       if (!app.innerHTML.trim() || !app.querySelector(".intro")) {
-        const first = c.offerings[0].degree.toLowerCase();
-        if (state.view !== first && !c.offerings.some((o) => o.degree.toLowerCase() === state.view)) state.view = first;
-        state.lastDegree = state.view.replace(/^(skills|cal)-/, "");
+        const degOf = (v) => v.replace(/^(skills|cal|m)-/, "");
+        if (!c.offerings.some((o) => o.degree.toLowerCase() === degOf(state.view))) {
+          const first = c.offerings[0].degree.toLowerCase();
+          state.view = isMaster(first) ? "m-" + first : first;
+        }
+        if (isMaster(degOf(state.view))) state.lastMaster = degOf(state.view); else state.lastDegree = degOf(state.view);
         render();
       }
       openDrawer(c.id);
       return;
     }
-    const cal = h.match(/^cal-(lei|lti)(?:-(.+))?$/);
+    const cal = h.match(/^cal-(lei|lti|mei|mi|msi|mcd)(?:-(.+))?$/);
     if (cal) {
       let deg = cal[1];
       const id = cal[2] && courses[cal[2]] ? cal[2] : null;
@@ -1156,11 +1349,21 @@
       if (id) state.calSem = courses[id].offerings.find((o) => o.degree.toLowerCase() === deg).sem;
       const same = state.view === "cal-" + deg && app.querySelector("#cal");
       state.view = "cal-" + deg;
-      state.lastDegree = deg;
+      if (isMaster(deg)) state.lastMaster = deg; else state.lastDegree = deg;
       state.calCourse = id;
       closeDrawer(true);
       if (same) updateCal(!!id);
       else { render(); window.scrollTo({ top: 0 }); }
+      return;
+    }
+    const master = h === "mestrados" ? state.lastMaster : (h.match(/^m-(mei|mi|msi|mcd)$/) || [])[1];
+    if (master && isMaster(master)) {
+      if (state.view !== "m-" + master) state.track = null;
+      const changedM = state.view !== "m-" + master || !app.querySelector(".intro");
+      state.view = "m-" + master;
+      state.lastMaster = master;
+      closeDrawer(true);
+      if (changedM) { render(); window.scrollTo({ top: 0 }); }
       return;
     }
     const view = ["lei", "lti", "compare", "skills-lei", "skills-lti"].includes(h) ? h : "lei";
@@ -1176,6 +1379,18 @@
   app.addEventListener("click", (e) => {
     const jump = e.target.closest("[data-jump]");
     if (jump) { document.getElementById(jump.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    const myEl = e.target.closest("[data-my]");
+    if (myEl) { toggleMy(calDeg(), myEl.dataset.my); updateCal(); return; }
+    if (e.target.closest("[data-myclear]")) { state.my[calDeg()] = new Set(); store.set("my-" + calDeg(), "[]"); updateCal(); return; }
+    const trackEl = e.target.closest("[data-track]");
+    if (trackEl) {
+      state.track = trackEl.dataset.track || null;
+      const y = window.scrollY;
+      render();
+      window.scrollTo({ top: y });
+      $(`[data-track="${trackEl.dataset.track}"]`)?.focus({ preventScroll: true });
+      return;
+    }
     const calEl = e.target.closest("[data-cal]");
     if (calEl) { location.hash = `cal-${calDeg().toLowerCase()}-${calEl.dataset.cal}`; return; }
     if (e.target.closest("[data-calback]")) { location.hash = `cal-${calDeg().toLowerCase()}`; return; }

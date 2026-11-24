@@ -1,0 +1,470 @@
+{
+ "_about": "Master's degrees of the Department of Informatics: hand-written intros, structure notes, option-group labels (matched against Fenix group names) and a colour area per course. build_site_data.py merges it with data/curation.json.",
+ "degrees": {
+  "MEI": {
+   "short": {
+    "pt": "Engenharia Informática",
+    "en": "Informatics Engineering"
+   },
+   "intro": {
+    "pt": "A continuação natural da LEI. No 1.º ano escolhe-se uma de nove especializações e completa-se o ano com opções. O 2.º ano é a dissertação ou o projeto.",
+    "en": "The natural follow-on from LEI. In the first year students pick one of nine specialisations and fill the year with options. The second year is the dissertation or project."
+   },
+   "structure": {
+    "pt": [
+     "Especialização: 30 ECTS, dos quais 12 em cadeiras nucleares dessa especialização.",
+     "Opções gerais de informática: 18 a 30 ECTS. Até 12 ECTS podem ser de outra área.",
+     "2.º ano: dissertação ou projeto (54 ECTS) e estudo orientado (6 ECTS)."
+    ],
+    "en": [
+     "Specialisation: 30 ECTS, 12 of them in that specialisation's core courses.",
+     "General computing options: 18 to 30 ECTS. Up to 12 ECTS can come from another field.",
+     "Second year: dissertation or project (54 ECTS) and guided study (6 ECTS)."
+    ]
+   },
+   "setsTitle": {
+    "pt": "Especializações",
+    "en": "Specialisations"
+   },
+   "sets": [
+    {
+     "match": "Ciência da Computação",
+     "id": "computer-science",
+     "pt": "Ciência da Computação",
+     "en": "Computer Science"
+    },
+    {
+     "match": "Ciência de Dados",
+     "id": "data-science",
+     "pt": "Ciência de Dados",
+     "en": "Data Science"
+    },
+    {
+     "match": "Engenharia de Software",
+     "id": "software-engineering",
+     "pt": "Engenharia de Software",
+     "en": "Software Engineering"
+    },
+    {
+     "match": "Inteligência Artificial",
+     "id": "artificial-intelligence",
+     "pt": "Inteligência Artificial",
+     "en": "Artificial Intelligence"
+    },
+    {
+     "match": "Interação Pessoa-Máquina",
+     "id": "hci",
+     "pt": "Interação Pessoa-Máquina",
+     "en": "Human-Computer Interaction"
+    },
+    {
+     "match": "Jogos e Ambientes Virtuais",
+     "id": "games",
+     "pt": "Jogos e Ambientes Virtuais",
+     "en": "Games and Virtual Environments"
+    },
+    {
+     "match": "Segurança Informática",
+     "id": "security",
+     "pt": "Segurança Informática",
+     "en": "Computer Security"
+    },
+    {
+     "match": "Sistemas Distribuídos e Redes",
+     "id": "distributed-systems",
+     "pt": "Sistemas Distribuídos e Redes",
+     "en": "Distributed Systems and Networks"
+    },
+    {
+     "match": "Sistemas Móveis e Ubíquos",
+     "id": "mobile-ubiquitous",
+     "pt": "Sistemas Móveis e Ubíquos",
+     "en": "Mobile and Ubiquitous Systems"
+    }
+   ]
+  },
+  "MI": {
+   "short": {
+    "pt": "Informática",
+    "en": "Informatics"
+   },
+   "intro": {
+    "pt": "Um mestrado flexível: o 1.º ano é quase todo feito de opções, escolhidas entre as várias áreas do Departamento de Informática. O 2.º ano é a dissertação ou o projeto.",
+    "en": "A flexible master's: the first year is almost all options, chosen across the Department of Informatics' fields. The second year is the dissertation or project."
+   },
+   "structure": {
+    "pt": [
+     "1.º ano: 60 ECTS de opções, 30 em cada semestre.",
+     "Pelo menos 6 ECTS em cada um dos grupos CTP, MC, OSC e SI. Os restantes 36 são livres.",
+     "2.º ano: dissertação ou projeto (54 ECTS) e estudo orientado (6 ECTS)."
+    ],
+    "en": [
+     "First year: 60 ECTS of options, 30 in each semester.",
+     "At least 6 ECTS in each of the CTP, MC, OSC and SI groups. The other 36 are free.",
+     "Second year: dissertation or project (54 ECTS) and guided study (6 ECTS)."
+    ]
+   },
+   "setsTitle": {
+    "pt": "Grupos de opções",
+    "en": "Option groups"
+   },
+   "sets": [
+    {
+     "match": "CTP",
+     "id": "ctp",
+     "pt": "Grupo CTP",
+     "en": "Group CTP"
+    },
+    {
+     "match": "MC",
+     "id": "mc",
+     "pt": "Grupo MC",
+     "en": "Group MC"
+    },
+    {
+     "match": "OSC",
+     "id": "osc",
+     "pt": "Grupo OSC",
+     "en": "Group OSC"
+    },
+    {
+     "match": "SI",
+     "id": "si",
+     "pt": "Grupo SI",
+     "en": "Group SI"
+    }
+   ]
+  },
+  "MSI": {
+   "short": {
+    "pt": "Segurança Informática",
+    "en": "Information Security"
+   },
+   "intro": {
+    "pt": "Formação especializada em segurança: quatro cadeiras obrigatórias no 1.º ano, mais opções com destaque para a área de segurança. O 2.º ano é a dissertação ou o projeto.",
+    "en": "Specialised training in security: four compulsory courses in the first year, plus options weighted towards security. The second year is the dissertation or project."
+   },
+   "structure": {
+    "pt": [
+     "Obrigatórias: risco, segurança de software, metodologias ofensivas e defensivas, e segurança de redes e sistemas distribuídos (24 ECTS).",
+     "Opções: 36 ECTS, dos quais 18 a 24 na área específica de segurança e 12 no grupo geral.",
+     "2.º ano: dissertação ou projeto (54 ECTS) e estudo orientado (6 ECTS)."
+    ],
+    "en": [
+     "Compulsory: risk, software security, offensive and defensive methods, and network and distributed systems security (24 ECTS).",
+     "Options: 36 ECTS, 18 to 24 of them in the security-specific group and 12 in the general group.",
+     "Second year: dissertation or project (54 ECTS) and guided study (6 ECTS)."
+    ]
+   },
+   "setsTitle": {
+    "pt": "Grupos de opções",
+    "en": "Option groups"
+   },
+   "sets": [
+    {
+     "match": "Grupo Área Específica",
+     "id": "ae",
+     "pt": "Área específica (AE)",
+     "en": "Security-specific (AE)"
+    },
+    {
+     "match": "Grupo Opcional Geral",
+     "id": "og",
+     "pt": "Opções gerais (OG)",
+     "en": "General options (OG)"
+    }
+   ]
+  },
+  "MCD": {
+   "short": {
+    "pt": "Ciência de Dados",
+    "en": "Data Science"
+   },
+   "intro": {
+    "pt": "Para licenciados em ciências e engenharias. O 1.º semestre dá as bases de algoritmos, dados e estatística, e o 2.º é feito de opções em quatro grupos de foco. O 2.º ano é a dissertação ou o projeto.",
+    "en": "For graduates in the sciences and engineering. The first semester lays the foundations in algorithms, data and statistics, and the second is made of options in four focus groups. The second year is the dissertation or project."
+   },
+   "structure": {
+    "pt": [
+     "1.º semestre: Fundamentos de Ciência de Dados, uma cadeira nuclear de algoritmos, uma de dados e uma de estatística, e uma opção dos grupos 1 a 3.",
+     "2.º semestre: 30 ECTS de opções, 6 a 18 em cada grupo de foco e até 6 em tópicos alargados.",
+     "2.º ano: dissertação ou projeto (54 ECTS), com a Introdução à Investigação em Ciência de Dados (6 ECTS)."
+    ],
+    "en": [
+     "First semester: Foundations of Data Science, one core course each in algorithms, data and statistics, and one option from groups 1 to 3.",
+     "Second semester: 30 ECTS of options, 6 to 18 in each focus group and up to 6 in broader topics.",
+     "Second year: dissertation or project (54 ECTS), with Introduction to Research in Data Science (6 ECTS)."
+    ]
+   },
+   "setsTitle": {
+    "pt": "Grupos",
+    "en": "Groups"
+   },
+   "sets": [
+    {
+     "match": "Nucleares: Algoritmos",
+     "id": "core-algo",
+     "pt": "Nucleares: algoritmos",
+     "en": "Core: algorithms"
+    },
+    {
+     "match": "Nucleares: Dados",
+     "id": "core-data",
+     "pt": "Nucleares: dados",
+     "en": "Core: data"
+    },
+    {
+     "match": "Nucleares: Estatística",
+     "id": "core-stats",
+     "pt": "Nucleares: estatística",
+     "en": "Core: statistics"
+    },
+    {
+     "match": "Grupo 1: Foco em Matemática e Estatística",
+     "id": "g1",
+     "pt": "Grupo 1: matemática e estatística",
+     "en": "Group 1: maths and statistics"
+    },
+    {
+     "match": "Grupo 2: Foco em Dados",
+     "id": "g2",
+     "pt": "Grupo 2: dados",
+     "en": "Group 2: data"
+    },
+    {
+     "match": "Grupo 3: Foco em Algoritmos",
+     "id": "g3",
+     "pt": "Grupo 3: algoritmos",
+     "en": "Group 3: algorithms"
+    },
+    {
+     "match": "Grupo 4: Tópicos Alargados",
+     "id": "g4",
+     "pt": "Grupo 4: tópicos alargados",
+     "en": "Group 4: broader topics"
+    }
+   ]
+  }
+ },
+ "courses": {
+  "AAA": {
+   "area": "ai"
+  },
+  "AAut": {
+   "area": "ai"
+  },
+  "AP": {
+   "area": "ai"
+  },
+  "IAJ": {
+   "area": "ai"
+  },
+  "ILN": {
+   "area": "ai"
+  },
+  "RC": {
+   "area": "ai"
+  },
+  "RM": {
+   "area": "ai"
+  },
+  "RMove": {
+   "area": "ai"
+  },
+  "SM-Aag": {
+   "area": "ai"
+  },
+  "VArt": {
+   "area": "ai"
+  },
+  "ADC": {
+   "area": "data"
+  },
+  "BDA": {
+   "area": "data"
+  },
+  "Bioi": {
+   "area": "data"
+  },
+  "FCD": {
+   "area": "data"
+  },
+  "IBD": {
+   "area": "data"
+  },
+  "PDad": {
+   "area": "data"
+  },
+  "PRI": {
+   "area": "data"
+  },
+  "ADMul": {
+   "area": "math"
+  },
+  "ALC": {
+   "area": "math"
+  },
+  "CEP": {
+   "area": "math"
+  },
+  "Comb": {
+   "area": "math"
+  },
+  "EBaye": {
+   "area": "math"
+  },
+  "MC": {
+   "area": "math"
+  },
+  "MEGen": {
+   "area": "math"
+  },
+  "MEstat": {
+   "area": "math"
+  },
+  "MLG": {
+   "area": "math"
+  },
+  "MQBS": {
+   "area": "math"
+  },
+  "RAV": {
+   "area": "math"
+  },
+  "ST": {
+   "area": "math"
+  },
+  "AGRSI": {
+   "area": "sec"
+  },
+  "CAF": {
+   "area": "sec"
+  },
+  "MODC": {
+   "area": "sec"
+  },
+  "PSMIC": {
+   "area": "sec"
+  },
+  "SRSD": {
+   "area": "sec"
+  },
+  "SSoft": {
+   "area": "sec"
+  },
+  "ASAS": {
+   "area": "se"
+  },
+  "DSof": {
+   "area": "se"
+  },
+  "SFia": {
+   "area": "se"
+  },
+  "VVSof": {
+   "area": "se"
+  },
+  "CDeB": {
+   "area": "net"
+  },
+  "CMov": {
+   "area": "net"
+  },
+  "CN": {
+   "area": "net"
+  },
+  "ICoi": {
+   "area": "net"
+  },
+  "TFDis": {
+   "area": "net"
+  },
+  "CProg": {
+   "area": "prog"
+  },
+  "FLP": {
+   "area": "prog"
+  },
+  "FPro": {
+   "area": "prog"
+  },
+  "TCom": {
+   "area": "prog"
+  },
+  "CompQuan": {
+   "area": "algo"
+  },
+  "DAAlgo": {
+   "area": "algo"
+  },
+  "AAVir": {
+   "area": "hci"
+  },
+  "DDJ": {
+   "area": "hci"
+  },
+  "EU": {
+   "area": "hci"
+  },
+  "IH-AI": {
+   "area": "hci"
+  },
+  "IRVA": {
+   "area": "hci"
+  },
+  "MEU": {
+   "area": "hci"
+  },
+  "Mult": {
+   "area": "hci"
+  },
+  "VDad": {
+   "area": "hci"
+  },
+  "PPC": {
+   "area": "sys"
+  },
+  "SCib": {
+   "area": "sys"
+  },
+  "DCib": {
+   "area": "soc"
+  },
+  "GOE": {
+   "area": "soc"
+  },
+  "D/P-Inf": {
+   "area": "free"
+  },
+  "DCD": {
+   "area": "free"
+  },
+  "DEI": {
+   "area": "free"
+  },
+  "DSI": {
+   "area": "free"
+  },
+  "EOEI": {
+   "area": "free"
+  },
+  "EOI": {
+   "area": "free"
+  },
+  "EOSI": {
+   "area": "free"
+  },
+  "IICD": {
+   "area": "free"
+  },
+  "PCD": {
+   "area": "free"
+  },
+  "PEI": {
+   "area": "free"
+  },
+  "PSI": {
+   "area": "free"
+  }
+ }
+}

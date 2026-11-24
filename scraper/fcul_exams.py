@@ -7,7 +7,8 @@ for exam times and rooms, so the site uses it ahead of the Fenix exam calendar.
     python scraper/fcul_exams.py [--refresh] [path/to/calendar.pdf]
 
 finds the newest PDF on that page (or reads the one given), and writes data/exams_fcul.json:
-one record per row of the table, keeping the rows whose "Cursos" column lists LEI or LTI.
+one record per row of the table, keeping the rows whose "Cursos" column lists LEI, LTI or one
+of the DI master's degrees (MEI, MI, MSI, MCD).
 
 The PDF is printed from a spreadsheet: every cell is a separate piece of text, and its font
 tables map accented letters to U+FFFD. So rows are rebuilt from the position of each piece,
@@ -30,7 +31,7 @@ PAGES = [
     "https://ciencias.ulisboa.pt/en/education/current-students/academic-information/calendars-deadlines-and-schedules",
 ]
 PDF_LINK = re.compile(r'href="([^"]*calendario-exames-[^"]*\.pdf)"', re.I)
-DEGREE_CODE = re.compile(r"^(\d)(LEI|LTI)(\*?)$")
+DEGREE_CODE = re.compile(r"^(\d)(LEI|LTI|MEI|MI|MSI|MCD)(\*?)$")
 DATE = re.compile(r"^(\d\d)/(\d\d)/(\d{4})$")
 TIME = re.compile(r"^(\d\d):(\d\d):\d\d$")
 ROOM = re.compile(r"^\d+\.\d+\.\d+[A-Za-z]?$")
@@ -170,7 +171,7 @@ def main():
             keep.append(r)
     OUT.write_text(json.dumps({"source": source, "rows": len(rows), "exams": keep}, ensure_ascii=False, indent=1),
                    encoding="utf-8")
-    print(f"{len(rows)} rows in {pdf.name}; {len(keep)} for LEI/LTI -> {OUT.relative_to(ROOT)}")
+    print(f"{len(rows)} rows in {pdf.name}; {len(keep)} for DI degrees -> {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

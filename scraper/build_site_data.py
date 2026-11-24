@@ -16,6 +16,13 @@ ROOT = Path(__file__).resolve().parent.parent
 FENIX = json.loads((ROOT / "data" / "fenix.json").read_text(encoding="utf-8"))
 CUR = json.loads((ROOT / "data" / "curation.json").read_text(encoding="utf-8"))
 SKILLS = json.loads((ROOT / "data" / "skills.json").read_text(encoding="utf-8"))
+# master's degrees: intros, option-group labels and course colour areas (hand-written)
+_masters = ROOT / "data" / "masters.json"
+if _masters.exists():
+    MASTERS = json.loads(_masters.read_text(encoding="utf-8"))
+    CUR["degrees"].update(MASTERS["degrees"])
+    for _acr, _entry in MASTERS["courses"].items():
+        CUR["courses"].setdefault(_acr, _entry)
 OUT = ROOT / "site" / "data" / "courses.js"
 LANGS = ("pt", "en")
 
@@ -73,6 +80,31 @@ def clean_staff(staff):
     return sorted(out, key=lambda s: (not s["lead"], s["name"]))
 
 
+def option_sets(code, paths, dcur):
+    """Master's degrees: which option groups (MEI specialisations, MCD focus groups, ...) a course
+    belongs to. The deepest coded group of each Fenix path ("2017 - MEI - Ciência de Dados -
+    Nucleares") is matched against the labels listed in curation.json; MEI's "Nucleares" marks the
+    courses at the heart of a specialisation."""
+    wanted = {s["match"]: s["id"] for s in dcur.get("sets", [])}
+    out = {}
+    for p in paths:
+        coded = [g for g in p if re.match(r"^\d+\s*-", g)]
+        if not coded:
+            continue
+        label = re.sub(r"^\d+\s*-\s*", "", coded[-1])
+        label = re.sub(r"^(MEI|MI|MSI|MCD|Mestrado em [^-]+?)\s*-\s*", "", label)
+        label = re.sub(r"^Opção\s+", "", label)
+        label = re.sub(r"\s*\([A-Z]{2,5}\)$", "", label).strip()
+        nuclear = False
+        m = re.match(r"^(.*) - (Nucleares|Livres)$", label)
+        if m:
+            label, nuclear = m.group(1), m.group(2) == "Nucleares"
+        if label in wanted:
+            sid = wanted[label]
+            out[sid] = out.get(sid, False) or nuclear
+    return [{"id": k, "core": v} for k, v in out.items()]
+
+
 courses: dict[str, dict] = {}
 by_edition: dict[str, str] = {}
 degrees = {}
@@ -91,15 +123,21 @@ for code, deg in FENIX["degrees"].items():
                 return re.sub(r"\s+", " ", v).strip()
         return ""
 
+    level = deg.get("level", "bachelor")
     degrees[code] = {
         "code": code,
+        "level": level,
         "dges": info.get("Código", ""),
         "title": deg["title"],
         "short": dcur["short"],
         "intro": dcur["intro"],
         "url": deg["url"],
         "planYear": deg["plan_year"],
-        "ects": 180,
+        "ects": 120 if level == "master" else 180,
+        "semesters": 4 if level == "master" else 6,
+        "sets": [{k: s[k] for k in ("id", "pt", "en", "kind") if k in s} for s in dcur.get("sets", [])],
+        "structure": dcur.get("structure"),
+        "setsTitle": dcur.get("setsTitle"),
         "jobs": {"pt": section(secs_pt, "saídas"), "en": section(secs_en, "employment", "career")},
         "coordinators": " ".join(t for t in section(secs_pt, "coordena").split() if "@" not in t),
         "minors": [],
@@ -176,14 +214,17 @@ for code, deg in FENIX["degrees"].items():
         sem = c["semester"]
         if kind != "core":
             sem = edition_semester(latest.get("label", "")) or sem
+        if level == "master":
+            kind = "core" if not c["optional"] else ("final" if c["year"] == 2 else "option")
         course["offerings"].append({
             "degree": code, "year": c["year"], "sem": sem, "kind": kind,
-            "group": group if named_pt else None,
+            "group": group if named_pt and level != "master" else None,
+            **({"sets": option_sets(code, c["groups"], dcur)} if level == "master" else {}),
             "fenix": f"{deg['url']}/curriculo?curricularCourseId={cid}",
         })
         if kind == "minor" and group["id"] not in [m["id"] for m in degrees[code]["minors"]]:
             degrees[code]["minors"].append(group)
-        if kind == "option" and group["id"] not in [g["id"] for g in degrees[code]["groups"]]:
+        if kind == "option" and level != "master" and group["id"] not in [g["id"] for g in degrees[code]["groups"]]:
             rules = [g["rules"] for g in deg["groups_en"].values() if strip_code(g["name"]) == group["en"]]
             m = re.search(r"([\d.]+)", " ".join(rules[0]) if rules else "")
             degrees[code]["groups"].append({**group, "year": c["year"], "credits": float(m.group(1)) if m else None})
@@ -253,7 +294,8 @@ if EXAMS_PDF.exists():
 missing = [a for a, v in CUR["courses"].items() if a not in acr_index]
 if missing:
     print("curation keys with no matching course:", missing)
-no_skills = sorted({c["acr"] for c in courses.values() if c["acr"] not in SKILLS})
+no_skills = sorted({c["acr"] for c in courses.values() if c["acr"] not in SKILLS
+                    and any(degrees[o["degree"]]["level"] == "bachelor" for o in c["offerings"])})
 if no_skills:
     print("courses with no entry in skills.json:", no_skills)
 stale = [a for a in SKILLS if not a.startswith("_") and a not in acr_index]

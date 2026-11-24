@@ -160,7 +160,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 700; line-height: 1.12;
 .intro p { margin: 10px 0 0; color: var(--muted); max-width: 60ch; }
 
 .degree-tabs { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
-.degree-tabs .dtab { grid-column: span 3; }
+.degree-tabs .dtab { grid-column: span 2; }
 .degree-tabs .dtab.lens { grid-column: span 2; }
 .dtab {
   display: flex; flex-direction: column; gap: 2px; text-align: left; padding: 12px 14px;
@@ -541,6 +541,52 @@ table.shifts { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   .xm-label { padding: 6px 8px; font-size: 0.74rem; }
   .wk { --hour: 42px; grid-template-columns: 40px repeat(var(--days), minmax(80px, 1fr)); min-width: calc(40px + var(--days) * 80px); }
   .cd-head { padding: 12px 16px 16px; }
+}
+
+/* ---------- master's degrees ---------- */
+.masters-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 28px; align-items: end; padding: 22px 0 18px; border-top: 1px solid var(--line); }
+.masters-head h2 { font-size: var(--step-2); }
+.masters-head p { margin: 6px 0 0; max-width: 70ch; color: var(--muted); }
+.masters-nav { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.deg-head-sm { padding-top: 14px; }
+.deg-head-sm h2 { font-size: var(--step-1); }
+.m-structure { margin: 0 0 22px; padding: 14px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.m-structure ul { margin: 8px 0 0; padding-left: 1.1em; color: var(--muted); font-size: 0.9rem; display: grid; gap: 4px; }
+.m-structure .cp-title { font-size: 1rem; }
+.mplan { display: grid; grid-template-columns: repeat(3, minmax(200px, 1fr)); column-gap: 26px; min-width: 680px; }
+.final-pick { display: flex; flex-direction: column; gap: 8px; padding: 10px; border: 1px dashed color-mix(in oklch, var(--muted) 45%, transparent); border-radius: var(--radius); }
+.final-pick .eyebrow { margin: 0; font-size: 0.68rem; }
+.set-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 10px; }
+.set-chips .eyebrow { margin: 0 6px 0 0; }
+.set-chip { font-size: 0.8rem; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.set-chip b { font-weight: 600; color: var(--muted); font-size: 0.72rem; margin-left: 2px; }
+.set-chip:hover { border-color: var(--muted); }
+.set-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.set-chip[aria-pressed="true"] b { color: color-mix(in oklch, var(--paper) 70%, transparent); }
+.opt-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 12px; }
+.opt-col { min-width: 0; }
+.opt-col .cp-title { font-size: 1rem; margin-bottom: 10px; }
+.opt-col .tile-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+.tile.is-dim { opacity: 0.3; }
+.tile.is-in { box-shadow: 0 0 0 1px var(--tile-ink); }
+.flag.nuc { background: var(--tile-ink); color: var(--surface); }
+.my-picker { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.my-group .eyebrow { display: block; margin: 0 0 6px; font-size: 0.68rem; }
+.my-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.my-chip {
+  display: inline-flex; align-items: baseline; gap: 6px; max-width: 100%; padding: 5px 10px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 0.78rem; text-align: left;
+}
+.my-chip span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 22ch; }
+.my-chip:hover { border-color: var(--tile-ink); color: var(--ink); }
+.my-chip[aria-pressed="true"] { background: var(--tile-bg); border-color: var(--tile-ink); color: var(--ink); box-shadow: inset 3px 0 0 var(--tile-ink); }
+.btn-sm { padding: 5px 12px; font-size: 0.78rem; cursor: pointer; }
+.footer-links { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 0 18px; align-content: start; }
+@media (max-width: 760px) {
+  .masters-head { grid-template-columns: 1fr; }
+  .masters-nav { align-items: flex-start; }
+  .mplan { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+  .opt-cols { grid-template-columns: 1fr; }
 }
 
 /* ---------- footer ---------- */

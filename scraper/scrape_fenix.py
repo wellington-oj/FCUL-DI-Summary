@@ -34,7 +34,13 @@ BASE = "https://fenix.ciencias.ulisboa.pt"
 DEGREES = {
     "LEI": f"{BASE}/degrees/engenharia-informatica-564500436615278",
     "LTI": f"{BASE}/degrees/tecnologias-de-informacao-564500436615450",
+    # master's degrees run by the Departamento de Informática
+    "MEI": f"{BASE}/degrees/engenharia-informatica-564500436615277",
+    "MI": f"{BASE}/degrees/informatica-564500436615356",
+    "MSI": f"{BASE}/degrees/seguranca-informatica-564500436615446",
+    "MCD": f"{BASE}/degrees/mcd",
 }
+LEVEL = {"LEI": "bachelor", "LTI": "bachelor", "MEI": "master", "MI": "master", "MSI": "master", "MCD": "master"}
 LOCALES = {"pt": "pt-PT", "en": "en-GB"}
 REFRESH = "--refresh" in sys.argv
 
@@ -345,6 +351,7 @@ def main():
             plan["courses"][cid]["detail"] = details[cid]
         data["degrees"][code] = {
             "url": url,
+            "level": LEVEL[code],
             "title": {"pt": plans["pt"]["title"], "en": plans["en"]["title"]},
             "plan_year": (plans["pt"]["years"] or [""])[0],
             "description": {lang: description(desc[lang]) for lang in LOCALES},

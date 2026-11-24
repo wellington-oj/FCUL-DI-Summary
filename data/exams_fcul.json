@@ -3,6 +3,679 @@
  "rows": 2011,
  "exams": [
   {
+   "code": "441206",
+   "name": "Abordagens \"Ómicas\" em Biomedicina e Biotecnologia",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.50",
+    "6.2.49"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBBC*",
+    "1MBMG*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "441206",
+   "name": "Abordagens \"Ómicas\" em Biomedicina e Biotecnologia",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-29",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBBC*",
+    "1MBMG*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "441206",
+   "name": "Abordagens \"Ómicas\" em Biomedicina e Biotecnologia",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBBC*",
+    "1MBMG*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425268",
+   "name": "Análise de Dados Complexos",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-06",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.16",
+    "8.2.19"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425268",
+   "name": "Análise de Dados Complexos",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-25",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47",
+    "6.2.48"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425268",
+   "name": "Análise de Dados Complexos",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421105_6ects",
+   "name": "Análise de Dados Multivariados",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.47"
+   ],
+   "cursos": [
+    "1MBioest",
+    "1MAEG*",
+    "1MBBC*",
+    "1MCD*",
+    "1MEIO*",
+    "2MAEG*",
+    "2MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421105_6ects",
+   "name": "Análise de Dados Multivariados",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MBioest",
+    "1MAEG*",
+    "1MBBC*",
+    "1MCD*",
+    "1MEIO*",
+    "2MAEG*",
+    "2MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421105_6ects",
+   "name": "Análise de Dados Multivariados",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.46"
+   ],
+   "cursos": [
+    "1MBioest",
+    "1MAEG*",
+    "1MBBC*",
+    "1MCD*",
+    "1MEIO*",
+    "2MAEG*",
+    "2MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425230",
+   "name": "Análise e Gestão de Risco em Segurança Informática",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-18",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.47"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425230",
+   "name": "Análise e Gestão de Risco em Segurança Informática",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425230",
+   "name": "Análise e Gestão de Risco em Segurança Informática",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425216",
+   "name": "Aprendizagem Automática",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-08",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53",
+    "6.2.50"
+   ],
+   "cursos": [
+    "1MCD",
+    "1MEBB",
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEF*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEBB*",
+    "2MFisMed*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425216",
+   "name": "Aprendizagem Automática",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-26",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "1MCD",
+    "1MEBB",
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEF*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEBB*",
+    "2MFisMed*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425216",
+   "name": "Aprendizagem Automática",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD",
+    "1MEBB",
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEF*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEBB*",
+    "2MFisMed*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425269",
+   "name": "Aprendizagem Automática Avançada",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.3.14",
+    "1.3.15"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425269",
+   "name": "Aprendizagem Automática Avançada",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-26",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425269",
+   "name": "Aprendizagem Automática Avançada",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26702",
    "name": "Arquiteturas de Computadores",
    "sem": 1,
@@ -281,6 +954,132 @@
    ]
   },
   {
+   "code": "425276",
+   "name": "Bases de Dados Avançadas",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-13",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.53"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEGE*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425276",
+   "name": "Bases de Dados Avançadas",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-02",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.53"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEGE*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425276",
+   "name": "Bases de Dados Avançadas",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEGE*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "13538",
    "name": "Cálculo",
    "sem": 1,
@@ -368,6 +1167,79 @@
    ]
   },
   {
+   "code": "421216",
+   "name": "Complementos de Estatística e Probabilidade",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.30",
+    "6.4.31"
+   ],
+   "cursos": [
+    "1MCD*",
+    "2MBioest",
+    "2MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421216",
+   "name": "Complementos de Estatística e Probabilidade",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.31"
+   ],
+   "cursos": [
+    "1MCD*",
+    "2MBioest",
+    "2MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421216",
+   "name": "Complementos de Estatística e Probabilidade",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1MCD*",
+    "2MBioest",
+    "2MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26733",
    "name": "Computação Gráfica",
    "sem": 1,
@@ -437,6 +1309,112 @@
      "degree": "LEI",
      "year": 3,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425113",
+   "name": "Computação Móvel",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*",
+    "2MEGE*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425113",
+   "name": "Computação Móvel",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.48",
+    "6.2.49"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*",
+    "2MEGE*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425113",
+   "name": "Computação Móvel",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*",
+    "2MEGE*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -608,6 +1586,112 @@
    ]
   },
   {
+   "code": "425266",
+   "name": "Desenho e Desenvolvimento de Jogos",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-18",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.48",
+    "6.2.49"
+   ],
+   "cursos": [
+    "1MEns.Inf.",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425266",
+   "name": "Desenho e Desenvolvimento de Jogos",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-03",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MEns.Inf.",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425266",
+   "name": "Desenho e Desenvolvimento de Jogos",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MEns.Inf.",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "74000",
    "name": "Desenho Técnico e Impressão 3D",
    "sem": 1,
@@ -683,6 +1767,113 @@
     {
      "degree": "LTI",
      "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425117",
+   "name": "Design de Software",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.47",
+    "6.2.48",
+    "6.2.49"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425117",
+   "name": "Design de Software",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-03",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425117",
+   "name": "Design de Software",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
      "optional": true
     }
    ]
@@ -1229,6 +2420,111 @@
    ]
   },
   {
+   "code": "425239",
+   "name": "Experiência de Utilização",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-15",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1MEns.Inf.",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425239",
+   "name": "Experiência de Utilização",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MEns.Inf.",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425239",
+   "name": "Experiência de Utilização",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1MEns.Inf.",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "34707",
    "name": "Física Experimental",
    "sem": 1,
@@ -1365,6 +2661,166 @@
     {
      "degree": "LTI",
      "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425262",
+   "name": "Fundamentos de Linguagens de Programação",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425262",
+   "name": "Fundamentos de Linguagens de Programação",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-25",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.53"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425262",
+   "name": "Fundamentos de Linguagens de Programação",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.02"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425203",
+   "name": "Fundamentos de Programação",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-15",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MensInf*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425203",
+   "name": "Fundamentos de Programação",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-03",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.11",
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MensInf*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425203",
+   "name": "Fundamentos de Programação",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MensInf*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MI",
+     "year": 1,
      "optional": true
     }
    ]
@@ -1660,6 +3116,127 @@
    ]
   },
   {
+   "code": "425236",
+   "name": "Internet das Coisas",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425236",
+   "name": "Internet das Coisas",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-01",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425236",
+   "name": "Internet das Coisas",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26732",
    "name": "Introdução à Inteligência Artificial",
    "sem": 1,
@@ -1729,6 +3306,28 @@
     {
      "degree": "LEI",
      "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425250",
+   "name": "Introdução à Investigação em Ciência de Dados",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "2MCD"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 2,
      "optional": false
     }
    ]
@@ -1906,6 +3505,108 @@
    ]
   },
   {
+   "code": "425105",
+   "name": "Introdução às Bases de Dados",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-07",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.47"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*",
+    "1MensInf*",
+    "1MI*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425105",
+   "name": "Introdução às Bases de Dados",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-01",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*",
+    "1MensInf*",
+    "1MI*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425105",
+   "name": "Introdução às Bases de Dados",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*",
+    "1MensInf*",
+    "1MI*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "22758",
    "name": "Laboratório de Estatística I - Introdução à Simulação",
    "sem": 1,
@@ -2058,6 +3759,157 @@
      "degree": "LEI",
      "year": 1,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "421191",
+   "name": "Métodos Computacionais para Estatística e Investigação Operacional",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-15",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.30",
+    "6.4.31",
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MEIO",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421191",
+   "name": "Métodos Computacionais para Estatística e Investigação Operacional",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.31",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MEIO",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421191",
+   "name": "Métodos Computacionais para Estatística e Investigação Operacional",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MEIO",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421135",
+   "name": "Métodos Estatísticos",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-14",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.45",
+    "6.2.46"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421135",
+   "name": "Métodos Estatísticos",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.30",
+    "6.4.31"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421135",
+   "name": "Métodos Estatísticos",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.30"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -2305,6 +4157,126 @@
    ]
   },
   {
+   "code": "425263",
+   "name": "Programação Paralela e Concorrente",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-06",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425263",
+   "name": "Programação Paralela e Concorrente",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425263",
+   "name": "Programação Paralela e Concorrente",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26704",
    "name": "Redes de Computadores",
    "sem": 1,
@@ -2377,6 +4349,290 @@
      "degree": "LEI",
      "year": 2,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425208",
+   "name": "Robôs Móveis",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30"
+   ],
+   "cursos": [
+    "1MEF*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425208",
+   "name": "Robôs Móveis",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "1MEF*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425208",
+   "name": "Robôs Móveis",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MEF*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425298",
+   "name": "Robótica Médica",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MEBB*",
+    "1MEI*",
+    "2MEBB*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425298",
+   "name": "Robótica Médica",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MEBB*",
+    "1MEI*",
+    "2MEBB*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425298",
+   "name": "Robótica Médica",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MEBB*",
+    "1MEI*",
+    "2MEBB*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425141",
+   "name": "Segurança de Software",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-11",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425141",
+   "name": "Segurança de Software",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425141",
+   "name": "Segurança de Software",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -2607,6 +4863,109 @@
    ]
   },
   {
+   "code": "425146",
+   "name": "Sistemas Multi-Agente",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-14",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425146",
+   "name": "Sistemas Multi-Agente",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.44",
+    "6.2.45"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425146",
+   "name": "Sistemas Multi-Agente",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26754",
    "name": "Sistemas Operativos (LTI)",
    "sem": 1,
@@ -2707,6 +5066,108 @@
    ]
   },
   {
+   "code": "425149",
+   "name": "Software Fiável",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-07",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.47"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425149",
+   "name": "Software Fiável",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.49"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425149",
+   "name": "Software Fiável",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26737",
    "name": "Teoria da Computação",
    "sem": 1,
@@ -2777,6 +5238,447 @@
      "degree": "LEI",
      "year": 3,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425157",
+   "name": "Tolerância a Faltas Distribuída",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425157",
+   "name": "Tolerância a Faltas Distribuída",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47",
+    "6.2.48"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425157",
+   "name": "Tolerância a Faltas Distribuída",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "411158",
+   "name": "Tópicos de Matemática",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "411158",
+   "name": "Tópicos de Matemática",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "411158",
+   "name": "Tópicos de Matemática",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*",
+    "2MAEG*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425160",
+   "name": "Vida Artificial",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-13",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.10",
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425160",
+   "name": "Vida Artificial",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.10",
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425160",
+   "name": "Vida Artificial",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425243",
+   "name": "Visualização de Dados",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-11",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14",
+    "1.3.15",
+    "1.3.20"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEBB*",
+    "2MEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425243",
+   "name": "Visualização de Dados",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-29",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.38",
+    "8.2.39"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEBB*",
+    "2MEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425243",
+   "name": "Visualização de Dados",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MEIO*",
+    "1MI*",
+    "1MSI*",
+    "2MEBB*",
+    "2MEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -3008,6 +5910,113 @@
    ]
   },
   {
+   "code": "425109",
+   "name": "Animação e Ambientes Virtuais",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.49",
+    "6.2.50"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425109",
+   "name": "Animação e Ambientes Virtuais",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-01",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.48",
+    "6.2.49"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425109",
+   "name": "Animação e Ambientes Virtuais",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26709",
    "name": "Aplicações Distribuídas",
    "sem": 2,
@@ -3168,6 +6177,833 @@
    ]
   },
   {
+   "code": "425282",
+   "name": "Aprendizagem Profunda",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425282",
+   "name": "Aprendizagem Profunda",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-28",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425282",
+   "name": "Aprendizagem Profunda",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425305",
+   "name": "Arquitetura de Sistemas, Aplicações e Serviços",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-11",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MDS*",
+    "1MEGE*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425305",
+   "name": "Arquitetura de Sistemas, Aplicações e Serviços",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MDS*",
+    "1MEGE*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425305",
+   "name": "Arquitetura de Sistemas, Aplicações e Serviços",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MDS*",
+    "1MEGE*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425194",
+   "name": "Bioinformática",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBioest.*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425194",
+   "name": "Bioinformática",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBioest.*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425194",
+   "name": "Bioinformática",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBioest.*",
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425202",
+   "name": "Complementos de Programação",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MEGeo*",
+    "1MensInf*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425202",
+   "name": "Complementos de Programação",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MEGeo*",
+    "1MensInf*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425202",
+   "name": "Complementos de Programação",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MEGeo*",
+    "1MensInf*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425296",
+   "name": "Computação Descentralizada e Blockchains",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-07",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47",
+    "6.2.48"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425296",
+   "name": "Computação Descentralizada e Blockchains",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-28",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425296",
+   "name": "Computação Descentralizada e Blockchains",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425240",
+   "name": "Computação em Nuvem",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-17",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425240",
+   "name": "Computação em Nuvem",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-30",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425240",
+   "name": "Computação em Nuvem",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425252",
+   "name": "Computação Quântica",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-17",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.17",
+    "8.2.19"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425252",
+   "name": "Computação Quântica",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425252",
+   "name": "Computação Quântica",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26750",
    "name": "Construção de Sistemas de Software",
    "sem": 2,
@@ -3303,6 +7139,129 @@
     {
      "degree": "LTI",
      "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425116",
+   "name": "Desenho e Análise de Algoritmos",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.46"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEGeo*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425116",
+   "name": "Desenho e Análise de Algoritmos",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-02",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEGeo*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425116",
+   "name": "Desenho e Análise de Algoritmos",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEGeo*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
      "optional": true
     }
    ]
@@ -3734,6 +7693,80 @@
      "degree": "LTI",
      "year": 1,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "421160",
+   "name": "Estatística Bayesiana",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421160",
+   "name": "Estatística Bayesiana",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-08",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421160",
+   "name": "Estatística Bayesiana",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.34"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -4405,6 +8438,461 @@
    ]
   },
   {
+   "code": "425205",
+   "name": "Inteligência Artificial em Jogos",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-08",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425205",
+   "name": "Inteligência Artificial em Jogos",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.45"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425205",
+   "name": "Inteligência Artificial em Jogos",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.02"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425125",
+   "name": "Interação em Linguagem Natural",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-16",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425125",
+   "name": "Interação em Linguagem Natural",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-08",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425125",
+   "name": "Interação em Linguagem Natural",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425306",
+   "name": "Interação em Realidade Virtual e Aumentada",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-07",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.47",
+    "6.2.48"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425306",
+   "name": "Interação em Realidade Virtual e Aumentada",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-07",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425306",
+   "name": "Interação em Realidade Virtual e Aumentada",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425299",
+   "name": "Interação Humano-AI",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.10",
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "2MEBB*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425299",
+   "name": "Interação Humano-AI",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-06",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "2MEBB*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425299",
+   "name": "Interação Humano-AI",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEBB*",
+    "1MEI*",
+    "1MI*",
+    "2MEBB*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26768",
    "name": "Introdução à Aprendizagem Automática",
    "sem": 2,
@@ -4592,6 +9080,76 @@
    ]
   },
   {
+   "code": "411168",
+   "name": "Matemática Computacional",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44",
+    "6.2.45"
+   ],
+   "cursos": [
+    "1MAEG",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "411168",
+   "name": "Matemática Computacional",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-28",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MAEG",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "411168",
+   "name": "Matemática Computacional",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MAEG",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "13528",
    "name": "Matemática Discreta",
    "sem": 2,
@@ -4685,6 +9243,273 @@
    ]
   },
   {
+   "code": "425280",
+   "name": "Metodologias Ofensivas e Defensivas de CiberSegurança",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-11",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425280",
+   "name": "Metodologias Ofensivas e Defensivas de CiberSegurança",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.10",
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425280",
+   "name": "Metodologias Ofensivas e Defensivas de CiberSegurança",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425253",
+   "name": "Métodos e Estudos com Utilizadores",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425253",
+   "name": "Métodos e Estudos com Utilizadores",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-30",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425253",
+   "name": "Métodos e Estudos com Utilizadores",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MensInf*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421199",
+   "name": "Métodos Estatísticos em Genética",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.14"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "71753",
    "name": "Métodos Óticos de Modelação 3D",
    "sem": 2,
@@ -4756,6 +9581,263 @@
     {
      "degree": "LTI",
      "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "441205",
+   "name": "Métodos Quantitativos em Biologia de Sistemas",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.50"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MITEQB",
+    "1MQT*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "441205",
+   "name": "Métodos Quantitativos em Biologia de Sistemas",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.47"
+   ],
+   "cursos": [
+    "1MBB*",
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MITEQB",
+    "1MQT*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421200",
+   "name": "Modelos Lineares Generalizados",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-07",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421200",
+   "name": "Modelos Lineares Generalizados",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-28",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421200",
+   "name": "Modelos Lineares Generalizados",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MBioest*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425128",
+   "name": "Multimédia",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.3.33A"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425128",
+   "name": "Multimédia",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425128",
+   "name": "Multimédia",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
      "optional": true
     }
    ]
@@ -4895,6 +9977,130 @@
     {
      "degree": "LTI",
      "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425304",
+   "name": "Processamento e Recuperação de Informação",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.11",
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425304",
+   "name": "Processamento e Recuperação de Informação",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-05",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425304",
+   "name": "Processamento e Recuperação de Informação",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
      "optional": true
     }
    ]
@@ -5163,6 +10369,130 @@
    ]
   },
   {
+   "code": "425242",
+   "name": "Prospeção de Dados",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-18",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.14",
+    "1.3.15"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425242",
+   "name": "Prospeção de Dados",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425242",
+   "name": "Prospeção de Dados",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MBBC*",
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
    "code": "26755",
    "name": "Redes de Computadores (LTI)",
    "sem": 2,
@@ -5260,6 +10590,372 @@
      "degree": "LTI",
      "year": 1,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425283",
+   "name": "Redes de Conhecimento",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425283",
+   "name": "Redes de Conhecimento",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425283",
+   "name": "Redes de Conhecimento",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MCD*",
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421218",
+   "name": "Regressão e Análise da Variância",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-22",
+   "start": "16:00",
+   "end": "19:30",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421218",
+   "name": "Regressão e Análise da Variância",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "16:00",
+   "end": "19:30",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421218",
+   "name": "Regressão e Análise da Variância",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.34"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425175_6ects",
+   "name": "Segurança Aplicada",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425175_6ects",
+   "name": "Segurança Aplicada",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-02",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425175_6ects",
+   "name": "Segurança Aplicada",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425295",
+   "name": "Segurança de Redes e Sistemas Distribuídos",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.23",
+    "1.2.24",
+    "1.2.25"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425295",
+   "name": "Segurança de Redes e Sistemas Distribuídos",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-02",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425295",
+   "name": "Segurança de Redes e Sistemas Distribuídos",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1MSI",
+    "1MEI*",
+    "1MI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -5407,6 +11103,184 @@
      "degree": "LTI",
      "year": 3,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "421150",
+   "name": "Séries Temporais",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-18",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.30",
+    "6.4.31"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421150",
+   "name": "Séries Temporais",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "421150",
+   "name": "Séries Temporais",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.30"
+   ],
+   "cursos": [
+    "1MAEG*",
+    "1MBioest*",
+    "1MCD*",
+    "1MEIO*"
+   ],
+   "degrees": [
+    {
+     "degree": "MCD",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425237",
+   "name": "Sistemas Ciberfísicos",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-16",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.19"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425237",
+   "name": "Sistemas Ciberfísicos",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-07",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.15"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425237",
+   "name": "Sistemas Ciberfísicos",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.04"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
     }
    ]
   },
@@ -5576,6 +11450,277 @@
      "degree": "LEI",
      "year": 2,
      "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425150",
+   "name": "Técnicas de Compilação",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425150",
+   "name": "Técnicas de Compilação",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425150",
+   "name": "Técnicas de Compilação",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.13"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425184_6ects",
+   "name": "Tolerância a Intrusões",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-07",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MSI"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425184_6ects",
+   "name": "Tolerância a Intrusões",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-28",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.50"
+   ],
+   "cursos": [
+    "1MSI"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425184_6ects",
+   "name": "Tolerância a Intrusões",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1MSI"
+   ],
+   "degrees": [
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "425159",
+   "name": "Verificação e Validação de Software",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-18",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425159",
+   "name": "Verificação e Validação de Software",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-06",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.10",
+    "8.2.11"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "425159",
+   "name": "Verificação e Validação de Software",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1MEI*",
+    "1MI*",
+    "1MSI*"
+   ],
+   "degrees": [
+    {
+     "degree": "MEI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MI",
+     "year": 1,
+     "optional": true
+    },
+    {
+     "degree": "MSI",
+     "year": 1,
+     "optional": true
     }
    ]
   }
