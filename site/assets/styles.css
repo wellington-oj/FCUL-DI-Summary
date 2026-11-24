@@ -490,23 +490,43 @@ table.shifts { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
 .shifts tr.dim { opacity: 0.4; }
 .shifts tr.is-hl { background: var(--sunken); }
 
-.agenda { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
-.ag-day { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
-.ag-day.past { opacity: 0.5; }
-.ag-date { display: flex; flex-direction: column; line-height: 1.15; padding-top: 2px; }
-.ag-date b { font: 700 1.6rem/1 var(--f-display); }
-.ag-date span { font-weight: 600; font-size: 0.8rem; }
-.ag-date small { color: var(--muted); font-size: 0.72rem; }
-.ag-items { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.ag-item {
-  display: grid; grid-template-columns: 86px 50px minmax(0, 1fr) auto; gap: 10px; align-items: baseline;
-  text-align: left; padding: 7px 10px; border-radius: 8px; border: 1px solid transparent;
-  background: var(--tile-bg); color: var(--ink); cursor: pointer; font-size: 0.85rem;
+/* class-group picker: year first, then the groups of that year as chips */
+.turma-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 14px; }
+.turma-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.turma-chip {
+  font-size: 0.8rem; font-weight: 500; padding: 5px 10px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted);
 }
-.ag-item:hover { border-color: var(--tile-ink); }
-.ag-time { color: var(--muted); font-size: 0.74rem; }
-.ag-name small { color: var(--muted); font-size: 0.72rem; }
-.ag-rooms { color: var(--muted); font-size: 0.7rem; text-align: right; max-width: 22em; line-height: 1.45; }
+.turma-chip:hover { color: var(--ink); border-color: var(--muted); }
+.turma-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.wk-caption { margin: 0 0 8px; font-weight: 600; font-size: 0.9rem; }
+
+/* exam grid: one row per year, one column per exam day; Mondays start a new week */
+.xm-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.xm { display: grid; grid-template-columns: 104px repeat(var(--cols), minmax(64px, 1fr)); min-width: calc(104px + var(--cols) * 64px); }
+.xm-row { display: contents; }
+.xm-label {
+  position: sticky; left: 0; z-index: 3; display: flex; flex-direction: column; justify-content: center; gap: 2px;
+  padding: 8px 10px; font-size: 0.8rem; font-weight: 600; background: var(--surface); border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+}
+.xm-label small { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+.xm-dh { display: flex; flex-direction: column; align-items: center; padding: 6px 2px; line-height: 1.15; border-bottom: 1px solid var(--line); }
+.xm-dh small { font-size: 0.64rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.xm-dh b { font: 700 1.05rem var(--f-display); }
+.xm-dh.free b { color: var(--muted); font-weight: 500; }
+.xm-cell { display: flex; flex-direction: column; gap: 4px; padding: 5px 4px; min-height: 52px; border-bottom: 1px solid var(--line); }
+.xm-dh.wk-start, .xm-cell.wk-start { border-left: 1px solid var(--line); }
+.xm-dh.past, .xm-cell.past { opacity: 0.45; }
+.xm-row.mine .xm-label, .xm-row.mine .xm-cell { background-color: var(--sunken); }
+.xm-row.mine .xm-label { box-shadow: inset 3px 0 0 var(--accent); }
+.xm-row:last-child > * { border-bottom: 0; }
+.xm-ex {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 1px; width: 100%; padding: 4px 6px; cursor: pointer; text-align: left;
+  border: 1px solid transparent; border-radius: 6px; background: var(--tile-bg); box-shadow: inset 3px 0 0 var(--tile-ink); color: var(--ink);
+}
+.xm-ex b { font: 600 0.74rem var(--f-mono); color: var(--tile-ink); }
+.xm-ex span { font: 500 0.64rem var(--f-mono); color: var(--muted); }
+.xm-ex:hover, .xm-ex:focus-visible { border-color: var(--tile-ink); }
 
 @media (max-width: 960px) {
   .cal-layout { grid-template-columns: 1fr; gap: 24px; }
@@ -514,10 +534,8 @@ table.shifts { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   .cal-list { max-height: 320px; border: 1px solid var(--line); border-radius: 12px; padding: 8px; background: var(--surface); }
 }
 @media (max-width: 560px) {
-  .ag-day { grid-template-columns: 44px minmax(0, 1fr); gap: 10px; }
-  .ag-item { grid-template-columns: 50px minmax(0, 1fr); gap: 2px 8px; }
-  .ag-time { grid-column: 1 / -1; }
-  .ag-rooms { grid-column: 1 / -1; text-align: left; }
+  .xm { grid-template-columns: 76px repeat(var(--cols), minmax(58px, 1fr)); min-width: calc(76px + var(--cols) * 58px); }
+  .xm-label { padding: 6px 8px; font-size: 0.74rem; }
   .wk { --hour: 42px; grid-template-columns: 40px repeat(var(--days), minmax(80px, 1fr)); min-width: calc(40px + var(--days) * 80px); }
   .cd-head { padding: 12px 16px 16px; }
 }

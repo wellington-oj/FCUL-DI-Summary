@@ -74,18 +74,17 @@
       calTab: "Horários", calSub: "Aulas e exames",
       calEyebrow: (d, y) => `${d} · horários e exames ${y}`,
       calTitle: "Quando e onde são as aulas e os exames",
-      calLead: "Escolha uma cadeira para ver os turnos da semana e a data, hora e sala de cada exame. Sem nenhuma escolhida, veja a semana completa de uma turma e o calendário de exames do semestre.",
+      calLead: "Escolha o seu ano e a sua turma para ver o horário da semana. Mais abaixo estão todos os exames do semestre, com uma linha por ano. Clique numa cadeira, aqui ou na lista, para ver os turnos e as salas dos exames.",
       calList: "Cadeiras do semestre",
       exams: "Exames",
       epoca: { 1: "1.ª época", 2: "2.ª época", esp: "Época especial" },
       room: "Sala", rooms: "Salas", roomTbd: "Sala ainda por anunciar",
       inDays: (n) => (n < 0 ? "já passou" : n === 0 ? "hoje" : n === 1 ? "amanhã" : `daqui a ${n} dias`),
       noExams: "Esta cadeira não aparece no calendário de exames do Fenix. A avaliação pode ser contínua ou por projeto: veja o método de avaliação na ficha da cadeira.",
-      weekTitle: "Horário semanal", weekOf: (x) => `Semana da turma ${x}`,
+      weekTitle: "Horário semanal", weekOf: (x) => `Horário da turma ${x}`, classTitle: "Horário das aulas", yearLabel: "Ano",
       turma: "Turma", allTurmas: "Todas as turmas",
       turmaNone: (x) => `A turma ${x} não tem turnos nesta cadeira, por isso aparecem todos.`,
       turmaWhat: "As turmas (ex.: 1LEI01) são os grupos de horário do Fenix. O primeiro algarismo é o ano.",
-      pickTurma: "Escolha uma turma para ver a semana completa, com as aulas de todas as cadeiras.",
       noShifts: "O Fenix não tem horário publicado para esta cadeira. Acontece sobretudo com cadeiras de Menores dadas noutras faculdades.",
       shiftType: { T: "Teórica", TP: "Teórico-prática", PL: "Prática laboratorial", P: "Prática", S: "Seminário", O: "Orientação tutorial", OT: "Orientação tutorial" },
       shiftsList: (n) => `Todos os turnos (${n})`,
@@ -94,8 +93,7 @@
       openCourse: "Ficha da cadeira", fenixShifts: "Turnos no Fenix", calLink: "Horário e exames",
       backOverview: "Visão geral do semestre",
       examCal: "Calendário de exames",
-      examCalLead: (s) => `Todos os exames das cadeiras do ${s}. Clique numa cadeira para ver os detalhes.`,
-      examCalTurma: (x) => `Exames das cadeiras que a turma ${x} frequenta. Clique numa cadeira para ver os detalhes.`,
+      examCalLead: (s) => `Exames do ${s}: cada linha é um ano e cada coluna um dia. Clique numa cadeira para ver as salas.`, yourYear: "o seu ano",
       noExamsPeriod: "Nenhum exame nesta época.",
       days: ["", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
       kindShort: { option: "opção", minor: "menor" },
@@ -164,18 +162,17 @@
       calTab: "Timetable", calSub: "Classes and exams",
       calEyebrow: (d, y) => `${d} · timetable and exams ${y}`,
       calTitle: "When and where classes and exams happen",
-      calLead: "Pick a course to see its weekly shifts and the date, time and room of each exam. With no course picked, see the full week of a class group and the semester's exam calendar.",
+      calLead: "Pick your year and class group to see your week. Below are all of the semester's exams, one row per year. Click a course, here or in the list, to see its shifts and exam rooms.",
       calList: "Courses this semester",
       exams: "Exams",
       epoca: { 1: "1st exam period", 2: "2nd exam period", esp: "Special period" },
       room: "Room", rooms: "Rooms", roomTbd: "Room not announced yet",
       inDays: (n) => (n < 0 ? "done" : n === 0 ? "today" : n === 1 ? "tomorrow" : `in ${n} days`),
       noExams: "This course isn't in the Fenix exam calendar. It may be assessed continuously or by project: see the assessment method in the course details.",
-      weekTitle: "Weekly timetable", weekOf: (x) => `Week for class group ${x}`,
+      weekTitle: "Weekly timetable", weekOf: (x) => `Timetable for class group ${x}`, classTitle: "Class timetable", yearLabel: "Year",
       turma: "Class group", allTurmas: "All class groups",
       turmaNone: (x) => `Class group ${x} has no shifts in this course, so all of them are shown.`,
       turmaWhat: "Class groups (e.g. 1LEI01) are Fenix's timetable groups. The first digit is the year.",
-      pickTurma: "Pick a class group to see its full week, with classes from every course.",
       noShifts: "Fenix has no timetable for this course. This mostly happens with Minor courses taught at other faculties.",
       shiftType: { T: "Lecture", TP: "Lecture-practical", PL: "Lab", P: "Practical", S: "Seminar", O: "Tutorial", OT: "Tutorial" },
       shiftsList: (n) => `All shifts (${n})`,
@@ -184,8 +181,7 @@
       openCourse: "Course details", fenixShifts: "Shifts on Fenix", calLink: "Timetable and exams",
       backOverview: "Semester overview",
       examCal: "Exam calendar",
-      examCalLead: (s) => `Every exam for the courses in ${s.toLowerCase()}. Click a course to see the details.`,
-      examCalTurma: (x) => `Exams for the courses class group ${x} takes. Click a course to see the details.`,
+      examCalLead: (s) => `${s} exams: each row is a year and each column a day. Click a course to see the rooms.`, yourYear: "your year",
       noExamsPeriod: "No exams in this period.",
       days: ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       kindShort: { option: "option", minor: "minor" },
@@ -496,7 +492,7 @@
   }
 
   function calItem(c) {
-    const ex = c.exams.find((e) => e.epoca === "1") || c.exams[0];
+    const ex = c.exams.find((e) => e.epoca === "1" && examInSem(e, state.calSem)) || c.exams[0];
     const meta = ex ? fmtDate(ex.date, { day: "numeric", month: "short" }) : "—";
     return `<button type="button" class="cal-item hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}" aria-pressed="${state.calCourse === c.id}">
       <span class="tile-acr">${esc(c.acr)}</span><span class="ci-name">${esc(L(c.name))}</span>
@@ -609,46 +605,84 @@
       </div>`;
   }
 
+  /* Regular-period exams of a course offered in both semesters show up twice (January and June):
+     keep only the ones that fall in the semester being shown. The special period is shared. */
+  const examInSem = (e, sem) => {
+    if (e.epoca === "esp") return true;
+    const m = Number(e.date.slice(5, 7));
+    return sem === 1 ? m >= 10 || m <= 3 : m >= 4 && m <= 9;
+  };
+
+  /* Every exam of one period as a grid: one row per year (then options, minors), one column per
+     exam day. Students find their row and read across, so the gap between exams is visible. */
+  function examMatrix(groups, ysel) {
+    const ep = state.epoca;
+    const rows = groups.map((g) => ({
+      ...g, mine: g.title === t("year", Number(ysel)),
+      ex: g.items.flatMap((c) => c.exams.filter((e) => e.epoca === ep && examInSem(e, state.calSem)).map((e) => ({ c, e }))),
+    })).filter((r) => r.ex.length);
+    if (!rows.length) return `<p class="cal-empty">${esc(t("noExamsPeriod"))}</p>`;
+    const used = new Set(rows.flatMap((r) => r.ex.map((x) => x.e.date)));
+    const sorted = [...used].sort();
+    const days = [];
+    for (let d = dateOf(sorted[0]), last = dateOf(sorted[sorted.length - 1]); d <= last; d.setDate(d.getDate() + 1)) {
+      const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+      if (d.getDay() === 0 || (d.getDay() === 6 && !used.has(iso))) continue;
+      days.push(iso);
+    }
+    let prevMonth = "";
+    const head = days.map((iso) => {
+      const d = dateOf(iso), mon = fmtDate(iso, { month: "short" });
+      const showMon = mon !== prevMonth; prevMonth = mon;
+      return `<div class="xm-dh${d.getDay() === 1 ? " wk-start" : ""}${d < DAY0 ? " past" : ""}${used.has(iso) ? "" : " free"}">
+        <small>${esc(t("days")[d.getDay() || 7])}</small><b>${d.getDate()}</b><small>${showMon ? esc(mon.replace(".", "")) : "&nbsp;"}</small></div>`;
+    }).join("");
+    const body = rows.map((r) => `<div class="xm-row${r.mine ? " mine" : ""}">
+        <div class="xm-label">${esc(r.title)}${r.mine ? `<small>${esc(t("yourYear"))}</small>` : ""}</div>
+        ${days.map((iso) => {
+          const here = r.ex.filter((x) => x.e.date === iso).sort((a, b) => a.e.start.localeCompare(b.e.start));
+          return `<div class="xm-cell${dateOf(iso).getDay() === 1 ? " wk-start" : ""}${dateOf(iso) < DAY0 ? " past" : ""}">${here.map(({ c, e }) => {
+            const tip = `${L(c.name)} · ${fmtDate(iso, { weekday: "long", day: "numeric", month: "long" })} ${e.start}–${e.end}${e.rooms.length ? " · " + e.rooms.join(", ") : ""}`;
+            return `<button type="button" class="xm-ex hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}" title="${esc(tip)}"><b>${esc(c.acr)}</b><span>${e.start}</span></button>`;
+          }).join("")}</div>`;
+        }).join("")}
+      </div>`).join("");
+    return `<div class="xm-scroll"><div class="xm" style="--cols:${days.length}">
+        <div class="xm-row xm-headrow"><div class="xm-label"></div>${head}</div>${body}
+      </div></div>`;
+  }
+
   function calOverview(deg, groups) {
     const list = groups.flatMap((g) => g.items);
     const re = turmaRe(deg);
     const turmas = [...new Set(list.flatMap((c) => c.shifts.flatMap((s) => s.turmas)).filter((x) => re.test(x)))].sort();
-    const tsel = turmas.includes(state.turma) ? state.turma : "";
-    let week = `<p class="cal-empty">${esc(t("pickTurma"))}</p>`;
-    let taken = list;
+    const tsel = turmas.includes(state.turma) ? state.turma : turmas[0] || "";
+    const ysel = tsel[0] || "1";
+    const years = [...new Set(turmas.map((x) => x[0]))];
+    let week = `<p class="cal-empty">${esc(t("noShifts"))}</p>`;
     if (tsel) {
       const events = [];
-      taken = [];
-      list.forEach((c) => c.shifts.filter((s) => s.turmas.includes(tsel)).forEach((s, i) => {
-        if (!i) taken.push(c);
+      list.forEach((c) => c.shifts.filter((s) => s.turmas.includes(tsel)).forEach((s) => {
         s.slots.forEach((sl) => events.push({ ...sl, key: c.id + s.id, type: s.type, label: c.acr, sub: `${s.id} · ${sl.room}`, course: c, cal: c.id, title: `${L(c.name)} · ${s.id}` }));
       }));
-      week = events.length ? weekGrid(events) : week;
+      if (events.length) week = weekGrid(events);
     }
-    const ep = state.epoca;
-    const items = taken.flatMap((c) => c.exams.filter((e) => e.epoca === ep).map((e) => ({ c, e })))
-      .sort((a, b) => a.e.date.localeCompare(b.e.date) || a.e.start.localeCompare(b.e.start) || a.c.acr.localeCompare(b.c.acr));
-    const byDate = [];
-    items.forEach((x) => { const last = byDate[byDate.length - 1]; if (last && last.date === x.e.date) last.items.push(x); else byDate.push({ date: x.e.date, items: [x] }); });
-    const kindOf = (c) => (c.offerings.find((o) => o.degree === deg && o.sem === state.calSem) || {}).kind;
-    const agenda = byDate.length ? `<div class="agenda">${byDate.map((g) => {
-      const past = dateOf(g.date) < DAY0;
-      return `<div class="ag-day${past ? " past" : ""}">
-        <div class="ag-date"><b>${dateOf(g.date).getDate()}</b><span>${esc(fmtDate(g.date, { month: "short" }))}</span><small>${esc(fmtDate(g.date, { weekday: "short" }))}</small></div>
-        <div class="ag-items">${g.items.map(({ c, e }) => { const k = kindOf(c); return `<button type="button" class="ag-item hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}">
-          <span class="ag-time mono">${e.start}–${e.end}</span><span class="tile-acr">${esc(c.acr)}</span>
-          <span class="ag-name">${esc(L(c.name))}${k && k !== "core" ? ` <small>${esc(t("kindShort")[k])}</small>` : ""}</span>
-          <span class="ag-rooms mono">${esc(e.rooms.join(", "))}</span></button>`; }).join("")}</div></div>`;
-    }).join("")}</div>` : `<p class="cal-empty">${esc(t("noExamsPeriod"))}</p>`;
-    const epSeg = ["1", "2", "esp"].map((k) => `<button type="button" class="seg-btn" data-epoca="${k}" aria-pressed="${k === ep}">${esc(t("epoca")[k])}</button>`).join("");
+    const yearSeg = years.map((y) => `<button type="button" class="seg-btn" data-calyear="${y}" aria-pressed="${y === ysel}">${esc(t("year", Number(y)))}</button>`).join("");
+    const chips = turmas.filter((x) => x[0] === ysel).map((x) => `<button type="button" class="turma-chip mono" data-turma="${esc(x)}" aria-pressed="${x === tsel}">${esc(x)}</button>`).join("");
+    const epSeg = ["1", "2", "esp"].map((k) => `<button type="button" class="seg-btn" data-epoca="${k}" aria-pressed="${k === state.epoca}">${esc(t("epoca")[k])}</button>`).join("");
     return `<div class="cp-block">
-        <div class="cp-head"><div><h3 class="cp-title">${esc(tsel ? t("weekOf", tsel) : t("weekTitle"))}</h3><p>${esc(t("turmaWhat"))}</p></div>${turmaSelect(turmas, tsel)}</div>
+        <div class="cp-head"><div><h3 class="cp-title">${esc(t("classTitle"))}</h3><p>${esc(t("turmaWhat"))}</p></div></div>
+        ${turmas.length ? `<div class="turma-bar">
+          <div class="seg seg-sm" role="group" aria-label="${esc(t("yearLabel"))}">${yearSeg}</div>
+          <div class="turma-chips" role="group" aria-label="${esc(t("turma"))}">${chips}</div>
+        </div>
+        <p class="wk-caption">${esc(t("weekOf", tsel))}</p>` : ""}
         ${week}
       </div>
       <div class="cp-block">
-        <div class="cp-head"><div><h3 class="cp-title">${esc(t("examCal"))}</h3><p>${esc(tsel ? t("examCalTurma", tsel) : t("examCalLead", t("sem", state.calSem)))}</p></div>
+        <div class="cp-head"><div><h3 class="cp-title">${esc(t("examCal"))}</h3><p>${esc(t("examCalLead", t("sem", state.calSem)))}</p></div>
           <div class="seg seg-sm" role="group" aria-label="${esc(t("exams"))}">${epSeg}</div></div>
-        ${agenda}
+        ${examMatrix(groups, ysel)}
       </div>`;
   }
 
@@ -690,6 +724,8 @@
       ? (a.dataset.cal && a.classList.contains("cal-item") ? `.cal-item[data-cal="${a.dataset.cal}"]`
         : a.dataset.calsem ? `[data-calsem="${a.dataset.calsem}"]`
         : a.dataset.epoca ? `[data-epoca="${a.dataset.epoca}"]`
+        : a.dataset.calyear ? `[data-calyear="${a.dataset.calyear}"]`
+        : a.dataset.turma ? `[data-turma="${a.dataset.turma}"]`
         : a.id === "turma-select" ? "#turma-select" : null)
       : null;
     const ls = $(".cal-list", box)?.scrollTop || 0;
@@ -1130,6 +1166,16 @@
     }
     const epBtn = e.target.closest("[data-epoca]");
     if (epBtn) { state.epoca = epBtn.dataset.epoca; updateCal(); return; }
+    const yearBtn = e.target.closest("[data-calyear]");
+    if (yearBtn) {
+      const prefix = yearBtn.dataset.calyear + calDeg();
+      const list = calGroups(calDeg(), state.calSem).flatMap((g) => g.items);
+      const ts = [...new Set(list.flatMap((c) => c.shifts.flatMap((s) => s.turmas)).filter((x) => x.toUpperCase().startsWith(prefix)))].sort();
+      if (ts.length) { state.turma = ts[0]; store.set("turma", state.turma); }
+      updateCal(); return;
+    }
+    const turmaBtn = e.target.closest("[data-turma]");
+    if (turmaBtn) { state.turma = turmaBtn.dataset.turma; store.set("turma", state.turma); updateCal(); return; }
     const tileEl = e.target.closest(".tile[data-id], [data-open]");
     if (tileEl) { location.hash = "c-" + (tileEl.dataset.id || tileEl.dataset.open); return; }
     const chip = e.target.closest(".area-chip[data-area]");
