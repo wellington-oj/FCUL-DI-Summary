@@ -503,7 +503,7 @@ table.shifts { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
 
 /* exam grid: one row per year, one column per exam day; Mondays start a new week */
 .xm-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
-.xm { display: grid; grid-template-columns: 104px repeat(var(--cols), minmax(64px, 1fr)); min-width: calc(104px + var(--cols) * 64px); }
+.xm { display: grid; grid-template-columns: 104px repeat(var(--cols), minmax(98px, 1fr)); min-width: calc(104px + var(--cols) * 98px); }
 .xm-row { display: contents; }
 .xm-label {
   position: sticky; left: 0; z-index: 3; display: flex; flex-direction: column; justify-content: center; gap: 2px;
@@ -525,7 +525,10 @@ table.shifts { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   border: 1px solid transparent; border-radius: 6px; background: var(--tile-bg); box-shadow: inset 3px 0 0 var(--tile-ink); color: var(--ink);
 }
 .xm-ex b { font: 600 0.74rem var(--f-mono); color: var(--tile-ink); }
-.xm-ex span { font: 500 0.64rem var(--f-mono); color: var(--muted); }
+.xm-ex span { font: 500 0.64rem var(--f-mono); color: var(--muted); white-space: nowrap; }
+.xm-ex .xm-room { white-space: normal; }
+.xm-ex .xm-room { font-size: 0.6rem; line-height: 1.25; color: var(--ink); opacity: 0.8; }
+.xm-ex b i { font-style: normal; font-weight: 500; font-size: 0.64rem; color: var(--muted); }
 .xm-ex:hover, .xm-ex:focus-visible { border-color: var(--tile-ink); }
 
 @media (max-width: 960px) {
@@ -534,7 +537,7 @@ table.shifts { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   .cal-list { max-height: 320px; border: 1px solid var(--line); border-radius: 12px; padding: 8px; background: var(--surface); }
 }
 @media (max-width: 560px) {
-  .xm { grid-template-columns: 76px repeat(var(--cols), minmax(58px, 1fr)); min-width: calc(76px + var(--cols) * 58px); }
+  .xm { grid-template-columns: 76px repeat(var(--cols), minmax(92px, 1fr)); min-width: calc(76px + var(--cols) * 92px); }
   .xm-label { padding: 6px 8px; font-size: 0.74rem; }
   .wk { --hour: 42px; grid-template-columns: 40px repeat(var(--days), minmax(80px, 1fr)); min-width: calc(40px + var(--days) * 80px); }
   .cd-head { padding: 12px 16px 16px; }

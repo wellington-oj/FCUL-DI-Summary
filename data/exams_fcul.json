@@ -1,0 +1,5583 @@
+{
+ "source": "https://ciencias.ulisboa.pt/multimedia/faculdade-ciencias/calendario-exames-26-27-28out26.pdf",
+ "rows": 2011,
+ "exams": [
+  {
+   "code": "26702",
+   "name": "Arquiteturas de Computadores",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-15",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26702",
+   "name": "Arquiteturas de Computadores",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26702",
+   "name": "Arquiteturas de Computadores",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26748",
+   "name": "Arquiteturas de Sistemas Computacionais",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-11",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26748",
+   "name": "Arquiteturas de Sistemas Computacionais",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26748",
+   "name": "Arquiteturas de Sistemas Computacionais",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.15"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26707",
+   "name": "Bases de Dados",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-08",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LCD",
+    "1PG-CEns*",
+    "2LEA",
+    "2LEGeo",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26707",
+   "name": "Bases de Dados",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LCD",
+    "1PG-CEns*",
+    "2LEA",
+    "2LEGeo",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26707",
+   "name": "Bases de Dados",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1LCD",
+    "1PG-CEns*",
+    "2LEA",
+    "2LEGeo",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13538",
+   "name": "Cálculo",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-18",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14",
+    "1.3.15",
+    "1.3.20",
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16",
+    "6.1.36",
+    "6.2.53",
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13538",
+   "name": "Cálculo",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16",
+    "6.1.36",
+    "6.2.53",
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13538",
+   "name": "Cálculo",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26733",
+   "name": "Computação Gráfica",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-18",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "3LEI",
+    "3LEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26733",
+   "name": "Computação Gráfica",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "3LEI",
+    "3LEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26733",
+   "name": "Computação Gráfica",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "3LEI",
+    "3LEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26758",
+   "name": "Construção de Sistemas de Software (LTI)",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-07",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39"
+   ],
+   "cursos": [
+    "3LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26758",
+   "name": "Construção de Sistemas de Software (LTI)",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.1.36",
+    "6.2.50",
+    "6.2.53"
+   ],
+   "cursos": [
+    "3LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26758",
+   "name": "Construção de Sistemas de Software (LTI)",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "3LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "93103",
+   "name": "Curso de Competências Sociais e Desenvolvimento Pessoal",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-07",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.14",
+    "1.3.15"
+   ],
+   "cursos": [
+    "2LBio*",
+    "2LEBB*",
+    "2LEEA*",
+    "2LEGeo*",
+    "2LEI*",
+    "2LMA*",
+    "2LMat*",
+    "2LMOG*",
+    "2LQui*",
+    "3LFis*",
+    "3LGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "93103",
+   "name": "Curso de Competências Sociais e Desenvolvimento Pessoal",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.33A"
+   ],
+   "cursos": [
+    "2LBio*",
+    "2LEBB*",
+    "2LEEA*",
+    "2LEGeo*",
+    "2LEI*",
+    "2LMA*",
+    "2LMat*",
+    "2LMOG*",
+    "2LQui*",
+    "3LFis*",
+    "3LGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "93103",
+   "name": "Curso de Competências Sociais e Desenvolvimento Pessoal",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.33A"
+   ],
+   "cursos": [
+    "2LBio*",
+    "2LEBB*",
+    "2LEEA*",
+    "2LEGeo*",
+    "2LEI*",
+    "2LMA*",
+    "2LMat*",
+    "2LMOG*",
+    "2LQui*",
+    "3LFis*",
+    "3LGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "74000",
+   "name": "Desenho Técnico e Impressão 3D",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-11",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26",
+    "1.4.20",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "2LEEA",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "74000",
+   "name": "Desenho Técnico e Impressão 3D",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-25",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "2LEEA",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "74000",
+   "name": "Desenho Técnico e Impressão 3D",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.32"
+   ],
+   "cursos": [
+    "2LEEA",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71744",
+   "name": "Deteção Remota e Processamento de Imagem",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-11",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.46",
+    "6.2.47"
+   ],
+   "cursos": [
+    "3LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71744",
+   "name": "Deteção Remota e Processamento de Imagem",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.46",
+    "6.2.47"
+   ],
+   "cursos": [
+    "3LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71744",
+   "name": "Deteção Remota e Processamento de Imagem",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "3LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66517",
+   "name": "Ecologia Numérica (T)",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.26",
+    "1.4.20",
+    "6.2.40",
+    "6.2.41",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66517",
+   "name": "Ecologia Numérica (T)",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.25",
+    "1.2.26",
+    "1.4.20",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66517",
+   "name": "Ecologia Numérica (T)",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "14:30",
+   "end": "16:30",
+   "rooms": [
+    "2.2.19"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66517",
+   "name": "Ecologia Numérica (TP)",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "08:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66517",
+   "name": "Ecologia Numérica (TP)",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-04",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66517",
+   "name": "Ecologia Numérica (TP)",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "12:30",
+   "end": "14:30",
+   "rooms": [
+    "2.2.12"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "13565",
+   "name": "Elementos de Matemática I",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-13",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13565",
+   "name": "Elementos de Matemática I",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13565",
+   "name": "Elementos de Matemática I",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.45"
+   ],
+   "cursos": [
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22771",
+   "name": "Estatística e Probabilidade",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-08",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LEI",
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22771",
+   "name": "Estatística e Probabilidade",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-25",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LEI",
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22771",
+   "name": "Estatística e Probabilidade",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1LEI",
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22764",
+   "name": "Estatística Não Paramétrica",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-13",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.14",
+    "1.3.15",
+    "1.3.33A"
+   ],
+   "cursos": [
+    "3LEA",
+    "3LMA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22764",
+   "name": "Estatística Não Paramétrica",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-29",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.47",
+    "8.2.30"
+   ],
+   "cursos": [
+    "3LEA",
+    "3LMA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22764",
+   "name": "Estatística Não Paramétrica",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "3LEA",
+    "3LMA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62840",
+   "name": "Estudo Orientado em Biologia Celular e Biotecnologia",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-13",
+   "start": "10:00",
+   "end": "19:00",
+   "rooms": [
+    "2.2.21"
+   ],
+   "cursos": [
+    "3LBio*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62840",
+   "name": "Estudo Orientado em Biologia Celular e Biotecnologia",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-01",
+   "start": "10:00",
+   "end": "19:00",
+   "rooms": [
+    "2.3.13"
+   ],
+   "cursos": [
+    "3LBio*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62840",
+   "name": "Estudo Orientado em Biologia Celular e Biotecnologia",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "2.2.12"
+   ],
+   "cursos": [
+    "3LBio*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "34707",
+   "name": "Física Experimental",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "34707",
+   "name": "Física Experimental",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "34707",
+   "name": "Física Experimental",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.26"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "62822",
+   "name": "Fundamentos de Bioinformática",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-06",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.14"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LBio*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62822",
+   "name": "Fundamentos de Bioinformática",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-25",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.1.36"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LBio*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62822",
+   "name": "Fundamentos de Bioinformática",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "2.2.15"
+   ],
+   "cursos": [
+    "3LBio",
+    "3LBio*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26710",
+   "name": "Fundamentos e Técnicas de Visualização",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26710",
+   "name": "Fundamentos e Técnicas de Visualização",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.14",
+    "1.3.15",
+    "1.3.20",
+    "1.3.33A"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26710",
+   "name": "Fundamentos e Técnicas de Visualização",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22748",
+   "name": "Grafos e Redes",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.48",
+    "6.2.49",
+    "6.2.50"
+   ],
+   "cursos": [
+    "3LMA",
+    "3LBio*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22748",
+   "name": "Grafos e Redes",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-26",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "3LMA",
+    "3LBio*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22748",
+   "name": "Grafos e Redes",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "3LMA",
+    "3LBio*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26708",
+   "name": "Interação com Computadores",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-06",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53",
+    "6.2.50"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26708",
+   "name": "Interação com Computadores",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-25",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26708",
+   "name": "Interação com Computadores",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26732",
+   "name": "Introdução à Inteligência Artificial",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.14",
+    "3.2.15"
+   ],
+   "cursos": [
+    "2LCD",
+    "3LEI",
+    "3LMA*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26732",
+   "name": "Introdução à Inteligência Artificial",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LCD",
+    "3LEI",
+    "3LMA*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26732",
+   "name": "Introdução à Inteligência Artificial",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "2LCD",
+    "3LEI",
+    "3LMA*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22736",
+   "name": "Introdução à Investigação Operacional",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-06",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "2LEI",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22736",
+   "name": "Introdução à Investigação Operacional",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-01",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "2LEI",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22736",
+   "name": "Introdução à Investigação Operacional",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "2LEI",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26722",
+   "name": "Introdução à Programação",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26722",
+   "name": "Introdução à Programação",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26722",
+   "name": "Introdução à Programação",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22758",
+   "name": "Laboratório de Estatística I - Introdução à Simulação",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.40",
+    "6.2.41",
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "2LEA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22758",
+   "name": "Laboratório de Estatística I - Introdução à Simulação",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-02",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "2LEA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22758",
+   "name": "Laboratório de Estatística I - Introdução à Simulação",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.34"
+   ],
+   "cursos": [
+    "2LEA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "13539",
+   "name": "Lógica de Primeira Ordem",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-14",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LCD"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13539",
+   "name": "Lógica de Primeira Ordem",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-29",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53",
+    "6.2.50"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LCD"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13539",
+   "name": "Lógica de Primeira Ordem",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.1.11"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LCD"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26716",
+   "name": "Planeamento e Gestão de Projeto",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-12",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.1.36"
+   ],
+   "cursos": [
+    "3LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26716",
+   "name": "Planeamento e Gestão de Projeto",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-03",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.14",
+    "1.3.15"
+   ],
+   "cursos": [
+    "3LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26716",
+   "name": "Planeamento e Gestão de Projeto",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "3LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26706",
+   "name": "Programação Centrada em Objetos",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-15",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "2LCD",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26706",
+   "name": "Programação Centrada em Objetos",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-02",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.47",
+    "8.2.30"
+   ],
+   "cursos": [
+    "2LCD",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26706",
+   "name": "Programação Centrada em Objetos",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "2LCD",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26756",
+   "name": "Programação I (LTI)",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.21",
+    "1.2.22",
+    "1.2.23"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26756",
+   "name": "Programação I (LTI)",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-01",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.21",
+    "1.2.22",
+    "1.2.23"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26756",
+   "name": "Programação I (LTI)",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.21"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26704",
+   "name": "Redes de Computadores",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-15",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.10",
+    "1.3.41",
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24",
+    "1.3.12"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26704",
+   "name": "Redes de Computadores",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-27",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.10",
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26704",
+   "name": "Redes de Computadores",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.21"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26726",
+   "name": "Sistemas de Informação e Bases de Dados",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26726",
+   "name": "Sistemas de Informação e Bases de Dados",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26726",
+   "name": "Sistemas de Informação e Bases de Dados",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.45"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "71766",
+   "name": "Sistemas de Informação Geográfica",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-18",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.53",
+    "6.2.50",
+    "6.2.48"
+   ],
+   "cursos": [
+    "2LEEA",
+    "2LEGeo",
+    "2LMOG*",
+    "3LEEA",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71766",
+   "name": "Sistemas de Informação Geográfica",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.10"
+   ],
+   "cursos": [
+    "2LEEA",
+    "2LEGeo",
+    "2LMOG*",
+    "3LEEA",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71766",
+   "name": "Sistemas de Informação Geográfica",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.32"
+   ],
+   "cursos": [
+    "2LEEA",
+    "2LEGeo",
+    "2LMOG*",
+    "3LEEA",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26730",
+   "name": "Sistemas Distribuídos",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-05",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.44",
+    "6.2.53"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26730",
+   "name": "Sistemas Distribuídos",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-28",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26730",
+   "name": "Sistemas Distribuídos",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26754",
+   "name": "Sistemas Operativos (LTI)",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26754",
+   "name": "Sistemas Operativos (LTI)",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-02-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26754",
+   "name": "Sistemas Operativos (LTI)",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26737",
+   "name": "Teoria da Computação",
+   "sem": 1,
+   "epoca": "1",
+   "date": "2027-01-13",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15"
+   ],
+   "cursos": [
+    "3LEI",
+    "3LMat*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26737",
+   "name": "Teoria da Computação",
+   "sem": 1,
+   "epoca": "2",
+   "date": "2027-01-29",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "3LEI",
+    "3LMat*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26737",
+   "name": "Teoria da Computação",
+   "sem": 1,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.19"
+   ],
+   "cursos": [
+    "3LEI",
+    "3LMat*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26723",
+   "name": "Algoritmos e Estruturas de Dados",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LMat*",
+    "3LMA*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26723",
+   "name": "Algoritmos e Estruturas de Dados",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LMat*",
+    "3LMA*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26723",
+   "name": "Algoritmos e Estruturas de Dados",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.10"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LMat*",
+    "3LMA*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26711",
+   "name": "Análise e Desenho de Software",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-16",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26711",
+   "name": "Análise e Desenho de Software",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-07",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26711",
+   "name": "Análise e Desenho de Software",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.14"
+   ],
+   "cursos": [
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22733",
+   "name": "Análise e Simulação de Sistemas",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.39"
+   ],
+   "cursos": [
+    "3LBio*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22733",
+   "name": "Análise e Simulação de Sistemas",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.38",
+    "8.2.39"
+   ],
+   "cursos": [
+    "3LBio*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22733",
+   "name": "Análise e Simulação de Sistemas",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.30"
+   ],
+   "cursos": [
+    "3LBio*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26709",
+   "name": "Aplicações Distribuídas",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.10",
+    "1.2.21",
+    "1.2.22",
+    "1.3.41",
+    "1.3.12"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LCD",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26709",
+   "name": "Aplicações Distribuídas",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.10",
+    "1.2.21",
+    "1.2.22",
+    "1.3.41",
+    "1.3.12"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LCD",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26709",
+   "name": "Aplicações Distribuídas",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LCD",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26712",
+   "name": "Aplicações e Serviços na Web",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.3.14",
+    "1.3.15",
+    "1.3.20",
+    "1.3.33A"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LCD*",
+    "3LEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26712",
+   "name": "Aplicações e Serviços na Web",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-05",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.13",
+    "8.2.15"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LCD*",
+    "3LEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26712",
+   "name": "Aplicações e Serviços na Web",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.2.45"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LCD*",
+    "3LEGeo*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26750",
+   "name": "Construção de Sistemas de Software",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26750",
+   "name": "Construção de Sistemas de Software",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-02",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26750",
+   "name": "Construção de Sistemas de Software",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "93103",
+   "name": "Curso de Competências Sociais e Desenvolvimento Pessoal",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-17",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "1LEA",
+    "2LEF*",
+    "2LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "93103",
+   "name": "Curso de Competências Sociais e Desenvolvimento Pessoal",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-28",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.02"
+   ],
+   "cursos": [
+    "1LEA",
+    "2LEF*",
+    "2LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "93103",
+   "name": "Curso de Competências Sociais e Desenvolvimento Pessoal",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.3.33A"
+   ],
+   "cursos": [
+    "1LEA",
+    "2LEF*",
+    "2LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26727",
+   "name": "Desenvolvimento Centrado em Objetos",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26727",
+   "name": "Desenvolvimento Centrado em Objetos",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-06",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53",
+    "6.2.50"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26727",
+   "name": "Desenvolvimento Centrado em Objetos",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "62818",
+   "name": "Ecologia",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26",
+    "1.4.20",
+    "6.4.32",
+    "6.2.41",
+    "6.4.34",
+    "6.4.35",
+    "2.2.16",
+    "2.2.19",
+    "6.2.40"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LBio",
+    "3LBioq*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62818",
+   "name": "Ecologia",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-30",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "2.2.16",
+    "2.2.19",
+    "6.2.40",
+    "6.2.41",
+    "6.4.34",
+    "6.4.35"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LBio",
+    "3LBioq*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62818",
+   "name": "Ecologia",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.25"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LBio",
+    "3LBioq*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22741",
+   "name": "Economia e Gestão",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16",
+    "1.3.14",
+    "1.3.15",
+    "1.3.20",
+    "1.3.33A"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LEA",
+    "2LEBB",
+    "2LEEA",
+    "2LEF",
+    "2LMA",
+    "2LMat*",
+    "3LEGeo",
+    "3LMat*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22741",
+   "name": "Economia e Gestão",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-01",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16",
+    "8.2.30",
+    "8.2.38",
+    "8.2.39"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LEA",
+    "2LEBB",
+    "2LEEA",
+    "2LEF",
+    "2LMA",
+    "2LMat*",
+    "3LEGeo",
+    "3LMat*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22741",
+   "name": "Economia e Gestão",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1LEI",
+    "2LEA",
+    "2LEBB",
+    "2LEEA",
+    "2LEF",
+    "2LMA",
+    "2LMat*",
+    "3LEGeo",
+    "3LMat*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13540",
+   "name": "Elementos de Álgebra Linear",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13540",
+   "name": "Elementos de Álgebra Linear",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13540",
+   "name": "Elementos de Álgebra Linear",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.45"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13566",
+   "name": "Elementos de Matemática II",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13566",
+   "name": "Elementos de Matemática II",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-06",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16",
+    "3.1.10",
+    "3.1.11"
+   ],
+   "cursos": [
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13566",
+   "name": "Elementos de Matemática II",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22706",
+   "name": "Estatística Paramétrica",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.30",
+    "6.4.31",
+    "6.4.34"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LEA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22706",
+   "name": "Estatística Paramétrica",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-06",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.30",
+    "6.4.31",
+    "6.4.34"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LEA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22706",
+   "name": "Estatística Paramétrica",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.30"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LEA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26767",
+   "name": "Ética Profissional na Informática",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-17",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "2LCD",
+    "2LEI",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26767",
+   "name": "Ética Profissional na Informática",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-01",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LCD",
+    "2LEI",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26767",
+   "name": "Ética Profissional na Informática",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "2LCD",
+    "2LEI",
+    "2LTI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    },
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "66520",
+   "name": "Evolução",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "13:00",
+   "end": "18:00",
+   "rooms": [
+    "1.2.24",
+    "1.2.25",
+    "1.2.26",
+    "1.4.20"
+   ],
+   "cursos": [
+    "2LBio",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66520",
+   "name": "Evolução",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-02",
+   "start": "16:30",
+   "end": "20:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26",
+    "1.4.20",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "2LBio",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "66520",
+   "name": "Evolução",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "2.2.21"
+   ],
+   "cursos": [
+    "2LBio",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "34706",
+   "name": "Física A",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-15",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI",
+    "3LCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "34706",
+   "name": "Física A",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-07",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1LEI",
+    "3LCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "34706",
+   "name": "Física A",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.19"
+   ],
+   "cursos": [
+    "1LEI",
+    "3LCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26771",
+   "name": "Fundamentos de Aprendizagem Automática",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13"
+   ],
+   "cursos": [
+    "2LEBB",
+    "3LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26771",
+   "name": "Fundamentos de Aprendizagem Automática",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.39"
+   ],
+   "cursos": [
+    "2LEBB",
+    "3LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "71778",
+   "name": "Fundamentos de Cartografia",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.15"
+   ],
+   "cursos": [
+    "1LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71778",
+   "name": "Fundamentos de Cartografia",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-06",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71778",
+   "name": "Fundamentos de Cartografia",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.02"
+   ],
+   "cursos": [
+    "1LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62835",
+   "name": "Genética",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-11",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LBio",
+    "1PG-CEns*",
+    "3LBioq*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62835",
+   "name": "Genética",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14"
+   ],
+   "cursos": [
+    "1LBio",
+    "1PG-CEns*",
+    "3LBioq*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "62835",
+   "name": "Genética",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "2.2.21"
+   ],
+   "cursos": [
+    "1LBio",
+    "1PG-CEns*",
+    "3LBioq*",
+    "3LCD*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQT*",
+    "3LQui*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26769",
+   "name": "Inteligência Artificial Aplicada",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-21",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.14"
+   ],
+   "cursos": [
+    "3LCD*",
+    "3LEI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26769",
+   "name": "Inteligência Artificial Aplicada",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-09",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.47"
+   ],
+   "cursos": [
+    "3LCD*",
+    "3LEI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26769",
+   "name": "Inteligência Artificial Aplicada",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.17"
+   ],
+   "cursos": [
+    "3LCD*",
+    "3LEI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26768",
+   "name": "Introdução à Aprendizagem Automática",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-08",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38",
+    "8.2.39",
+    "8.2.47"
+   ],
+   "cursos": [
+    "2LCD",
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26768",
+   "name": "Introdução à Aprendizagem Automática",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53"
+   ],
+   "cursos": [
+    "2LCD",
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26768",
+   "name": "Introdução à Aprendizagem Automática",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.12"
+   ],
+   "cursos": [
+    "2LCD",
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26751",
+   "name": "Introdução às Tecnologias Web",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-14",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24",
+    "1.2.25",
+    "1.2.26",
+    "1.4.20",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "2LEGeo",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26751",
+   "name": "Introdução às Tecnologias Web",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-08",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.10",
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24",
+    "1.2.26",
+    "1.3.41",
+    "1.3.12"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "2LEGeo",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26751",
+   "name": "Introdução às Tecnologias Web",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.11"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "2LEGeo",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13528",
+   "name": "Matemática Discreta",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-11",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LMat",
+    "1PG-CEns*",
+    "2LEI",
+    "3LBio*",
+    "3LEA*",
+    "3LFis*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13528",
+   "name": "Matemática Discreta",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-30",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LMat",
+    "1PG-CEns*",
+    "2LEI",
+    "3LBio*",
+    "3LEA*",
+    "3LFis*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "13528",
+   "name": "Matemática Discreta",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.45"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LMat",
+    "1PG-CEns*",
+    "2LEI",
+    "3LBio*",
+    "3LEA*",
+    "3LFis*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "71753",
+   "name": "Métodos Óticos de Modelação 3D",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-16",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "8.2.06",
+    "8.2.10"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71753",
+   "name": "Métodos Óticos de Modelação 3D",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.3.20"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71753",
+   "name": "Métodos Óticos de Modelação 3D",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.19"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LBio*",
+    "3LMOG*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71745",
+   "name": "Posicionamento Geoespacial I (P)",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.25",
+    "1.2.26"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71745",
+   "name": "Posicionamento Geoespacial I (P)",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-30",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.4.20"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71745",
+   "name": "Posicionamento Geoespacial I (P)",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.4.33"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71745",
+   "name": "Posicionamento Geoespacial I (T)",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.48"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71745",
+   "name": "Posicionamento Geoespacial I (T)",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-30",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.50"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "71745",
+   "name": "Posicionamento Geoespacial I (T)",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.2.44"
+   ],
+   "cursos": [
+    "2LEGeo",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26764",
+   "name": "Programação Funcional",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-16",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26764",
+   "name": "Programação Funcional",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-05",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36",
+    "6.2.53",
+    "6.2.50"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26764",
+   "name": "Programação Funcional",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-21",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.38"
+   ],
+   "cursos": [
+    "1LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26757",
+   "name": "Programação II (LTI)",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-08",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26757",
+   "name": "Programação II (LTI)",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-02",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26757",
+   "name": "Programação II (LTI)",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-19",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.21"
+   ],
+   "cursos": [
+    "1LCD",
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "22725_6ects",
+   "name": "Programação Matemática",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-11",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "2LEA",
+    "2LMA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22725_6ects",
+   "name": "Programação Matemática",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "3.2.13",
+    "3.2.14",
+    "3.2.15",
+    "3.2.16"
+   ],
+   "cursos": [
+    "2LEA",
+    "2LMA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "22725_6ects",
+   "name": "Programação Matemática",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "6.4.30"
+   ],
+   "cursos": [
+    "2LEA",
+    "2LMA",
+    "3LBio*",
+    "3LFis*",
+    "3LMat*",
+    "3LTI*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "code": "26755",
+   "name": "Redes de Computadores (LTI)",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-21",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.25",
+    "1.2.26",
+    "6.4.32",
+    "6.4.33"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26755",
+   "name": "Redes de Computadores (LTI)",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.4.32",
+    "6.4.33",
+    "6.4.34"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26755",
+   "name": "Redes de Computadores (LTI)",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "3.1.10"
+   ],
+   "cursos": [
+    "1LTI",
+    "1PG-CEns*",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 1,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26749",
+   "name": "Segurança e Confiabilidade",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-17",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.10",
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24",
+    "1.3.41",
+    "1.3.29"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26749",
+   "name": "Segurança e Confiabilidade",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-07",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "1.2.10",
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24",
+    "1.3.41",
+    "1.3.29"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26749",
+   "name": "Segurança e Confiabilidade",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.21"
+   ],
+   "cursos": [
+    "3LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26714",
+   "name": "Segurança Informática",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-11",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "6.1.36"
+   ],
+   "cursos": [
+    "3LTI",
+    "3LCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26714",
+   "name": "Segurança Informática",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-05",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "6.2.53"
+   ],
+   "cursos": [
+    "3LTI",
+    "3LCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26714",
+   "name": "Segurança Informática",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.10"
+   ],
+   "cursos": [
+    "3LTI",
+    "3LCD*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26752",
+   "name": "Sistemas Inteligentes",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-09",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.30",
+    "8.2.47"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26752",
+   "name": "Sistemas Inteligentes",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-06-29",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "8.2.30",
+    "8.2.38"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26752",
+   "name": "Sistemas Inteligentes",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-20",
+   "start": "16:30",
+   "end": "19:30",
+   "rooms": [
+    "8.2.06"
+   ],
+   "cursos": [
+    "1PG-CEns*",
+    "2LTI",
+    "3LBio*",
+    "3LBioq*",
+    "3LEA*",
+    "3LFis*",
+    "3LGeo*",
+    "3LMA*",
+    "3LMat*",
+    "3LMOG*",
+    "3LQui*"
+   ],
+   "degrees": [
+    {
+     "degree": "LTI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26703",
+   "name": "Sistemas Operativos",
+   "sem": 2,
+   "epoca": "1",
+   "date": "2027-06-22",
+   "start": "13:00",
+   "end": "16:00",
+   "rooms": [
+    "1.2.21",
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26703",
+   "name": "Sistemas Operativos",
+   "sem": 2,
+   "epoca": "2",
+   "date": "2027-07-12",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.22",
+    "1.2.23",
+    "1.2.24"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "code": "26703",
+   "name": "Sistemas Operativos",
+   "sem": 2,
+   "epoca": "esp",
+   "date": "2027-07-23",
+   "start": "09:00",
+   "end": "12:00",
+   "rooms": [
+    "1.2.24"
+   ],
+   "cursos": [
+    "2LEI"
+   ],
+   "degrees": [
+    {
+     "degree": "LEI",
+     "year": 2,
+     "optional": false
+    }
+   ]
+  }
+ ]
+}

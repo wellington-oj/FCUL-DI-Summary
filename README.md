@@ -16,9 +16,11 @@ site/                    ← the website (deploy this folder as-is)
   data/courses.js        ← generated, do not edit by hand
 scraper/
   scrape_fenix.py        ← downloads plans, course pages, shifts and the exam calendar from Fenix → data/fenix.json
-  build_site_data.py     ← merges fenix.json + curation.json → site/data/courses.js
+  fcul_exams.py          ← reads the faculty's official exam calendar (PDF) → data/exams_fcul.json
+  build_site_data.py     ← merges fenix.json + exams_fcul.json + curation.json → site/data/courses.js
 data/
   fenix.json             ← raw scraped data
+  exams_fcul.json        ← LEI/LTI rows of the official exam calendar
   curation.json          ← hand-written: summaries, topics, areas, connections
   skills.json            ← hand-written: concrete skills per course (PT/EN), shown in the Skills view
 ```
@@ -28,6 +30,7 @@ data/
 ```bash
 pip install -r scraper/requirements.txt
 python -I scraper/scrape_fenix.py --refresh   # re-download everything (cached in .cache/ otherwise)
+python -I scraper/fcul_exams.py --refresh     # newest exam calendar PDF linked from ciencias.ulisboa.pt
 python -I scraper/build_site_data.py
 ```
 
@@ -50,7 +53,13 @@ For each course (by Fenix acronym), it lists what a student should be able to do
 
 ### Timetable and exams
 
-The **Timetable** view uses two Fenix pages, scraped automatically: each course edition's *Turnos* page (shift, weekday, time, room and class groups such as `1LEI01`) and each degree's *Avaliações* page (every exam of the year: 1st and 2nd period and the special period, with date, time and rooms). Grade-improvement (*Melhoria*) entries repeat the regular exams, so they are skipped. Exams are matched to courses by name, and the build script prints any exam it cannot match. Fenix updates timetables during the year, so re-run the scraper with `--refresh` to pick up changes.
+The **Timetable** view combines two sources.
+
+- **Classes** come from each course edition's Fenix *Turnos* page: shift, weekday, time, room and class groups such as `1LEI01`.
+- **Exams** (date, time and rooms for the 1st, 2nd and special periods) come from the faculty's official exam calendar, a PDF linked from the [Calendars, deadlines and schedules](https://ciencias.ulisboa.pt/en/education/current-students/academic-information/calendars-deadlines-and-schedules) page. A new dated file replaces it whenever it changes; `fcul_exams.py` follows the link on that page, so re-run it with `--refresh`. The PDF's text layer maps accented letters to U+FFFD, so rows are rebuilt from the position of each cell and names are matched with those letters as wildcards. A row belongs to a course when its *Cursos* column lists LEI or LTI and its name matches. Courses with separate T and TP exams get one entry per part. The build script prints any row it cannot match.
+- Courses missing from the PDF keep the exams from the Fenix *Avaliações* page, which Fenix also scrapes (grade-improvement entries are skipped).
+
+Timetables change during the year, so re-run both scrapers with `--refresh` to pick up changes.
 
 ## Running locally
 

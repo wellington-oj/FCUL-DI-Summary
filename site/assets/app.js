@@ -97,7 +97,8 @@
       noExamsPeriod: "Nenhum exame nesta época.",
       days: ["", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
       kindShort: { option: "opção", minor: "menor" },
-      calNote: (y) => `Turnos e exames publicados no Fenix para ${y}. Podem mudar ao longo do ano: confirme sempre no Fenix.`,
+      calNote: (y) => `Turnos publicados no Fenix para ${y}. Datas, horas e salas dos exames tiradas do calendário oficial de exames de Ciências. Tudo pode mudar ao longo do ano: confirme sempre.`, examPdf: "Calendário de exames oficial (PDF)",
+      roomAsk: "Sala: contactar o núcleo do C2", examPart: (p) => `parte ${p}`,
     },
     en: {
       brandSub: "LEI · LTI · Ciências ULisboa",
@@ -185,7 +186,8 @@
       noExamsPeriod: "No exams in this period.",
       days: ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       kindShort: { option: "option", minor: "minor" },
-      calNote: (y) => `Shifts and exams as published on Fenix for ${y}. They can change during the year: always check Fenix.`,
+      calNote: (y) => `Shifts as published on Fenix for ${y}. Exam dates, times and rooms come from the faculty's official exam calendar. Everything can change during the year: always check.`, examPdf: "Official exam calendar (PDF)",
+      roomAsk: "Room: ask the C2 office", examPart: (p) => `part ${p}`,
     },
   };
 
@@ -552,11 +554,29 @@
     </div></div>`;
   }
 
+  /* "3.2.13, 3.2.14, 3.2.15, 3.2.16" -> "3.2.13–16"; "8.2.30, 8.2.38" -> "8.2.30/38" (same building and floor) */
+  function roomsShort(rooms) {
+    const groups = [];
+    rooms.forEach((r) => {
+      const m = r.match(/^(\d+\.\d+\.)(\d+)$/);
+      const g = groups[groups.length - 1];
+      if (m && g && g.pre === m[1]) g.nums.push(m[2]);
+      else groups.push(m ? { pre: m[1], nums: [m[2]] } : { pre: r, nums: [] });
+    });
+    return groups.map(({ pre, nums }) => {
+      if (!nums.length) return pre;
+      const n = nums.map(Number);
+      const run = n.length > 2 && n.every((x, i) => !i || x === n[i - 1] + 1);
+      return pre + (run ? `${nums[0]}–${nums[nums.length - 1]}` : nums.join("/"));
+    }).join(", ");
+  }
+  const roomText = (e) => (e.rooms.length ? e.rooms.join(", ") : e.roomNote ? t("roomAsk") : t("roomTbd"));
+
   function examCard(e) {
     const days = Math.round((dateOf(e.date) - DAY0) / 864e5);
-    const rooms = e.rooms.length ? `${t(e.rooms.length > 1 ? "rooms" : "room")} ${e.rooms.join(", ")}` : t("roomTbd");
+    const rooms = e.rooms.length ? `${t(e.rooms.length > 1 ? "rooms" : "room")} ${e.rooms.join(", ")}` : roomText(e);
     return `<div class="exam-card${days < 0 ? " past" : ""}">
-      <span class="ec-epoca">${esc(t("epoca")[e.epoca] || e.epoca)}</span>
+      <span class="ec-epoca">${esc(t("epoca")[e.epoca] || e.epoca)}${e.part ? ` · ${esc(t("examPart", e.part))}` : ""}</span>
       <span class="ec-date"><b>${dateOf(e.date).getDate()}</b><span>${esc(fmtDate(e.date, { month: "short", year: "numeric" }))}</span></span>
       <span class="ec-when">${esc(fmtDate(e.date, { weekday: "long" }))} · ${e.start}–${e.end}</span>
       <span class="ec-rooms">${esc(rooms)}</span>
@@ -593,7 +613,8 @@
         <h3>${esc(L(c.name))}</h3>
         <div class="d-meta"><span class="pill">${deg} · ${esc(t("yearSem", o.year, o.sem))}${esc(kind)}</span><span class="pill">${fmtN(c.ects)} ECTS</span></div>
         <div class="cd-actions"><button class="btn" type="button" data-open="${c.id}">${esc(t("openCourse"))}</button>
-          ${c.edition?.url ? `<a class="btn" href="${esc(c.edition.url)}/turnos" target="_blank" rel="noopener">${esc(t("fenixShifts"))} ↗</a>` : ""}</div>
+          ${c.edition?.url ? `<a class="btn" href="${esc(c.edition.url)}/turnos" target="_blank" rel="noopener">${esc(t("fenixShifts"))} ↗</a>` : ""}
+          ${c.exams.length && D.examSource ? `<a class="btn" href="${esc(D.examSource)}" target="_blank" rel="noopener">${esc(t("examPdf"))} ↗</a>` : ""}</div>
       </div>
       <div class="cp-block">
         <h3 class="cp-title">${esc(t("exams"))}</h3>
@@ -642,8 +663,10 @@
         ${days.map((iso) => {
           const here = r.ex.filter((x) => x.e.date === iso).sort((a, b) => a.e.start.localeCompare(b.e.start));
           return `<div class="xm-cell${dateOf(iso).getDay() === 1 ? " wk-start" : ""}${dateOf(iso) < DAY0 ? " past" : ""}">${here.map(({ c, e }) => {
-            const tip = `${L(c.name)} · ${fmtDate(iso, { weekday: "long", day: "numeric", month: "long" })} ${e.start}–${e.end}${e.rooms.length ? " · " + e.rooms.join(", ") : ""}`;
-            return `<button type="button" class="xm-ex hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}" title="${esc(tip)}"><b>${esc(c.acr)}</b><span>${e.start}</span></button>`;
+            const tip = `${L(c.name)}${e.part ? ` (${t("examPart", e.part)})` : ""} · ${fmtDate(iso, { weekday: "long", day: "numeric", month: "long" })} ${e.start}–${e.end} · ${roomText(e)}`;
+            return `<button type="button" class="xm-ex hued${neutralCls(c)}" data-cal="${c.id}" style="${hueStyle(c)}" title="${esc(tip)}">
+              <b>${esc(c.acr)}${e.part ? ` <i>${esc(e.part)}</i>` : ""}</b><span>${e.start}–${e.end}</span>
+              <span class="xm-room">${esc(e.rooms.length ? roomsShort(e.rooms) : roomText(e))}</span></button>`;
           }).join("")}</div>`;
         }).join("")}
       </div>`).join("");
@@ -712,7 +735,7 @@
         <nav class="seg" aria-label="Degree">${seg}</nav>
       </section>
       <div id="cal">${calBody(deg)}</div>
-      <p class="source-note" style="margin-top:32px">${esc(t("calNote", d.planYear))}</p>`;
+      <p class="source-note" style="margin-top:32px">${esc(t("calNote", d.planYear))}${D.examSource ? ` <a href="${esc(D.examSource)}" target="_blank" rel="noopener">${esc(t("examPdf"))} ↗</a>` : ""}</p>`;
   }
 
   /* re-render only the calendar body, keeping list scroll and keyboard focus */

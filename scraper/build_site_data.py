@@ -1,7 +1,7 @@
 """
-Merge data/fenix.json (scraped: plans, course pages, shifts, exams) with
-data/curation.json and data/skills.json (hand-written) into site/data/courses.js,
-the single file the site loads.
+Merge data/fenix.json (scraped: plans, course pages, shifts, exams), data/exams_fcul.json
+(official exam calendar) and data/curation.json + data/skills.json (hand-written) into
+site/data/courses.js, the single file the site loads.
 
 Usage:  python -I scraper/build_site_data.py
 """
@@ -201,6 +201,55 @@ for c in courses.values():
     c["after"] = [acr_index[a] for a in c["after"] if a in acr_index]
     c["twin"] = acr_index.get(c["twin"]) if c["twin"] else None
 
+# Exam dates, times and rooms: the faculty's official exam calendar (PDF, see fcul_exams.py)
+# wins over the Fenix calendar. A PDF row belongs to a course when its "Cursos" column lists one
+# of the course's degrees and its name matches; the PDF's accented letters come out as U+FFFD,
+# so each of those matches any single letter.
+EXAMS_PDF = ROOT / "data" / "exams_fcul.json"
+exam_source = None
+if EXAMS_PDF.exists():
+    pdf = json.loads(EXAMS_PDF.read_text(encoding="utf-8"))
+    exam_source = pdf["source"]
+
+    def name_re(name):
+        base = re.sub(r"\s*\((LEI|LTI)\)\s*$", "", name.strip())
+        part = re.search(r"\s*\((T|TP|P|PL)\)\s*$", base)
+        if part:
+            base = base[: part.start()]
+        pat = "".join("." if ch == "�" else re.escape(ch) for ch in base.lower())
+        return re.compile(pat + r"$"), part.group(1) if part else None
+
+    used = set()
+    diffs = []
+    for c in courses.values():
+        names = {c["name"]["pt"].lower().strip()}
+        degs = {o["degree"] for o in c["offerings"]}
+        found = []
+        for i, r in enumerate(pdf["exams"]):
+            if not degs & {d["degree"] for d in r["degrees"]}:
+                continue
+            rx, part = name_re(r["name"])
+            if any(rx.match(n) for n in names):
+                used.add(i)
+                e = {"epoca": r["epoca"], "date": r["date"], "start": r["start"], "end": r["end"], "rooms": r["rooms"]}
+                if r.get("roomNote"):
+                    e["roomNote"] = r["roomNote"]
+                if part:
+                    e["part"] = part
+                if e not in found:
+                    found.append(e)
+        if not found:
+            continue
+        old = {(e["epoca"], e["date"], e["start"]) for e in c["exams"]}
+        new = {(e["epoca"], e["date"], e["start"]) for e in found}
+        if c["exams"] and old != new:
+            diffs.append(c["acr"])
+        c["exams"] = sorted(found, key=lambda e: (e["date"], e["start"] or "", e.get("part") or ""))
+    left = sorted({r["name"] for i, r in enumerate(pdf["exams"]) if i not in used})
+    print(f"exams: {len(used)} PDF rows matched; Fenix date/time differs for {len(diffs)} courses: {diffs}")
+    if left:
+        print("PDF exam rows with no matching course:", left)
+
 missing = [a for a, v in CUR["courses"].items() if a not in acr_index]
 if missing:
     print("curation keys with no matching course:", missing)
@@ -214,6 +263,7 @@ if stale:
 data = {
     "source": FENIX["source"],
     "scraped": FENIX["scraped"],
+    "examSource": exam_source,
     "areas": CUR["areas"],
     "degrees": degrees,
     "courses": courses,
